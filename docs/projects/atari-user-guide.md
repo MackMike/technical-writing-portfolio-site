@@ -5,5 +5,5 @@ A Markdown-based user guide created to apply technical writing principles to leg
 ## Project Overview
 Read the project overview PDF for audience, goals, challenges, tools, and results.
 
-- [Atari User Guide Overview](../assets/pdfs/atari-user-guide-overview.pdf)
+- [Open Project Overview PDF](../assets/pdfs/atari-user-guide-overview.pdf)
 - [View Source Files on GitHub](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio/tree/main/Atari-Computer-User-Guide)
