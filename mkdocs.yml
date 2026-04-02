@@ -1,0 +1,12 @@
+site_name: Michael Scarborough Technical Writing Portfolio
+site_url: https://yourusername.github.io/technical-writing-portfolio-site/
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Resume: resume.md
+  - Projects:
+      - Atari Computer User Guide: projects/atari-user-guide.md
+      - Migrate User Administrative Tool Documentation: projects/migrate-user.md
