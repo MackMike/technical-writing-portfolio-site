@@ -18,5 +18,5 @@ I am especially interested in work involving:
 - Process and workflow documentation
 
 ## External Links
-- [LinkedIn](https://www.linkedin.com/in/jbob/)
-- [GitHub](https://github.com/yourusername)
+- [LinkedIn](https://www.linkedin.com/in/miscarborough/)
+- [GitHub](https://github.com/MackMike)
