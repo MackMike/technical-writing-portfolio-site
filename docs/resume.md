@@ -1,6 +1,6 @@
 # Resume
 
-You can download my resume here:
+Download my resume or review a summary of my qualifications below.
 
 [Download Resume PDF](../assets/pdfs/scarborough-resume.pdf)
 
