@@ -1,7 +1,5 @@
 # Resume
 
-##This is the TEST TEXT
-
 Download my resume or review a summary of my qualifications below.
 
 [Download Resume PDF](../assets/pdfs/scarborough-resume.pdf)
