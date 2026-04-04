@@ -1,5 +1,5 @@
 # Resume
-###REMOVE ME
+
 Download my resume or review a summary of my qualifications below.
 
 [Download Resume PDF](../assets/pdfs/scarborough-resume.pdf)
