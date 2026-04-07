@@ -16,6 +16,9 @@ A Markdown-based user guide created to apply technical writing principles to leg
 ### [Migrate User Administrative Tool Documentation](projects/migrate-user.md)
 Administrator-focused documentation for an AppleScript tool used to restore ownership and group permissions on a migrated macOS home folder after reimaging. This sample includes a polished README, revised prompts and warnings, improved maintainable comments, and supporting project documentation.
 
+### [Apache OpenOffice Technical Editing](projects/openoffice-technical-editing.md)
+A technical editing sample based on published Apache OpenOffice user documentation. This project demonstrates editorial work in consistency, content editing, copyediting, and structural editing, supported by project overview, editing highlights, and detailed before-and-after examples.
+
 ## Areas of Focus
 - Technical writing
 - Technical editing
