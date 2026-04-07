@@ -40,7 +40,7 @@ This document provides a more detailed set of editing examples, including fuller
 - [Open Detailed Before-and-After Examples PDF](../assets/pdfs/openoffice-detailed-editing-examples.pdf)
 
 ## Published Documentation
-- [Published OpenOffice Documentation](https://wiki.openoffice.org/wiki/Documentation/AOO4_User_Guides/AOO4.1_User_Guide_Chapters))
+- [Published OpenOffice Documentation](https://wiki.openoffice.org/wiki/Documentation/AOO4_User_Guides/AOO4.1_User_Guide_Chapters)
 
 ## Supporting Materials
 - [Unedited Calc 4.1 Guide - Macros](../assets/pdfs/unedited-calc-macros-guide.pdf)
