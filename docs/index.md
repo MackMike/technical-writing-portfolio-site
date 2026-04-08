@@ -12,7 +12,7 @@ This portfolio highlights selected writing and editing samples that demonstrate 
 
 ## Featured Projects
 
-### [Enterprise macOS Onboarding Guide](projects/enterprise-macOS-onboarding.md)
+### [Managed macOS Onboarding Guide](projects/managed-mac-onboarding-guide.md)
 
 A task-based quick-start guide designed to help end users set up a company-managed macOS device in an enterprise environment. This project demonstrates clear onboarding workflows, authentication and security integration (MFA, secure access), and user-focused troubleshooting while reflecting real-world device management practices.
 
