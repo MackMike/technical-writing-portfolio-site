@@ -1,17 +1,14 @@
-flowchart TD
-    A[Turn On Mac] --> B[Connect to Wi-Fi]
-    B --> C[Sign In with Company Account]
-    C --> D[Complete MFA]
-    D --> E[Automated Setup Runs]
-    E --> F[Connect to Zscaler]
-    F --> G{On-site?}
-    G -- Yes --> H[Connect to Secure Company Wi-Fi]
-    G -- No --> I[Continue on Current Network]
-    H --> J[Access Microsoft 365 Apps]
-    I --> J
-    J --> K[Open Self Service]
-    K --> L[Install Approved Apps]
-    L --> M[Ready for Work].venv/
+# Python virtual environment
+.venv/
+
+# Python binary
 python3.14
+
+# MkDocs build output
 site/
+
+# Apple Pages files
 *.pages
+
+# macOS system files
+.DS_Store
