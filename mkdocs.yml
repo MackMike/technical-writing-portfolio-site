@@ -1,4 +1,3 @@
-
 site_name: Michael Scarborough Technical Writing Portfolio
 site_url: https://MackMike.github.io/technical-writing-portfolio-site/
 theme:
@@ -13,7 +12,8 @@ nav:
       - Migrate User Administrative Tool Documentation: projects/migrate-user.md
       - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing.md
       - Managed macOS Onboarding Guide: projects/managed-mac-onboarding.md
- 
+      - Troubleshooting Compliance Failures on Jamf-Managed Macs: projects/jamf-managed-mac-compliance-troubleshooting.md
+
 plugins:
   - search
   - mermaid2
