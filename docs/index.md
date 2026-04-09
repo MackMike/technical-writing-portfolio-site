@@ -16,6 +16,10 @@ This portfolio highlights selected writing and editing samples that demonstrate 
 
 A task-based quick-start guide designed to help end users set up a company-managed macOS device in an enterprise environment. This project demonstrates clear onboarding workflows, authentication and security integration (MFA, secure access), and user-focused troubleshooting while reflecting real-world device management practices.
 
+### [Troubleshooting Compliance Failures on Jamf-Managed Macs](projects/jamf-managed-mac-compliance-troubleshooting.md)
+
+An internal knowledge base article written for macOS device management engineers, desktop support technicians, and Help Desk teams supporting Jamf-managed Macs. This sample demonstrates structured troubleshooting, remediation guidance, and support-focused documentation for compliance validation, policy execution, profile deployment, FileVault status, and reenrollment workflows.
+
 ### [Atari Computer User Guide](projects/atari-user-guide.md)
 
 A Markdown-based user guide created to apply technical writing principles to legacy computing documentation. This sample demonstrates step-by-step instructions, hardware setup guidance, and troubleshooting content for users familiar with modern systems but new to older platforms.
