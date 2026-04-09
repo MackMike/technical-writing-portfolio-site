@@ -11,6 +11,8 @@
         <link rel="canonical" href="https://MackMike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting/">
       
       
+        <link rel="prev" href="../managed-mac-onboarding/">
+      
       
       
         
@@ -272,18 +274,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -304,7 +308,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -422,6 +426,637 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting Compliance Failures on Jamf-Managed Macs
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting Compliance Failures on Jamf-Managed Macs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audience
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-failure-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Domains
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Begin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-confirm-the-jamf-pro-record-is-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Confirm the Jamf Pro Record Is Current
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Confirm the Jamf Pro Record Is Current">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-validate-mdm-enrollment-and-profile-presence" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Validate MDM Enrollment and Profile Presence
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Validate MDM Enrollment and Profile Presence">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signs-of-enrollment-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signs of Enrollment Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-check-mdm-command-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Check MDM Command Behavior
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Check MDM Command Behavior">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-compare-local-state-to-jamf-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Compare Local State to Jamf Inventory
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Compare Local State to Jamf Inventory">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remediation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-validate-filevault-and-escrow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Validate FileVault and Escrow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Validate FileVault and Escrow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-review-configuration-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Review Configuration Profiles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Review Configuration Profiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-review-jamf-policy-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Review Jamf Policy Execution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Review Jamf Policy Execution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-confirm-required-security-tools-are-installed-and-healthy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Confirm Required Security Tools Are Installed and Healthy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Confirm Required Security Tools Are Installed and Healthy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remediation_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-validate-macos-version-and-update-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Validate macOS Version and Update State
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Validate macOS Version and Update State">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remediation_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-standard-remediation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Standard Remediation Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Standard Remediation Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refresh-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refresh Inventory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#re-run-jamf-policies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Re-run Jamf Policies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redeploy-profiles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redeploy Profiles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reinstall-required-security-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reinstall Required Security Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resolve-filevault-or-escrow-gaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resolve FileVault or Escrow Gaps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-when-to-remove-and-re-enroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. When to Remove and Re-enroll
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. When to Remove and Re-enroll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indications-for-re-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indications for Re-enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-checks-before-re-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Checks Before Re-enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-re-enrollment-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Re-enrollment Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-validation-after-remediation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Validation After Remediation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escalation Criteria
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Escalation Criteria">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#escalation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escalation Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
