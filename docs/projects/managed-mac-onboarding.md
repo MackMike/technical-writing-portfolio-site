@@ -8,5 +8,5 @@ A task-based quick-start guide designed to help end users set up a company-manag
 
 Read the project overview PDF for audience, goals, challenges, tools, and results.
 
-- [Open Project Overview PDF](../assets/pdf/enterprise-macos-onboarding-overview.pdf)
+- [Open Project Overview PDF](../assets/pdfs/enterprise-macos-onboarding-overview.pdf)
 - [View User Guide](managed-mac-onboarding-guide.md)
