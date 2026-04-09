@@ -12,7 +12,7 @@ nav:
       - Atari Computer User Guide: projects/atari-user-guide.md
       - Migrate User Administrative Tool Documentation: projects/migrate-user.md
       - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing.md
-      - Managed Mac Onboarding Guide: projects/managed-mac-onboarding-guide.md
+      - Managed macOS Onboarding Guide: projects/managed-mac-onboarding.md
  
 plugins:
   - search
