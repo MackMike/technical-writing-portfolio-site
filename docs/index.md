@@ -2,55 +2,50 @@
 
 ## Technical Writer and Editor
 
-I am a technical writer and editor with a background in macOS systems engineering and enterprise IT. My experience includes creating administrator documentation, user guides, knowledge base content, workflows, and process documentation for both technical teams and end users.
+Technical writer and editor with a background in macOS systems engineering and enterprise IT. I create administrator guides, user documentation, knowledge base articles, and workflow documentation for technical teams and end users.
 
-In addition to my documentation work in IT environments, I serve as a Technical Editor for Apache OpenOffice documentation, where I review and edit user guide content for clarity, consistency, usability, and technical accuracy. I have also completed Scriptorium’s Introduction to DITA course and maintain documentation samples in Markdown and GitHub-based formats.
+My experience includes documenting real-world macOS and IT support workflows, with a focus on clarity, structure, usability, and audience-appropriate communication. I also serve as a Technical Editor for Apache OpenOffice documentation, where I review and improve published user guide content for consistency, readability, and technical accuracy.
 
-This portfolio highlights selected writing and editing samples that demonstrate my ability to translate complex technical workflows into clear, structured, user-focused documentation.
+This portfolio includes selected writing and editing samples in Markdown and GitHub-based formats, including onboarding guides, troubleshooting content, administrator documentation, and technical editing work. I have also completed Scriptorium’s *Introduction to DITA* course, with additional interest in structured authoring and modern documentation workflows.
 
 ---
 
 ## Featured Projects
 
 ### [Managed macOS Onboarding Guide](projects/managed-mac-onboarding/)
-
-A task-based quick-start guide designed to help end users set up a company-managed macOS device in an enterprise environment. This project demonstrates clear onboarding workflows, authentication and security integration (MFA, secure access), and user-focused troubleshooting while reflecting real-world device management practices.
+Task-based end-user documentation for setting up a company-managed macOS device in an enterprise environment. Demonstrates onboarding workflows, authentication and security integration, and user-focused troubleshooting.
 
 ### [Troubleshooting Compliance Failures on Jamf-Managed Macs](projects/jamf-managed-mac-compliance-troubleshooting.md)
-
-An internal knowledge base article written for macOS device management engineers, desktop support technicians, and Help Desk teams supporting Jamf-managed Macs. This sample demonstrates structured troubleshooting, remediation guidance, and support-focused documentation for compliance validation, policy execution, profile deployment, FileVault status, and reenrollment workflows.
-
-### [Atari Computer User Guide](projects/atari-user-guide.md)
-
-A Markdown-based user guide created to apply technical writing principles to legacy computing documentation. This sample demonstrates step-by-step instructions, hardware setup guidance, and troubleshooting content for users familiar with modern systems but new to older platforms.
+Internal knowledge base documentation for diagnosing and remediating compliance failures on Jamf-managed Macs. Demonstrates structured troubleshooting, remediation guidance, and support-focused writing for technical teams.
 
 ### [Migrate User Administrative Tool Documentation](projects/migrate-user.md)
-
-Administrator-focused documentation for an AppleScript tool used to restore ownership and group permissions on a migrated macOS home folder after reimaging. This sample includes a polished README, revised prompts and warnings, improved maintainable comments, and supporting project documentation.
+Administrator documentation for an AppleScript-based tool used to restore ownership and group permissions after macOS reimaging. Demonstrates tool documentation, warning and prompt revision, maintainable commenting, and admin-focused messaging.
 
 ### [Apache OpenOffice Technical Editing](projects/openoffice-technical-editing.md)
+Technical editing sample based on published Apache OpenOffice documentation. Demonstrates structural editing, clarity improvements, consistency editing, and before-and-after editorial examples.
 
-A technical editing sample based on published Apache OpenOffice user documentation. This project demonstrates editorial work in consistency, content editing, copyediting, and structural editing, supported by project overview, editing highlights, and before-and-after examples.
+### [Atari Computer User Guide](projects/atari-user-guide.md)
+A Markdown-based user guide created to apply technical writing principles to legacy computer documentation. Demonstrates procedural writing, setup guidance, and troubleshooting for users new to older systems.
 
 ---
 
 ## Areas of Focus
 
-* Technical writing
-* Technical editing
-* User guides
-* Administrator documentation
-* Knowledge base content
-* Process and workflow documentation
-* Markdown and structured documentation
-* macOS and enterprise IT documentation
+- Technical writing
+- Technical editing
+- Administrator documentation
+- User guides
+- Knowledge base and troubleshooting content
+- Process and workflow documentation
+- Markdown and GitHub-based documentation
+- Structured authoring and DITA fundamentals
+- macOS and enterprise IT documentation
 
 ---
 
 ## Quick Links
 
-* [About](about.md)
-* [Resume](resume.md)
-* [LinkedIn](https://www.linkedin.com/in/miscarborough/)
-* [GitHub](https://github.com/MackMike)
-
+- [About](about.md)
+- [Resume](resume.md)
+- [LinkedIn](https://www.linkedin.com/in/miscarborough/)
+- [GitHub](https://github.com/MackMike)
