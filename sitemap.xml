@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/about/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/resume/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/atari-user-guide/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
+    </url>
+    <url>
+         <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting-article/</loc>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/managed-mac-onboarding-guide/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/managed-mac-onboarding/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/migrate-user/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
     <url>
          <loc>https://MackMike.github.io/technical-writing-portfolio-site/projects/openoffice-technical-editing/</loc>
-         <lastmod>2026-04-09</lastmod>
+         <lastmod>2026-04-10</lastmod>
     </url>
 </urlset>
