@@ -53,3 +53,4 @@ A technical editing sample based on published Apache OpenOffice user documentati
 * [Resume](resume.md)
 * [LinkedIn](https://www.linkedin.com/in/miscarborough/)
 * [GitHub](https://github.com/MackMike)
+
