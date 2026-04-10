@@ -1014,10 +1014,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Escalation Criteria">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#escalation-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1025,11 +1024,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1062,7 +1056,7 @@
 
 
 <h1 id="troubleshooting-compliance-failures-on-jamf-managed-macs">Troubleshooting Compliance Failures on Jamf-Managed Macs</h1>
-<p>This article describes how to diagnose and remediate a Jamf-managed Mac that appears noncompliant in Jamf Pro or a downstream compliance workflow. Use it to determine whether the issue is caused by stale inventory, broken MDM enrollment, failed policy execution, missing configuration, or a true device-state problem.</p>
+<p>This article describes how to diagnose and remediate a Jamf-managed Mac that appears noncompliant in Jamf Pro or in a downstream compliance workflow. Use it to determine whether the issue is caused by stale inventory, broken MDM enrollment, failed policy execution, missing configuration, or an actual device-state problem.</p>
 <h2 id="audience">Audience</h2>
 <ul>
 <li>macOS device management engineers</li>
@@ -1073,24 +1067,24 @@
 <p>Use this workflow when a Mac:</p>
 <ul>
 <li>is marked noncompliant by Jamf-dependent controls or an integrated security platform</li>
-<li>loses access to corporate resources due to device state</li>
+<li>loses access to corporate resources because of device state</li>
 <li>appears healthy locally but is missing required controls in Jamf Pro</li>
 <li>has stale or inconsistent inventory data</li>
 </ul>
 <h2 id="common-failure-domains">Common Failure Domains</h2>
-<p>Most compliance failures fall into one of these categories:</p>
+<p>Most compliance failures fall into one of the following categories:</p>
 <ul>
 <li>stale inventory</li>
-<li>broken or partial MDM enrollment</li>
+<li>broken or incomplete MDM enrollment</li>
 <li>missing or failed configuration profile deployment</li>
 <li>failed Jamf policy execution</li>
-<li>FileVault or escrow failure</li>
+<li>FileVault or recovery key escrow failure</li>
 <li>unsupported macOS version</li>
 <li>missing required security tools</li>
 <li>delayed or failed MDM command execution</li>
 </ul>
 <h2 id="before-you-begin">Before You Begin</h2>
-<p>Collect:</p>
+<p>Collect the following:</p>
 <ul>
 <li>computer name</li>
 <li>serial number</li>
@@ -1133,71 +1127,72 @@
 <li><strong>Last Inventory Update</strong></li>
 <li>management status</li>
 <li>assigned user</li>
-<li>any recent scope changes affecting compliance</li>
+<li>recent scope changes affecting compliance</li>
 </ul>
 <h3 id="interpretation">Interpretation</h3>
 <ul>
-<li><strong>Current check-in, stale inventory</strong> usually points to recon failure or inventory submission issues.</li>
-<li><strong>Stale check-in and stale inventory</strong> usually points to loss of management connectivity or broken enrollment.</li>
-<li><strong>Current record but failed compliance</strong> usually means the Mac is enrolled but missing a required control.</li>
+<li><strong>Current check-in with stale inventory</strong> usually points to recon failure or inventory submission issues.</li>
+<li><strong>Stale check-in and stale inventory</strong> usually point to loss of management connectivity or broken enrollment.</li>
+<li><strong>Current record with failed compliance</strong> usually means the Mac is enrolled but missing a required control.</li>
 </ul>
 <h3 id="remediation">Remediation</h3>
 <p>If local access is available, submit fresh inventory:</p>
-<p><div class="highlight"><pre><span></span><code>bash
-
-sudo jamf recon`
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>recon
 </code></pre></div>
-Then recheck the inventory timestamp in Jamf Pro.</p>
+<p>Then recheck the inventory timestamp in Jamf Pro.</p>
 <p>If inventory updates successfully, verify whether the compliance status clears after downstream systems refresh.</p>
 <p>If recon fails, continue to policy, enrollment, and profile validation.</p>
+<hr />
 <h2 id="2-validate-mdm-enrollment-and-profile-presence">2. Validate MDM Enrollment and Profile Presence</h2>
 <p>On the Mac:</p>
 <ol>
-<li>Open System Settings</li>
-<li>Go to Privacy &amp; Security</li>
-<li>Review Profiles or Device Management</li>
+<li>Open <strong>System Settings</strong></li>
+<li>Go to <strong>Privacy &amp; Security</strong></li>
+<li>Review <strong>Profiles</strong> or <strong>Device Management</strong></li>
 <li>Confirm the Jamf MDM profile is present</li>
-<li>In Jamf Pro, confirm the device is still managed.</li>
 </ol>
+<p>In Jamf Pro, confirm the device is still managed.</p>
 <h3 id="signs-of-enrollment-problems">Signs of Enrollment Problems</h3>
 <ul>
-<li>MDM profile is missing</li>
-<li>The Mac is in Jamf Pro, but management actions fail</li>
-<li>The profile appears present locally, but the device does not receive commands</li>
-<li>The device was recently erased, restored, migrated, or manually unenrolled</li>
+<li>the MDM profile is missing</li>
+<li>the Mac appears in Jamf Pro, but management actions fail</li>
+<li>the profile appears present locally, but the device does not receive commands</li>
+<li>the device was recently erased, restored, migrated, or manually unenrolled</li>
 </ul>
 <h3 id="remediation_1">Remediation</h3>
-<p>If the MDM profile is missing or obviously invalid:</p>
+<p>If the MDM profile is missing or clearly invalid:</p>
 <ul>
-<li>Do not start with policy troubleshooting</li>
-<li>Verify whether the Mac was manually unenrolled</li>
-<li>Verify whether Automated Device Enrollment is still expected for the device</li>
-<li>Proceed to the Re-enrollment section if the MDM relationship is broken</li>
+<li>do not start with policy troubleshooting</li>
+<li>verify whether the Mac was manually unenrolled</li>
+<li>verify whether Automated Device Enrollment is still expected for the device</li>
+<li>proceed to the <strong>Re-enrollment</strong> section if the MDM relationship is broken</li>
 </ul>
 <p>If the profile is present, continue to MDM command validation.</p>
+<hr />
 <h2 id="3-check-mdm-command-behavior">3. Check MDM Command Behavior</h2>
 <p>In Jamf Pro, review recent MDM command history for the Mac.</p>
 <p>Look for:</p>
 <ul>
 <li>pending commands that never complete</li>
-<li>failed profile install commands</li>
+<li>failed profile installation commands</li>
 <li>repeated retries</li>
 <li>update-related commands that remain unacknowledged</li>
 </ul>
 <h3 id="interpretation_1">Interpretation</h3>
 <ul>
-<li>Unacknowledged commands may indicate a broken MDM channel</li>
-<li>Successful command delivery with no local change may indicate a local device issue</li>
-<li>Repeated profile command failures often point to enrollment or profile conflicts</li>
+<li>unacknowledged commands may indicate a broken MDM channel</li>
+<li>successful command delivery with no local change may indicate a local device issue</li>
+<li>repeated profile command failures often point to enrollment or profile conflicts</li>
 </ul>
 <h3 id="remediation_2">Remediation</h3>
 <p>If low-risk testing is allowed in your environment:</p>
 <ul>
-<li>Send a simple MDM command</li>
-<li>Confirm whether the command is acknowledged</li>
+<li>send a simple MDM command</li>
+<li>confirm whether the command is acknowledged</li>
 </ul>
 <p>If MDM commands consistently fail while the device appears online, move to profile and reenrollment remediation.</p>
 <p>If commands succeed, continue with local state validation.</p>
+<hr />
 <h2 id="4-compare-local-state-to-jamf-inventory">4. Compare Local State to Jamf Inventory</h2>
 <p>Do not assume Jamf inventory reflects the current local state.</p>
 <p>Compare Jamf Pro data with the Mac for:</p>
@@ -1206,32 +1201,31 @@ Then recheck the inventory timestamp in Jamf Pro.</p>
 <li>FileVault status</li>
 <li>installed security tools</li>
 <li>profile presence</li>
-<li>user assignment where relevant</li>
+<li>user assignment, where relevant</li>
 </ul>
 <h3 id="remediation_3">Remediation</h3>
-<p>If the local state is correct, but Jamf is stale:</p>
+<p>If the local state is correct but Jamf is stale:</p>
 <ol>
 <li>Run:</li>
 </ol>
-<p><div class="highlight"><pre><span></span><code>   bash
-
-   sudo jamf recon
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>recon
 </code></pre></div>
-2. Recheck the device record
-3. Confirm any custom extension attributes update
-4. Verify whether downstream compliance tooling has refreshed</p>
+<ol>
+<li>Recheck the device record</li>
+<li>Confirm any custom extension attributes update</li>
+<li>Verify whether downstream compliance tooling has refreshed</li>
+</ol>
 <p>If the local state is not correct, fix the underlying configuration issue rather than forcing repeated inventory updates.</p>
+<hr />
 <h2 id="5-validate-filevault-and-escrow">5. Validate FileVault and Escrow</h2>
 <p>On the Mac, verify FileVault status:</p>
-<p><div class="highlight"><pre><span></span><code>bash
-
-fdesetup status
+<div class="highlight"><pre><span></span><code>fdesetup<span class="w"> </span>status
 </code></pre></div>
-Or in System Settings:</p>
+<p>Or in System Settings:</p>
 <ol>
-<li>Open System Settings</li>
-<li>Go to Privacy &amp; Security</li>
-<li>Select FileVault</li>
+<li>Open <strong>System Settings</strong></li>
+<li>Go to <strong>Privacy &amp; Security</strong></li>
+<li>Select <strong>FileVault</strong></li>
 </ol>
 <p>In Jamf Pro, verify:</p>
 <ul>
@@ -1241,9 +1235,9 @@ Or in System Settings:</p>
 </ul>
 <h3 id="common-failure-patterns">Common Failure Patterns</h3>
 <ul>
-<li>FileVault enabled locally but not reflected in Jamf Pro</li>
-<li>FileVault enabled but escrow missing</li>
-<li>FileVault not enabled because the user never completed enablement</li>
+<li>FileVault is enabled locally but not reflected in Jamf Pro</li>
+<li>FileVault is enabled but recovery key escrow is missing</li>
+<li>FileVault is not enabled because the user never completed enablement</li>
 <li>token-related issues prevented activation</li>
 </ul>
 <h3 id="remediation_4">Remediation</h3>
@@ -1257,7 +1251,7 @@ Or in System Settings:</p>
 <ul>
 <li>confirm the expected Jamf policy or configuration is still scoped</li>
 <li>verify whether deferred enablement requires a logout or restart</li>
-<li>review token dependencies if the environment uses workflows that depend on a secure token or a bootstrap token</li>
+<li>review token dependencies if your environment uses workflows that depend on secure token or bootstrap token</li>
 </ul>
 <p>If escrow is missing but FileVault is on:</p>
 <ul>
@@ -1265,6 +1259,7 @@ Or in System Settings:</p>
 <li>trigger the organization’s standard escrow remediation process</li>
 <li>do not assume full reenrollment is required unless escrow remediation fails and the MDM relationship is also unhealthy</li>
 </ul>
+<hr />
 <h2 id="6-review-configuration-profiles">6. Review Configuration Profiles</h2>
 <p>In Jamf Pro, confirm that required profiles are installed and current.</p>
 <p>Typical profiles include:</p>
@@ -1278,45 +1273,26 @@ Or in System Settings:</p>
 <li>Network Extensions</li>
 <li>organization-specific security settings</li>
 </ul>
-<p>Locally, confirm the expected profiles are present in Profiles or Device Management.</p>
+<p>Locally, confirm the expected profiles are present in <strong>Profiles</strong> or <strong>Device Management</strong>.</p>
 <h3 id="common-failure-patterns_1">Common Failure Patterns</h3>
 <ul>
-<li>profile scoped in Jamf but missing on the Mac</li>
-<li>profile install command failed</li>
-<li>payload conflict with another management source</li>
-<li>profile installed but a dependent approval is still missing</li>
-<li>profile removed locally or by a lifecycle change</li>
+<li>a profile is scoped in Jamf but missing on the Mac</li>
+<li>a profile installation command failed</li>
+<li>a payload conflicts with another management source</li>
+<li>a profile is installed, but dependent approval is still missing</li>
+<li>a profile was removed locally or by a lifecycle event</li>
 </ul>
 <h3 id="remediation_5">Remediation</h3>
 <p>If a required profile is missing:</p>
 <ol>
-<li>
-<ul>
 <li>Confirm the device is in scope</li>
-</ul>
-</li>
-<li>
-<ul>
 <li>Confirm MDM commands are completing</li>
-</ul>
-</li>
-<li>
-<ul>
 <li>Review whether a conflicting profile or another management source exists</li>
-</ul>
-</li>
-<li>
-<ul>
-<li>Re-deploy the profile from Jamf Pro if your workflow permits</li>
-</ul>
-</li>
-<li>
-<ul>
+<li>Redeploy the profile from Jamf Pro if your workflow permits</li>
 <li>Validate profile presence locally after redeployment</li>
-</ul>
-</li>
 </ol>
 <p>If the profile still does not install and MDM commands are failing, proceed to reenrollment.</p>
+<hr />
 <h2 id="7-review-jamf-policy-execution">7. Review Jamf Policy Execution</h2>
 <p>If compliance depends on software deployment or remediation logic, review the relevant Jamf policies.</p>
 <p>In Jamf Pro, check:</p>
@@ -1329,24 +1305,20 @@ Or in System Settings:</p>
 <li>failure history</li>
 </ul>
 <p>If local access is available, you can run:</p>
-<p><div class="highlight"><pre><span></span><code>bash
-
-sudo jamf policy
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>policy
 </code></pre></div>
-Or a custom trigger:</p>
-<div class="highlight"><pre><span></span><code>bash
-
-sudo jamf policy -event &lt;custom_trigger&gt;
+<p>Or a custom trigger:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>policy<span class="w"> </span>-event<span class="w"> </span>&lt;custom_trigger&gt;
 </code></pre></div>
 <h3 id="common-failure-patterns_2">Common Failure Patterns</h3>
 <ul>
-<li>package install failures</li>
+<li>package installation failures</li>
 <li>script exit errors</li>
 <li>permissions issues</li>
 <li>network timeouts</li>
 <li>Rosetta dependency issues on Apple silicon</li>
 <li>policies waiting for restart or logout</li>
-<li>correct scope but wrong trigger expectations</li>
+<li>correct scope but incorrect trigger expectations</li>
 </ul>
 <h3 id="remediation_6">Remediation</h3>
 <p>If a policy failed:</p>
@@ -1354,8 +1326,8 @@ sudo jamf policy -event &lt;custom_trigger&gt;
 <li>Review the package or script error</li>
 <li>Correct the local blocker if known</li>
 <li>Re-run the policy or trigger the relevant custom event</li>
-<li>Confirm the expected application, setting, or file is now present</li>
-<li>Run sudo jamf recon if inventory-backed compliance depends on the result</li>
+<li>Confirm that the expected application, setting, or file is now present</li>
+<li>Run <code>sudo jamf recon</code> if inventory-backed compliance depends on the result</li>
 </ol>
 <p>If the policy does not run at all:</p>
 <ul>
@@ -1364,6 +1336,7 @@ sudo jamf policy -event &lt;custom_trigger&gt;
 <li>verify the Jamf binary is functioning</li>
 <li>verify the Mac can reach Jamf Pro</li>
 </ul>
+<hr />
 <h2 id="8-confirm-required-security-tools-are-installed-and-healthy">8. Confirm Required Security Tools Are Installed and Healthy</h2>
 <p>Validate all required tools for your environment, such as:</p>
 <ul>
@@ -1389,13 +1362,12 @@ sudo jamf policy -event &lt;custom_trigger&gt;
 <li>verify the app has the correct permissions</li>
 <li>reinstall only if standard remediation fails</li>
 </ul>
-<p>After remediation, update inventory if compliance depends on installed app reporting:</p>
-<div class="highlight"><pre><span></span><code>bash
-
-sudo jamf recon
+<p>After remediation, update inventory if compliance depends on installed application reporting:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>recon
 </code></pre></div>
+<hr />
 <h2 id="9-validate-macos-version-and-update-state">9. Validate macOS Version and Update State</h2>
-<p>Check the Mac’s current OS version and update state.</p>
+<p>Check the Mac’s current macOS version and update state.</p>
 <p>Validate:</p>
 <ul>
 <li>installed macOS version</li>
@@ -1410,40 +1382,35 @@ sudo jamf recon
 <li>use your standard update workflow</li>
 <li>verify whether an MDM update command was sent and acknowledged</li>
 <li>confirm whether the user deferred a required restart</li>
-<li>Complete the update and restart the Mac</li>
+<li>complete the update and restart the Mac</li>
 </ul>
 <p>After the update:</p>
-<ul>
+<ol>
 <li>confirm the OS version locally</li>
 <li>run <code>sudo jamf recon</code></li>
-<li>Verify the updated version appears in Jamf Pro</li>
-</ul>
+<li>verify the updated version appears in Jamf Pro</li>
+</ol>
 <p>If the local OS is current but Jamf reports an older version, treat it as an inventory issue unless other evidence suggests management failure.</p>
+<hr />
 <h2 id="10-standard-remediation-actions">10. Standard Remediation Actions</h2>
 <p>Apply the least disruptive remediation first.</p>
 <h3 id="refresh-inventory">Refresh Inventory</h3>
-<p>Use when the local state appears correct, but Jamf data is stale.</p>
-<div class="highlight"><pre><span></span><code>bash
-
-sudo jamf recon
+<p>Use when local state appears correct but Jamf data is stale.</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>recon
 </code></pre></div>
 <h3 id="re-run-jamf-policies">Re-run Jamf Policies</h3>
 <p>Use when a required app, script, or setting failed to deploy.</p>
-<p><div class="highlight"><pre><span></span><code>bash
-
-sudo jamf policy
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>policy
 </code></pre></div>
-Or:</p>
-<div class="highlight"><pre><span></span><code>bash
-
-sudo jamf policy -event &lt;custom_trigger&gt;
+<p>Or:</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>policy<span class="w"> </span>-event<span class="w"> </span>&lt;custom_trigger&gt;
 </code></pre></div>
 <h3 id="redeploy-profiles">Redeploy Profiles</h3>
-<p>Use when the Mac is enrolled, and MDM commands work, but a required profile is missing or has failed to install.</p>
+<p>Use when the Mac is enrolled and MDM commands work, but a required profile is missing or failed to install.</p>
 <ul>
 <li>confirm scope</li>
 <li>resend or redeploy the profile from Jamf Pro</li>
-<li>Validate the profile locally after deployment</li>
+<li>validate the profile locally after deployment</li>
 </ul>
 <h3 id="reinstall-required-security-tools">Reinstall Required Security Tools</h3>
 <p>Use when the compliance dependency is an app or agent that is missing, damaged, or not reporting.</p>
@@ -1460,12 +1427,13 @@ sudo jamf policy -event &lt;custom_trigger&gt;
 <li>re-run the approved FileVault or escrow remediation workflow</li>
 <li>avoid unnecessary reenrollment unless MDM is also unhealthy</li>
 </ul>
+<hr />
 <h2 id="11-when-to-remove-and-re-enroll">11. When to Remove and Re-enroll</h2>
 <p>Re-enrollment should not be the first remediation step. Use it when the management relationship itself is broken.</p>
 <h3 id="indications-for-re-enrollment">Indications for Re-enrollment</h3>
 <p>Proceed to re-enrollment if one or more of these are true:</p>
 <ul>
-<li>MDM profile is missing</li>
+<li>the MDM profile is missing</li>
 <li>MDM commands consistently fail or remain unacknowledged</li>
 <li>required profiles cannot be deployed despite correct scope</li>
 <li>inventory cannot be updated through normal Jamf workflows</li>
@@ -1484,47 +1452,54 @@ sudo jamf policy -event &lt;custom_trigger&gt;
 <h3 id="recommended-re-enrollment-approach">Recommended Re-enrollment Approach</h3>
 <p>Use the organization’s approved reenrollment workflow. In general:</p>
 <ol>
-<li>Document the current state<ul>
+<li>Document the current state</li>
 <li>serial number</li>
 <li>assigned user</li>
 <li>FileVault status</li>
 <li>missing profiles</li>
 <li>failed policies</li>
-<li>any compliance errors</li>
-</ul>
+<li>
+<p>compliance errors</p>
 </li>
-<li>Remove broken management artifacts only if approved by your process<ul>
-<li>avoid ad hoc removal unless the organization has a documented procedure</li>
-</ul>
+<li>
+<p>Remove broken management artifacts only if approved by your process</p>
 </li>
-<li>Re-enroll the Mac using the approved Jamf method<ul>
+<li>
+<p>avoid ad hoc removal unless your organization has a documented procedure</p>
+</li>
+<li>
+<p>Re-enroll the Mac using the approved Jamf method</p>
+</li>
 <li>Automated Device Enrollment, if applicable</li>
-<li>user-initiated enrollment, if allowed by policy</li>
-</ul>
+<li>
+<p>user-initiated enrollment, if allowed by policy</p>
 </li>
-<li>Confirm the following after enrollment<ul>
-<li>MDM profile is present</li>
-<li>Jamf Pro shows current check-in</li>
+<li>
+<p>Confirm the following after enrollment</p>
+</li>
+<li>the MDM profile is present</li>
+<li>Jamf Pro shows a current check-in</li>
 <li>inventory updates successfully</li>
 <li>required profiles install</li>
 <li>required policies run</li>
 <li>FileVault and escrow report correctly</li>
-<li>required security tools are present and healthy</li>
-</ul>
+<li>
+<p>required security tools are present and healthy</p>
 </li>
-<li>Run a final inventory update if needed:</li>
+<li>
+<p>Run a final inventory update if needed:</p>
+</li>
 </ol>
-<div class="highlight"><pre><span></span><code>bash
-
-sudo jamf recon
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>jamf<span class="w"> </span>recon
 </code></pre></div>
 <h3 id="important">Important</h3>
 <p>If your environment uses Automated Device Enrollment as the standard trusted path, a full erase-and-reprovision may be preferred over manual cleanup and reenrollment. Follow local policy.</p>
+<hr />
 <h2 id="12-validation-after-remediation">12. Validation After Remediation</h2>
 <p>After any remediation, verify:</p>
 <ul>
-<li>Jamf Pro Last Check-In is current</li>
-<li>Jamf Pro Last Inventory Update is current</li>
+<li>Jamf Pro <strong>Last Check-In</strong> is current</li>
+<li>Jamf Pro <strong>Last Inventory Update</strong> is current</li>
 <li>the MDM profile is present locally</li>
 <li>required configuration profiles are installed</li>
 <li>required security tools are installed and healthy</li>
@@ -1533,18 +1508,19 @@ sudo jamf recon
 <li>downstream compliance status has refreshed</li>
 </ul>
 <p>Do not close the issue until both the local device state and the Jamf record are consistent.</p>
+<hr />
 <h2 id="escalation-criteria">Escalation Criteria</h2>
-<p>Escalate after standard remediation only if the issue remains in one of these categories:</p>
+<p>Escalate after standard remediation only if the issue remains in one of the following categories:</p>
 <ul>
 <li>MDM channel failure</li>
 <li>repeated profile deployment failure</li>
 <li>persistent Jamf policy or package failure</li>
-<li>FileVault or escrow issue that does not respond to approved recovery steps</li>
-<li>infrastructure or APNs communication issue</li>
+<li>FileVault or escrow issues that do not respond to approved recovery steps</li>
+<li>infrastructure or APNs communication issues</li>
 <li>repeated reenrollment failure</li>
-<li>compliance integration issue outside Jamf Pro</li>
+<li>compliance integration issues outside Jamf Pro</li>
 </ul>
-<h3 id="escalation-checklist">Escalation Checklist</h3>
+<h2 id="escalation-checklist">Escalation Checklist</h2>
 <p>Include:</p>
 <ul>
 <li>computer name</li>
@@ -1561,12 +1537,12 @@ sudo jamf recon
 <li>required security tools status</li>
 <li>exact compliance symptom</li>
 <li>remediation steps already performed</li>
-<li>any recent lifecycle changes</li>
+<li>recent lifecycle changes</li>
 </ul>
 <h2 id="summary">Summary</h2>
 <p>When a Jamf-managed Mac fails compliance:</p>
 <ol>
-<li>verify the Jamf record is current</li>
+<li>verify the Jamf Pro record is current</li>
 <li>validate MDM enrollment</li>
 <li>review MDM command behavior</li>
 <li>compare local state with inventory</li>
@@ -1574,7 +1550,7 @@ sudo jamf recon
 <li>review profiles and policy execution</li>
 <li>remediate the specific failed control</li>
 <li>re-enroll only when the management relationship is broken</li>
-<li>confirm local and Jamf-reported state match before closing the issue</li>
+<li>confirm that local and Jamf-reported state match before closing the issue</li>
 </ol>
 
 
