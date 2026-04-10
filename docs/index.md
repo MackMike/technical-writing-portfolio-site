@@ -29,7 +29,7 @@ A Markdown-based user guide created to apply technical writing principles to leg
 
 ---
 
-## Areas of Focus
+## Documentation Strengths
 
 - Technical writing
 - Technical editing
