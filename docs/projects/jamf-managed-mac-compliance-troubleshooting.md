@@ -8,12 +8,11 @@ Read the project overview PDF for audience, goals, constraints, tools, and resul
 
 [Open Project Overview PDF](../assets/pdfs/jamf-managed-mac-compliance-troubleshooting-overview.pdf)
 
-
 ## Knowledge Base Article
 
 The full knowledge base article is hosted on the portfolio site:
 
-[View User Guide](jamf-managed-mac-compliance-troubleshooting-article.md)
+[View Troubleshooting Compliance Failures on Jamf-Managed Macs](jamf-managed-mac-compliance-troubleshooting-article.md)
 
 ## Portfolio Note
 
