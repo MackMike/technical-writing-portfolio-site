@@ -8,11 +8,11 @@ nav:
   - About: about.md
   - Resume: resume.md
   - Projects:
-      - Managed macOS Onboarding Guide: projects/managed-mac-onboarding.md
-      - KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs: projects/jamf-managed-mac-compliance-troubleshooting.md
-      - Migrate User Administrative Tool Documentation: projects/migrate-user.md
-      - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing.md
-	  - Atari Computer User Guide: projects/atari-user-guide.md
+      - "Managed macOS Onboarding Guide": projects/managed-mac-onboarding.md
+      - "KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs": projects/jamf-managed-mac-compliance-troubleshooting.md
+      - "Migrate User Administrative Tool Documentation": projects/migrate-user.md
+      - "Apache OpenOffice Technical Editing": projects/openoffice-technical-editing.md
+	  - "Atari Computer User Guide": projects/atari-user-guide.md
 
 plugins:
   - search
