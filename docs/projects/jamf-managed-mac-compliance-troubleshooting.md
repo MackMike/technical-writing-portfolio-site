@@ -1,19 +1,50 @@
 # Troubleshooting Compliance Failures on Jamf-Managed Macs
 
-This sample documents an internal knowledge base article for diagnosing and remediating compliance failures on company-managed Macs in a Jamf Pro environment. It is written for macOS device management engineers, desktop support teams, and Help Desk staff responsible for triage, remediation, and escalation.
+**One-sentence summary:**  
+Internal knowledge base article that helps IT support teams diagnose and remediate compliance failures on Jamf-managed macOS devices.
 
-## Project Overview
+## Overview
+This project is an internal IT knowledge base article for troubleshooting compliance failures on company-managed Macs enrolled in Jamf Pro. The article guides support teams through practical validation and remediation steps, including checking inventory freshness, reviewing MDM command behavior, validating configuration profiles, confirming FileVault and escrow status, reviewing policy execution, and determining when reenrollment is appropriate. It was written to support consistent triage and faster issue resolution in enterprise macOS environments.
 
-Read the project overview PDF for audience, goals, constraints, tools, and results:
+## Audience
+- macOS device management engineers
+- Desktop support technicians
+- Help Desk teams
 
-[Open Project Overview PDF](../assets/pdfs/jamf-managed-mac-compliance-troubleshooting-overview.pdf)
+## Documentation Goal
+The goal of this documentation is to help internal support teams diagnose compliance issues efficiently and follow clear remediation steps. It is intended to improve troubleshooting consistency, reduce unnecessary escalations, and shorten time to resolution.
 
-## Knowledge Base Article
+## What This Sample Demonstrates
+- Internal knowledge base writing
+- Technical troubleshooting documentation
+- Remediation-focused procedural writing
+- Writing for enterprise IT support audiences
+- Clear organization of complex support workflows
 
-View the full knowledge base article on the portfolio site:
+## Tools / Methods
+- Markdown
+- MkDocs
+- GitHub
+- Version-controlled documentation workflow
+- Internal knowledge base documentation practices
 
-[View Troubleshooting Compliance Failures on Jamf-Managed Macs](jamf-managed-mac-compliance-troubleshooting-article.md)
+## Challenges / Writing Considerations
+* This article was written for a technical internal audience, so it needed to be concise, efficient, and immediately useful during support work. 
+* A key writing challenge was balancing diagnosis with remediation by providing not only validation steps but also actionable next steps such as profile redeployment, policy reruns, inventory updates, and reenrollment decision points. 
+* The content also needed to reflect realistic Jamf Pro workflows and terminology without becoming overly dependent on a single organization’s environment or security configuration.
 
-## Portfolio Note
+## Deliverables
+- Internal knowledge base article
+- Structured troubleshooting workflow
+- Practical remediation guidance
 
-This page supports the Troubleshooting Compliance Failures on Jamf-Managed Macs sample presented in my technical writing portfolio site. It provides a concise project summary with links to the project overview PDF and the full knowledge base article hosted via MkDocs.
+## Outcome / Why It Matters
+This sample demonstrates the ability to create effective internal support documentation for enterprise macOS environments. It shows how technical writing can improve troubleshooting consistency, support faster remediation, and present complex Jamf-based workflows in a clear, usable format for IT teams.
+
+## View the Project
+- **View final sample:** [Troubleshooting Compliance Failures on Jamf-Managed Macs](https://mackmike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting-article/)
+- **View Markdown/source:** [jamf-managed-mac-compliance-troubleshooting-article.md](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/jamf-managed-mac-compliance-troubleshooting-article.md)
+- **View repository:** [GitHub Repository](https://github.com/MackMike)
+
+## Related Skills
+Technical writing, knowledge base writing, troubleshooting documentation, internal IT documentation, enterprise macOS documentation
