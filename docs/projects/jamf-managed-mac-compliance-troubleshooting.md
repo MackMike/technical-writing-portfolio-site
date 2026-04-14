@@ -1,4 +1,4 @@
-# Troubleshooting Compliance Failures on Jamf-Managed Macs
+# KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs
 
 **One-sentence summary:**  
 Internal knowledge base article that helps IT support teams diagnose and remediate compliance failures on Jamf-managed macOS devices.
