@@ -24,10 +24,6 @@ This sample demonstrates several forms of editing, including:
 
 ## Project Documents
 
-### Project Overview PDF
-This document provides project context, including audience, goals, constraints, tools, results, and a comparison summary.
-
-- [Open Project Overview PDF](../assets/pdfs/openoffice-technical-editing-overview.pdf)
 
 ### Editing Highlights PDF
 This document presents selected before-and-after examples of technical editing completed for Apache OpenOffice user documentation. It highlights representative edits in consistency, content, copyediting, and structure.
