@@ -152,6 +152,8 @@ Here are your core components for setup. Not everything is needed at once — st
 | <img src="/technical-writing-portfolio-site/assets/pdfs/Atari-Computer-User-Guide/pictures/AtariSIO-Cable100.jpg" width="100" height="100" alt="Atari SIO cable"> | SIO Cable | 13-pin Serial Input/Output | Standard Atari peripheral connection. |
 | <img src="/technical-writing-portfolio-site/assets/pdfs/Atari-Computer-User-Guide/pictures/Cable100.jpg" width="100" height="100" alt="Custom Video Cable top view"> | Custom Video Cable | Grey cable with Audio (red) and Video (yellow) outputs | Used with Video Out Box and Amdek monitor. |
 
+† = Requires a device-specific power adaptor, which should be included.
+
 
 ---
 
