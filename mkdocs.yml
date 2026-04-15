@@ -13,7 +13,7 @@ nav:
       - "KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs": projects/jamf-managed-mac-compliance-troubleshooting.md
       - Migrate User Administrative Tool Documentation: projects/migrate-user.md
       - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing-project.md
-      - Atari Computer User Guide: projects/atari-user-guide.md
+      - Atari Computer User Guide: projects/atari-user-guide-project.md
 
 plugins:
   - search
