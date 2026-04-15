@@ -134,7 +134,9 @@ Here are your core components for setup. Not everything is needed at once — st
 
 | Image | Component | Description | Connection Notes |
 |-------|-----------|-------------|------------------|
-| <img src="/technical-writing-portfolio-site/docs/assets/pdfs/Atari-Computer-User-Guide/pictures/Amdek100.jpg" width="100" height="100" alt="Amdek Color Composite Monitor front view">   | Amdek Color Composite Monitor   | Display for sharp video.   | Composite cable from mod box.  |
+| <img src="{{ '/assets/pdfs/Atari-Computer-User-Guide/pictures/Amdek100.jpg' 
+|
+ relative_url }}" width="100" height="100" alt="Amdek Color Composite Monitor front view">   | Amdek Color Composite Monitor   | Display for sharp video.   | Composite cable from mod box.  |
 | <img src="/technical-writing-portfolio-site/docs/assets/pdfs/Atari-Computer-User-Guide/pictures/Atari400100.jpg" width="100" height="100" alt="Atari 400 Computer top view">   | Atari 400 Computer   | Main unit (48K RAM, custom keyboard).   | RF or composite out; SIO chain.  † |
 | <img src="/technical-writing-portfolio-site/docs/assets/pdfs/Atari-Computer-User-Guide/pictures/ATR8000100.jpg" width="100" height="100" alt="ATR8000 top front view">   | ATR8000   |CP/M co-processor (Z80 CPU).   | SIO; uses Atari as a terminal.   |
 | <img src="/technical-writing-portfolio-site/docs/assets/pdfs/Atari-Computer-User-Guide/pictures/Percom100.jpg" width="100" height="100" alt="Standard Drive front view">   | Standard Drive   |Boots Atari/ATR8000/CP/M disks.   | Drive 1 (via ATR8000)   |
