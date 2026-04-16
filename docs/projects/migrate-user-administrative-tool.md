@@ -183,7 +183,7 @@ end tell
 
 ## Comparison Value
 
-Including both the original and revised script helps demonstrate the editing and documentation value of this sample. It shows how technical writing improvements can strengthen an internal administrative tool by making it easier to understand, safer to use, and easier to maintain.
+Including both the original and revised scripts demonstrates the value of this sample for editing and documentation. It shows how improvements to technical writing can strengthen an internal administrative tool by making it easier to understand, safer to use, and easier to maintain.
 
 Areas of improvement include:
 
@@ -198,12 +198,3 @@ Areas of improvement include:
 This repository contains a portfolio edition of the original internal tool and documentation. It is included to demonstrate documentation revision and editing rather than original software development.
 
 The sample preserves the core workflow and administrative purpose of the original utility, but it does not represent a production-supported enterprise tool.
-
-## Related Materials
-
-If included, supporting materials may also show:
-
-- before-and-after excerpts from the README
-- before-and-after dialog text revisions
-- selected examples of improved code comments
-- documentation notes explaining revision decisions
