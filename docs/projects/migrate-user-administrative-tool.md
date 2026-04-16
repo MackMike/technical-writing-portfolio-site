@@ -33,6 +33,11 @@ The portfolio version was updated to better support an administrator audience an
 ### Administrator Guide
 Administrator-facing instructions covering the tool’s purpose, prerequisites, limitations, usage steps, and expected results.
 
+- [Open Administrator README](../assets/pdfs/migrate-user-admin-readme.md)
+
+### Revised AppleScript
+Portfolio edition of the script with improved comments, prompts, warnings, and readability refinements.
+
 ```
 applescript
 
@@ -122,13 +127,7 @@ Error details:
 	end try
 end tell
 ```
-
-- [Open Administrator README](../assets/pdfs/migrate-user-admin-readme.md)
-
-### Revised AppleScript
-Portfolio edition of the script with improved comments, prompts, warnings, and readability refinements.
-
-- [Open Revised AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript)
+- [Download Revised AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript)
 
 ### Original AppleScript
 Original version of the script included to show the basis for revision and improvement.
@@ -180,7 +179,7 @@ tell application "Finder"
 end tell
 ```
 
-- [Open Original AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.applescript)
+- [Download Original AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.applescript)
 
 ## Comparison Value
 
