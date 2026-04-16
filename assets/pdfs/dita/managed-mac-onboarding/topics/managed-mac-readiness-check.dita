@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="managed-mac-readiness-check">
+  <title>Confirm Your Mac Is Ready</title>
+  <shortdesc>Use this checklist to confirm that setup is complete and the Mac is ready for normal work.</shortdesc>
+  <refbody>
+    <section>
+      <title>Readiness checklist</title>
+      <ul>
+        <li>You can sign in successfully</li>
+        <li>Wi-Fi is connected</li>
+        <li>MFA is working</li>
+        <li>Zscaler is connected, if required</li>
+        <li>Microsoft 365 sign-in works</li>
+        <li>Office applications open successfully</li>
+        <li>Self Service is available</li>
+      </ul>
+    </section>
+
+    <section>
+      <title>If setup is still finishing</title>
+      <p>If apps are still installing, allow a few additional minutes for setup to finish before you contact support.</p>
+    </section>
+
+    <section>
+      <title>Next steps</title>
+      <ul>
+        <li>Access Microsoft 365 services</li>
+        <li>Use Office applications</li>
+        <li>Install approved apps through Self Service</li>
+        <li>Connect securely to company resources</li>
+        <li>Begin your normal daily work</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

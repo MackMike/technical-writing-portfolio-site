@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="managed-mac-support-info">
+  <title>Get Help and Find Your Mac Serial Number</title>
+  <shortdesc>This topic explains when to contact IT support and what information to provide, including how to locate your Mac serial number.</shortdesc>
+  <refbody>
+    <section>
+      <title>When to contact IT support</title>
+      <ul>
+        <li>You cannot sign in after multiple attempts</li>
+        <li>MFA approval fails</li>
+        <li>The Mac cannot connect to Wi-Fi</li>
+        <li>Zscaler does not connect</li>
+        <li>Microsoft 365 apps do not open or do not recognize your account</li>
+        <li>Applications or Self Service are missing</li>
+        <li>Setup does not appear to be complete</li>
+      </ul>
+    </section>
+
+    <section>
+      <title>Find your Mac serial number</title>
+      <ol>
+        <li>Select the <uicontrol>Apple menu</uicontrol>.</li>
+        <li>Select <uicontrol>About This Mac</uicontrol>.</li>
+        <li>Locate the serial number.</li>
+        <li>Copy or record the serial number.</li>
+      </ol>
+    </section>
+
+    <section>
+      <title>Information to include when contacting support</title>
+      <ul>
+        <li>Your company email address
+          <ul>
+            <li>Example: <codeph>jbob@mycompany.com</codeph></li>
+          </ul>
+        </li>
+        <li>Your Mac serial number</li>
+        <li>A screenshot or description of the issue</li>
+        <li>The step or application involved</li>
+      </ul>
+    </section>
+  </refbody>
+</reference>

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://MackMike.github.io/technical-writing-portfolio-site/projects/migrate-user-administrative-tool/">
+        <link rel="canonical" href="https://MackMike.github.io/technical-writing-portfolio-site/projects/dita-managed-mac-onboarding-guide/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Migrate User Administrative Tool Project Page - Michael Scarborough Technical Writing Portfolio</title>
+        <title>DITA Sample: Getting Started with Your Managed Mac - Michael Scarborough Technical Writing Portfolio</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#migrate-user-administrative-tool-project-page" class="md-skip">
+        <a href="#dita-sample-getting-started-with-your-managed-mac" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Migrate User Administrative Tool Project Page
+              DITA Sample: Getting Started with Your Managed Mac
             
           </span>
         </div>
@@ -489,10 +489,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-background" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Project Background
+        Overview
       
     </span>
   </a>
@@ -500,44 +500,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#my-role" class="md-nav__link">
+  <a href="#dita-documentation-set-structure" class="md-nav__link">
     <span class="md-ellipsis">
       
-        My Role
+        DITA Documentation Set Structure
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#revision-focus" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Revision Focus
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-documents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project Documents
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Project Documents">
+    <nav class="md-nav" aria-label="DITA Documentation Set Structure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#administrator-guide" class="md-nav__link">
+  <a href="#dita-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Administrator Guide
+        DITA map
       
     </span>
   </a>
@@ -545,10 +523,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#revised-applescript" class="md-nav__link">
+  <a href="#concept-topic" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Revised AppleScript
+        Concept topic
       
     </span>
   </a>
@@ -556,10 +534,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#original-applescript" class="md-nav__link">
+  <a href="#reference-topics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Original AppleScript
+        Reference topics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task topics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troubleshooting-topic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting topic
       
     </span>
   </a>
@@ -572,10 +572,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comparison-value" class="md-nav__link">
+  <a href="#what-this-sample-demonstrates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Comparison Value
+        What This Sample Demonstrates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why This Matters
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-file-location" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Source File Location
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#view-the-source-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        View the Source Files
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-topic-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Topic Breakdown
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sample-xml-excerpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sample XML Excerpt
       
     </span>
   </a>
@@ -610,190 +665,149 @@
 
 
 
-<h1 id="migrate-user-administrative-tool-project-page">Migrate User Administrative Tool Project Page</h1>
-<h2 id="project-background">Project Background</h2>
-<p>This sample is based on an internal AppleScript-based macOS administrative tool originally used in an enterprise migration workflow. After a Mac was reimaged and a user’s home folder had already been restored to the target system, the tool was used to update ownership and group permissions so the user could successfully log in and access their files.</p>
-<p>The version included in this portfolio preserves the original workflow and administrative purpose while revising the surrounding documentation and script presentation to better reflect technical writing best practices.</p>
-<h2 id="my-role">My Role</h2>
-<p>I revised and edited the documentation and supporting script content for this tool. My work included:</p>
+<h1 id="dita-sample-getting-started-with-your-managed-mac">DITA Sample: Getting Started with Your Managed Mac</h1>
+<h2 id="overview">Overview</h2>
+<p>This sample presents a DITA-based adaptation of an end-user macOS onboarding guide for employees receiving a company-managed Mac. The original documentation was written as a linear Markdown guide. This version restructures the same onboarding scenario into a modular DITA documentation set using separate topic types and a DITA map.</p>
+<p>The sample covers common onboarding tasks such as connecting to Wi-Fi, signing in with a company account, completing multi-factor authentication (MFA), allowing managed setup to finish, connecting to Zscaler, accessing Microsoft 365 applications, using Self Service, confirming setup readiness, and troubleshooting common issues.</p>
+<p>Rather than presenting the content as a single continuous guide, this sample organizes the information into reusable XML topics based on content type.</p>
+<hr />
+<h2 id="dita-documentation-set-structure">DITA Documentation Set Structure</h2>
+<p>This sample includes the following DITA components:</p>
+<h3 id="dita-map">DITA map</h3>
 <ul>
-<li>improving the administrator README</li>
-<li>refining task instructions</li>
-<li>clarifying warnings and prerequisites</li>
-<li>revising user-facing dialog text</li>
-<li>strengthening code comments for readability and maintainability</li>
-<li>making minor script refinements to improve readability and error handling</li>
+<li><code>managed-mac-onboarding.ditamap</code></li>
 </ul>
-<h2 id="revision-focus">Revision Focus</h2>
-<p>The portfolio version was updated to better support an administrator audience and to present the workflow more clearly as a technical documentation sample. Revision priorities included:</p>
+<h3 id="concept-topic">Concept topic</h3>
 <ul>
-<li>clearer audience targeting</li>
-<li>more explicit prerequisites</li>
-<li>stronger warning and confirmation language</li>
-<li>improved consistency in terminology and instructions</li>
-<li>more maintainable code comments</li>
-<li>more usable, task-focused documentation structure</li>
+<li><code>managed-mac-overview.dita</code></li>
 </ul>
-<h2 id="project-documents">Project Documents</h2>
-<h3 id="administrator-guide">Administrator Guide</h3>
-<p>Administrator-facing instructions covering the tool’s purpose, prerequisites, limitations, usage steps, and expected results.</p>
+<h3 id="reference-topics">Reference topics</h3>
 <ul>
-<li><a href="../../assets/pdfs/migrate-user-admin-readme/">Open Administrator README</a></li>
+<li><code>managed-mac-prerequisites.dita</code></li>
+<li><code>managed-mac-readiness-check.dita</code></li>
+<li><code>managed-mac-support-info.dita</code></li>
 </ul>
-<h3 id="revised-applescript">Revised AppleScript</h3>
-<p>Portfolio edition of the script with improved comments, prompts, warnings, and readability refinements.</p>
-<p><div class="highlight"><pre><span></span><code>applescript
-
--- Migrate User Application
--- Portfolio edition
---
--- Purpose:
--- Restore ownership and group permissions on a migrated user home folder
--- after a Mac has been reimaged.
---
--- Intended audience:
--- Platform administrators, desktop support technicians, and macOS administrators
---
--- Assumptions:
--- 1. The user&#39;s home folder has already been copied to /Users on the target Mac.
--- 2. The entered value matches the user&#39;s short name/home folder name exactly.
--- 3. The Mac is bound to Active Directory.
--- 4. The administrator running the script has valid admin credentials.
---
--- This script does not validate the entered account name against LDAP or Active Directory.
-
-tell application &quot;Finder&quot;
-    set validAnswer to false
-
-    -- Prompt for the user&#39;s short name/home folder name and require confirmation.
-    repeat while (validAnswer = false)
-        display dialog &quot;Enter the Active Directory short name (home folder name) for the account being migrated.
-
-Important:
-• Enter the name exactly as it appears in /Users
-• Do not enter the user&#39;s full name&quot; default answer &quot;&quot; buttons {&quot;Continue&quot;} default button 1
-        set ADUserName to text returned of result
-
-        display dialog &quot;Confirm the account name:
-
-&quot; &amp; ADUserName &amp; &quot;
-
-This value must exactly match the user&#39;s home folder name in /Users.&quot; buttons {&quot;Re-enter&quot;, &quot;Quit&quot;, &quot;Confirm&quot;} default button &quot;Confirm&quot;
-
-        if button returned of result is &quot;Confirm&quot; then
-            set validAnswer to true
-        else if button returned of result is &quot;Quit&quot; then
-            error number -128
-        end if
-    end repeat
-
-    -- Confirm that the migrated home folder is already in the expected location.
-    display dialog &quot;Verify that the user&#39;s home folder has already been copied to the /Users directory on this Mac.
-
-Select OK only after this has been confirmed.&quot; buttons {&quot;OK&quot;, &quot;Cancel&quot;} default button &quot;OK&quot;
-    if button returned of result is &quot;Cancel&quot; then error number -128
-
-    -- Provide a final confirmation before permissions are updated.
-    display dialog &quot;Final confirmation:
-
-This tool will update ownership and group permissions for:
-/Users/&quot; &amp; ADUserName &amp; &quot;
-
-Proceed only if:
-• the account name is correct
-• the home folder is in the correct location
-• the Mac is bound to Active Directory&quot; buttons {&quot;Cancel&quot;, &quot;Proceed&quot;} default button &quot;Proceed&quot;
-    if button returned of result is &quot;Cancel&quot; then error number -128
-
-    -- Apply ownership to the specified home folder.
-    try
-        do shell script &quot;chown -R &quot; &amp; quoted form of ADUserName &amp; &quot; /Users/&quot; &amp; quoted form of ADUserName with administrator privileges
-
-        -- Apply the staff group to the same home folder.
-        do shell script &quot;chgrp -R staff /Users/&quot; &amp; quoted form of ADUserName with administrator privileges
-
-        display dialog &quot;Migration completed successfully for account:
-
-&quot; &amp; ADUserName buttons {&quot;OK&quot;} default button &quot;OK&quot;
-
-    on error errMsg number errNum
-        display dialog &quot;The migration could not be completed.
-
-Check the following and try again:
-• The account name is correct
-• The home folder exists in /Users
-• The Mac is bound to Active Directory
-• Administrator credentials were entered successfully
-
-Error details:
-&quot; &amp; errMsg buttons {&quot;OK&quot;} default button &quot;OK&quot;
-    end try
-end tell
+<h3 id="task-topics">Task topics</h3>
+<ul>
+<li><code>managed-mac-initial-setup.dita</code></li>
+<li><code>managed-mac-zscaler.dita</code></li>
+<li><code>managed-mac-apps.dita</code></li>
+</ul>
+<h3 id="troubleshooting-topic">Troubleshooting topic</h3>
+<ul>
+<li><code>managed-mac-troubleshooting.dita</code></li>
+</ul>
+<hr />
+<h2 id="what-this-sample-demonstrates">What This Sample Demonstrates</h2>
+<p>This sample demonstrates how onboarding documentation can be adapted into a structured authoring format using DITA. It shows:</p>
+<ul>
+<li>Topic-based writing</li>
+<li>Separation of concept, task, reference, and troubleshooting content</li>
+<li>Structured XML authoring</li>
+<li>DITA map organization</li>
+<li>Modular documentation design</li>
+<li>Adaptation of existing Markdown content into DITA</li>
+</ul>
+<hr />
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>This sample shows how the same documentation problem can be approached in two formats:</p>
+<ul>
+<li>A Markdown-based quick-start guide for end users</li>
+<li>A DITA-based modular documentation set using structured XML</li>
+</ul>
+<p>Together, these samples demonstrate flexibility across documentation formats and an understanding of both user-focused writing and structured content principles.</p>
+<hr />
+<h2 id="source-file-location">Source File Location</h2>
+<p>The DITA source files for this sample are stored in the portfolio repository under:</p>
+<p><code>docs/assets/dita/managed-mac-onboarding/</code></p>
+<hr />
+<h2 id="view-the-source-files">View the Source Files</h2>
+<ul>
+<li><strong>View DITA project folder:</strong> <a href="https://mackmike.github.io/technical-writing-portfolio-site//assets/pdfs/dita/managed-mac-onboarding/">managed-mac-onboarding</a></li>
+<li><strong>View DITA map:</strong> <a href="https://mackmike.github.io/technical-writing-portfolio-site//assets/pdfs/assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap">managed-mac-onboarding.ditamap</a></li>
+<li><strong>View overview topic:</strong> <a href="../assets/dita/managed-mac-onboarding/topics/managed-mac-overview.dita">managed-mac-overview.dita</a></li>
+<li><strong>View initial setup task:</strong> <a href="../assets/dita/managed-mac-onboarding/topics/managed-mac-initial-setup.dita">managed-mac-initial-setup.dita</a></li>
+<li><strong>View troubleshooting topic:</strong> <a href="../assets/dita/managed-mac-onboarding/topics/managed-mac-troubleshooting.dita">managed-mac-troubleshooting.dita</a></li>
+</ul>
+<hr />
+<h2 id="example-topic-breakdown">Example Topic Breakdown</h2>
+<p>Below is the topic organization used in this sample:</p>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Type</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>managed-mac-overview.dita</code></td>
+<td>Concept</td>
+<td>Explains what managed Mac setup includes</td>
+</tr>
+<tr>
+<td><code>managed-mac-prerequisites.dita</code></td>
+<td>Reference</td>
+<td>Lists required information and setup items</td>
+</tr>
+<tr>
+<td><code>managed-mac-initial-setup.dita</code></td>
+<td>Task</td>
+<td>Guides the user through first-time setup</td>
+</tr>
+<tr>
+<td><code>managed-mac-zscaler.dita</code></td>
+<td>Task</td>
+<td>Explains how to connect to Zscaler</td>
+</tr>
+<tr>
+<td><code>managed-mac-apps.dita</code></td>
+<td>Task</td>
+<td>Covers Microsoft 365 access and Self Service</td>
+</tr>
+<tr>
+<td><code>managed-mac-readiness-check.dita</code></td>
+<td>Reference</td>
+<td>Provides a setup completion checklist</td>
+</tr>
+<tr>
+<td><code>managed-mac-support-info.dita</code></td>
+<td>Reference</td>
+<td>Explains when to contact IT and what to provide</td>
+</tr>
+<tr>
+<td><code>managed-mac-troubleshooting.dita</code></td>
+<td>Troubleshooting</td>
+<td>Organizes common issues and remedies</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="sample-xml-excerpt">Sample XML Excerpt</h2>
+<p>Example from the task topic <code>managed-mac-initial-setup.dita</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;task</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;managed-mac-initial-setup&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;title&gt;</span>Set<span class="w"> </span>Up<span class="w"> </span>Your<span class="w"> </span>Managed<span class="w"> </span>Mac<span class="w"> </span>for<span class="w"> </span>First<span class="w"> </span>Use<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;shortdesc&gt;</span>Follow<span class="w"> </span>these<span class="w"> </span>steps<span class="w"> </span>to<span class="w"> </span>power<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>Mac,<span class="w"> </span>connect<span class="w"> </span>to<span class="w"> </span>Wi-Fi,<span class="w"> </span>sign<span class="w"> </span>in,<span class="w"> </span>complete<span class="w"> </span>MFA,<span class="w"> </span>and<span class="w"> </span>allow<span class="w"> </span>managed<span class="w"> </span>setup<span class="w"> </span>to<span class="w"> </span>finish.<span class="nt">&lt;/shortdesc&gt;</span>
+<span class="w">  </span><span class="nt">&lt;taskbody&gt;</span>
+<span class="w">    </span><span class="nt">&lt;prereq&gt;</span>
+<span class="w">      </span><span class="nt">&lt;p&gt;</span>Make<span class="w"> </span>sure<span class="w"> </span>you<span class="w"> </span>have<span class="w"> </span>your<span class="w"> </span>company<span class="w"> </span>email<span class="w"> </span>address,<span class="w"> </span>password,<span class="w"> </span>MFA<span class="w"> </span>method,<span class="w"> </span>access<span class="w"> </span>to<span class="w"> </span>Wi-Fi,<span class="w"> </span>and<span class="w"> </span>your<span class="w"> </span>Mac<span class="w"> </span>power<span class="w"> </span>adapter<span class="w"> </span>before<span class="w"> </span>you<span class="w"> </span>begin.<span class="nt">&lt;/p&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/prereq&gt;</span>
+<span class="w">    </span><span class="nt">&lt;steps&gt;</span>
+<span class="w">      </span><span class="nt">&lt;step&gt;</span>
+<span class="w">        </span><span class="nt">&lt;cmd&gt;</span>Connect<span class="w"> </span>the<span class="w"> </span>Mac<span class="w"> </span>to<span class="w"> </span>a<span class="w"> </span>power<span class="w"> </span>source<span class="w"> </span>using<span class="w"> </span>the<span class="w"> </span>provided<span class="w"> </span>adapter.<span class="nt">&lt;/cmd&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/step&gt;</span>
+<span class="w">      </span><span class="nt">&lt;step&gt;</span>
+<span class="w">        </span><span class="nt">&lt;cmd&gt;</span>Turn<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>Mac<span class="w"> </span>and<span class="w"> </span>follow<span class="w"> </span>the<span class="w"> </span>setup<span class="w"> </span>screens<span class="w"> </span>until<span class="w"> </span>you<span class="w"> </span>are<span class="w"> </span>prompted<span class="w"> </span>to<span class="w"> </span>connect<span class="w"> </span>to<span class="w"> </span>Wi-Fi<span class="w"> </span>or<span class="w"> </span>sign<span class="w"> </span>in.<span class="nt">&lt;/cmd&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/step&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/steps&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/taskbody&gt;</span>
+<span class="nt">&lt;/task&gt;</span>
 </code></pre></div>
-- <a href="https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript">Download Revised AppleScript</a></p>
-<h3 id="original-applescript">Original AppleScript</h3>
-<p>Original version of the script included to show the basis for revision and improvement.</p>
-<div class="highlight"><pre><span></span><code>applescript
-
--- First, we need to get the old home folder name
--- Then we need to get the new home folder name
--- We need to verify that the new user&#39;s home folder name is correctly entered
--- This asks for the user name, then confirms it&#39;s correct. It gives the option to quit at 
--- this point. This script does not check LDAP to ensure the username is correct.
-
-tell application &quot;Finder&quot;
-    set validAnswer to false
-    repeat while (validAnswer = false)
-        display dialog &quot;Please give me the Active Directory user&#39;s home folder name for the account you&#39;re migrating.&quot; default answer &quot;&quot;
-        set ADUserName to text returned of result
-        display dialog &quot;Is &quot; &amp; ADUserName &amp; &quot; the correct Active Directory user name?&quot; buttons {&quot;Yes&quot;, &quot;No&quot;, &quot;Quit&quot;} default button 1
-        if result = {button returned:&quot;Yes&quot;} then
-            set validAnswer to true
-        else
-            if result = {button returned:&quot;Quit&quot;} then error number -128
-        end if
-    end repeat
-
-    -- Now that we have the AD user name, we need to confirm it&#39;s in the right place
-
-    display dialog &quot;Make sure the user&#39;s home folder is now in the /Users directory. Click &#39;OK&#39; when that&#39;s done and not before&quot; default button 1
-    display dialog &quot;LAST CHANCE! Bad things may happen if I don&#39;t have the correct name or the home folder isn&#39;t in the proper directory. Are you sure?&quot; buttons {&quot;No Way&quot;, &quot;Go For It&quot;} default button 1
-
-    -- Now we try to change the owner and group permissions on the folder
-    try
-        do shell script &quot;chown -R &quot; &amp; ADUserName &amp; &quot; /Users/&quot; &amp; ADUserName with administrator privileges
-    on error
-        display dialog &quot;Something went wrong.  Sorry.
- It may be a typo, or I can&#39;t find the name in A.D.&quot;
-        try
-            do shell script &quot;chgrp -R staff /Users/&quot; &amp; ADUserName with administrator privileges
-        on error
-            display dialog &quot;Something went wrong.  Sorry.
- It may be a typo or I can&#39;t find the name in A.D.&quot;
-        end try
-
-    end try
-
-    display dialog &quot;Successfully migrated &quot; &amp; ADUserName
-
-end tell
-</code></pre></div>
-<ul>
-<li><a href="https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.applescript">Download Original AppleScript</a></li>
-</ul>
-<h2 id="comparison-value">Comparison Value</h2>
-<p>Including both the original and revised scripts demonstrates the value of this sample for editing and documentation. It shows how improvements to technical writing can strengthen an internal administrative tool by making it easier to understand, safer to use, and easier to maintain.</p>
-<p>Areas of improvement include:</p>
-<ul>
-<li>clearer user-facing prompts</li>
-<li>more explicit warning language</li>
-<li>improved administrator guidance</li>
-<li>more readable code comments</li>
-<li>cleaner presentation for portfolio review</li>
-</ul>
+<p>This excerpt shows how procedural content is structured in DITA, using a task topic, short description, prerequisites, and ordered steps.</p>
 <h2 id="notes">Notes</h2>
-<p>This repository contains a portfolio edition of the original internal tool and documentation. It is included to demonstrate documentation revision and editing rather than original software development.</p>
-<p>The sample preserves the core workflow and administrative purpose of the original utility, but it does not represent a production-supported enterprise tool.</p>
+<p>This sample was created as a foundational DITA writing project for a technical writing portfolio. The scope was intentionally limited to core DITA topic types and map structure in order to demonstrate basic structured authoring concepts clearly.</p>
+<p>If needed, this sample could later be expanded to include content reuse, conditional processing, or generated output using a DITA publishing toolchain.</p>
 
 
 

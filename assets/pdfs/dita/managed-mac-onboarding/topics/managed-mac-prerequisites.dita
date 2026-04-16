@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="managed-mac-prerequisites">
+  <title>Before You Begin</title>
+  <shortdesc>This topic lists the information, devices, and access needed before you begin setup of your managed Mac.</shortdesc>
+  <refbody>
+    <section>
+      <title>Required items</title>
+      <ul>
+        <li>Your company email address
+          <ul>
+            <li>Example: <codeph>jbob@mycompany.com</codeph></li>
+          </ul>
+        </li>
+        <li>Your company password</li>
+        <li>Your approved MFA method on your iPhone or other iOS device</li>
+        <li>Access to a Wi-Fi network</li>
+        <li>Your Mac power adapter</li>
+        <li>Any onboarding instructions provided by your IT team</li>
+      </ul>
+    </section>
+
+    <section>
+      <title>Security note</title>
+      <note type="important">Do not share your company password or MFA verification code. IT will never ask for this information.</note>
+    </section>
+  </refbody>
+</reference>

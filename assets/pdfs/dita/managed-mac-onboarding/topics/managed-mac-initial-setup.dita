@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="managed-mac-initial-setup">
+  <title>Set Up Your Managed Mac for First Use</title>
+  <shortdesc>Follow these steps to power on the Mac, connect to Wi-Fi, sign in, complete MFA, and allow managed setup to finish.</shortdesc>
+  <taskbody>
+    <prereq>
+      <p>Make sure you have your company email address, password, MFA method, access to Wi-Fi, and your Mac power adapter before you begin.</p>
+    </prereq>
+
+    <steps>
+      <step>
+        <cmd>Connect the Mac to a power source using the provided adapter.</cmd>
+      </step>
+
+      <step>
+        <cmd>Turn on the Mac and follow the setup screens until you are prompted to connect to Wi-Fi or sign in.</cmd>
+        <info>The Mac may automatically begin enrollment in your organization’s device management system during this process.</info>
+      </step>
+
+      <step>
+        <cmd>Connect the Mac to Wi-Fi.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Select the <uicontrol>Wi-Fi</uicontrol> icon in the menu bar.</cmd>
+          </substep>
+          <substep>
+            <cmd>Choose an available network.</cmd>
+            <info>This can be your home Wi-Fi or another trusted network.</info>
+          </substep>
+          <substep>
+            <cmd>Enter the network password if prompted.</cmd>
+          </substep>
+          <substep>
+            <cmd>Confirm that the Wi-Fi icon shows an active connection.</cmd>
+          </substep>
+        </substeps>
+        <info>You do not need to connect to the company network yet.</info>
+      </step>
+
+      <step>
+        <cmd>Sign in with your company account.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Enter your company email address and password.</cmd>
+            <info>Example: <codeph>jbob@mycompany.com</codeph></info>
+          </substep>
+          <substep>
+            <cmd>If prompted, sign in with your Microsoft 365 account.</cmd>
+          </substep>
+          <substep>
+            <cmd>Wait for the desktop to load.</cmd>
+          </substep>
+        </substeps>
+        <info>Your Mac login may be linked to your Microsoft 365 account. The first login may take longer than usual while setup completes.</info>
+      </step>
+
+      <step>
+        <cmd>Complete MFA if prompted.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Open your approved authentication app on your iPhone or other iOS device.</cmd>
+          </substep>
+          <substep>
+            <cmd>Approve the sign-in request or enter the verification code.</cmd>
+          </substep>
+          <substep>
+            <cmd>Return to the Mac and continue setup.</cmd>
+          </substep>
+        </substeps>
+        <info>Examples of MFA actions include approving a push notification, entering a time-based verification code, or confirming your identity in a company-approved app.</info>
+      </step>
+
+      <step>
+        <cmd>Allow managed setup to finish.</cmd>
+        <info>After you sign in, your Mac may continue applying settings in the background. This may include device enrollment, security configuration, application installation, Microsoft Office installation, browser or certificate configuration, SSO setup, and Zscaler setup or registration.</info>
+        <info>Leave your Mac connected to power and Wi-Fi for several minutes to allow setup to complete.</info>
+      </step>
+    </steps>
+
+    <result>
+      <p>Your Mac is signed in, connected to Wi-Fi, and allowed to continue applying required company settings and applications.</p>
+    </result>
+  </taskbody>
+</task>

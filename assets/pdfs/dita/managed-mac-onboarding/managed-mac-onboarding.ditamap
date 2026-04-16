@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map id="managed-mac-onboarding">
+  <title>Getting Started with Your Managed Mac</title>
+
+  <topichead navtitle="Overview and Preparation">
+    <topicref href="topics/managed-mac-overview.dita"/>
+    <topicref href="topics/managed-mac-prerequisites.dita"/>
+  </topichead>
+
+  <topichead navtitle="Setup Tasks">
+    <topicref href="topics/managed-mac-initial-setup.dita"/>
+    <topicref href="topics/managed-mac-zscaler.dita"/>
+    <topicref href="topics/managed-mac-apps.dita"/>
+    <topicref href="topics/managed-mac-readiness-check.dita"/>
+  </topichead>
+
+  <topichead navtitle="Support">
+    <topicref href="topics/managed-mac-support-info.dita"/>
+    <topicref href="topics/managed-mac-troubleshooting.dita"/>
+  </topichead>
+</map>
