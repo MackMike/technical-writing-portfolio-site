@@ -1,6 +1,8 @@
 ## Professional Summary
 Technical writer and editor with a background in macOS systems engineering, endpoint management, and enterprise IT. Experienced in creating user guides, administrator documentation, knowledge base content, troubleshooting materials, workflows, playbooks, and process documentation for technical teams and end users. Combines strong writing and editing skills with hands-on expertise in macOS, Jamf Pro, security-focused enterprise environments, and managed device workflows. Portfolio includes Markdown-based documentation, technical editing samples, and introductory DITA-based structured authoring work.
 
+[Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
+
 ## Core Skills
 - Technical writing
 - Technical editing
@@ -44,6 +46,7 @@ Technical writer and editor with a background in macOS systems engineering, endp
 - Introduction to DITA Certificate — Scriptorium
 
 ## External Links
+- [Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
 - [Portfolio](https://MackMike.github.io/technical-writing-portfolio-site/)
 - [LinkedIn](https://www.linkedin.com/in/miscarborough)
 - [GitHub](https://github.com/MackMike)
