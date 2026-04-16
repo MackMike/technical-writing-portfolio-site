@@ -653,13 +653,144 @@
 </ul>
 <h3 id="revised-applescript">Revised AppleScript</h3>
 <p>Portfolio edition of the script with improved comments, prompts, warnings, and readability refinements.</p>
-<ul>
-<li><a href="https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript">Open Revised AppleScript</a></li>
-</ul>
+<p><div class="highlight"><pre><span></span><code>applescript
+
+-- Migrate User Application
+-- Portfolio edition
+--
+-- Purpose:
+-- Restore ownership and group permissions on a migrated user home folder
+-- after a Mac has been reimaged.
+--
+-- Intended audience:
+-- Platform administrators, desktop support technicians, and macOS administrators
+--
+-- Assumptions:
+-- 1. The user&#39;s home folder has already been copied to /Users on the target Mac.
+-- 2. The entered value matches the user&#39;s short name/home folder name exactly.
+-- 3. The Mac is bound to Active Directory.
+-- 4. The administrator running the script has valid admin credentials.
+--
+-- This script does not validate the entered account name against LDAP or Active Directory.
+
+tell application &quot;Finder&quot;
+    set validAnswer to false
+
+    -- Prompt for the user&#39;s short name/home folder name and require confirmation.
+    repeat while (validAnswer = false)
+        display dialog &quot;Enter the Active Directory short name (home folder name) for the account being migrated.
+
+Important:
+• Enter the name exactly as it appears in /Users
+• Do not enter the user&#39;s full name&quot; default answer &quot;&quot; buttons {&quot;Continue&quot;} default button 1
+        set ADUserName to text returned of result
+
+        display dialog &quot;Confirm the account name:
+
+&quot; &amp; ADUserName &amp; &quot;
+
+This value must exactly match the user&#39;s home folder name in /Users.&quot; buttons {&quot;Re-enter&quot;, &quot;Quit&quot;, &quot;Confirm&quot;} default button &quot;Confirm&quot;
+
+        if button returned of result is &quot;Confirm&quot; then
+            set validAnswer to true
+        else if button returned of result is &quot;Quit&quot; then
+            error number -128
+        end if
+    end repeat
+
+    -- Confirm that the migrated home folder is already in the expected location.
+    display dialog &quot;Verify that the user&#39;s home folder has already been copied to the /Users directory on this Mac.
+
+Select OK only after this has been confirmed.&quot; buttons {&quot;OK&quot;, &quot;Cancel&quot;} default button &quot;OK&quot;
+    if button returned of result is &quot;Cancel&quot; then error number -128
+
+    -- Provide a final confirmation before permissions are updated.
+    display dialog &quot;Final confirmation:
+
+This tool will update ownership and group permissions for:
+/Users/&quot; &amp; ADUserName &amp; &quot;
+
+Proceed only if:
+• the account name is correct
+• the home folder is in the correct location
+• the Mac is bound to Active Directory&quot; buttons {&quot;Cancel&quot;, &quot;Proceed&quot;} default button &quot;Proceed&quot;
+    if button returned of result is &quot;Cancel&quot; then error number -128
+
+    -- Apply ownership to the specified home folder.
+    try
+        do shell script &quot;chown -R &quot; &amp; quoted form of ADUserName &amp; &quot; /Users/&quot; &amp; quoted form of ADUserName with administrator privileges
+
+        -- Apply the staff group to the same home folder.
+        do shell script &quot;chgrp -R staff /Users/&quot; &amp; quoted form of ADUserName with administrator privileges
+
+        display dialog &quot;Migration completed successfully for account:
+
+&quot; &amp; ADUserName buttons {&quot;OK&quot;} default button &quot;OK&quot;
+
+    on error errMsg number errNum
+        display dialog &quot;The migration could not be completed.
+
+Check the following and try again:
+• The account name is correct
+• The home folder exists in /Users
+• The Mac is bound to Active Directory
+• Administrator credentials were entered successfully
+
+Error details:
+&quot; &amp; errMsg buttons {&quot;OK&quot;} default button &quot;OK&quot;
+    end try
+end tell
+</code></pre></div>
+- <a href="https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript">Download Revised AppleScript</a></p>
 <h3 id="original-applescript">Original AppleScript</h3>
 <p>Original version of the script included to show the basis for revision and improvement.</p>
+<div class="highlight"><pre><span></span><code>applescript
+
+-- First, we need to get the old home folder name
+-- Then we need to get the new home folder name
+-- We need to verify that the new user&#39;s home folder name is correctly entered
+-- This asks for the user name, then confirms it&#39;s correct. It gives the option to quit at 
+-- this point. This script does not check LDAP to ensure the username is correct.
+
+tell application &quot;Finder&quot;
+    set validAnswer to false
+    repeat while (validAnswer = false)
+        display dialog &quot;Please give me the Active Directory user&#39;s home folder name for the account you&#39;re migrating.&quot; default answer &quot;&quot;
+        set ADUserName to text returned of result
+        display dialog &quot;Is &quot; &amp; ADUserName &amp; &quot; the correct Active Directory user name?&quot; buttons {&quot;Yes&quot;, &quot;No&quot;, &quot;Quit&quot;} default button 1
+        if result = {button returned:&quot;Yes&quot;} then
+            set validAnswer to true
+        else
+            if result = {button returned:&quot;Quit&quot;} then error number -128
+        end if
+    end repeat
+
+    -- Now that we have the AD user name, we need to confirm it&#39;s in the right place
+
+    display dialog &quot;Make sure the user&#39;s home folder is now in the /Users directory. Click &#39;OK&#39; when that&#39;s done and not before&quot; default button 1
+    display dialog &quot;LAST CHANCE! Bad things may happen if I don&#39;t have the correct name or the home folder isn&#39;t in the proper directory. Are you sure?&quot; buttons {&quot;No Way&quot;, &quot;Go For It&quot;} default button 1
+
+    -- Now we try to change the owner and group permissions on the folder
+    try
+        do shell script &quot;chown -R &quot; &amp; ADUserName &amp; &quot; /Users/&quot; &amp; ADUserName with administrator privileges
+    on error
+        display dialog &quot;Something went wrong.  Sorry.
+ It may be a typo, or I can&#39;t find the name in A.D.&quot;
+        try
+            do shell script &quot;chgrp -R staff /Users/&quot; &amp; ADUserName with administrator privileges
+        on error
+            display dialog &quot;Something went wrong.  Sorry.
+ It may be a typo or I can&#39;t find the name in A.D.&quot;
+        end try
+
+    end try
+
+    display dialog &quot;Successfully migrated &quot; &amp; ADUserName
+
+end tell
+</code></pre></div>
 <ul>
-<li><a href="https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.applescript">Open Original AppleScript</a></li>
+<li><a href="https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.applescript">Download Original AppleScript</a></li>
 </ul>
 <h2 id="comparison-value">Comparison Value</h2>
 <p>Including both the original and revised script helps demonstrate the editing and documentation value of this sample. It shows how technical writing improvements can strengthen an internal administrative tool by making it easier to understand, safer to use, and easier to maintain.</p>
