@@ -12,6 +12,7 @@ nav:
       - Managed macOS Onboarding Guide: projects/managed-mac-onboarding.md
       - "KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs": projects/jamf-managed-mac-compliance-troubleshooting.md
       - Migrate User Administrative Tool Documentation: projects/migration-tool-project.md
+      - "DITA Sample: Managed macOS Onboarding Guide": projects/dita-managed-mac-onboarding.md
       - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing-project.md
       - Atari Computer User Guide: projects/atari-user-guide-project.md
 
