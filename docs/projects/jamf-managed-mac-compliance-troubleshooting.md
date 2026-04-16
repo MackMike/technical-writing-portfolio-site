@@ -44,7 +44,7 @@ This sample demonstrates the ability to create effective internal support docume
 ## View the Project
 - **View final sample:** [Troubleshooting Compliance Failures on Jamf-Managed Macs](https://mackmike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting-article/)
 - **View Markdown/source:** [jamf-managed-mac-compliance-troubleshooting-article.md](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/jamf-managed-mac-compliance-troubleshooting-article.md)
-- **View repository:** [GitHub Repository](https://github.com/MackMike)
+- **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
 Technical writing, knowledge base writing, troubleshooting documentation, internal IT documentation, enterprise macOS documentation
