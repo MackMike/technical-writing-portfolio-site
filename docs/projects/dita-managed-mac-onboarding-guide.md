@@ -93,11 +93,11 @@ Together, these samples demonstrate flexibility across documentation formats and
 
 Replace the placeholder links below with your actual GitHub URLs.
 
-- **View DITA project folder:** [managed-mac-onboarding](https://github.com/MackMike/technical-writing-portfolio-site/tree/main/docs/assets/dita/managed-mac-onboarding)
-- **View DITA map:** [managed-mac-onboarding.ditamap](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
-- **View overview topic:** [managed-mac-overview.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/topics/managed-mac-overview.dita)
-- **View initial setup task:** [managed-mac-initial-setup.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/topics/managed-mac-initial-setup.dita)
-- **View troubleshooting topic:** [managed-mac-troubleshooting.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/topics/managed-mac-troubleshooting.dita)
+- **View DITA project folder:** [managed-mac-onboarding](https://github.com/MackMike/technical-writing-portfolio-site/tree/main/docs/assets/pdfs/dita/managed-mac-onboarding)
+- **View DITA map:** [managed-mac-onboarding.ditamap](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/pdfs/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
+- **View overview topic:** [managed-mac-overview.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/pdfs/dita/managed-mac-onboarding/topics/managed-mac-overview.dita)
+- **View initial setup task:** [managed-mac-initial-setup.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/pdfs/dita/managed-mac-onboarding/topics/managed-mac-initial-setup.dita)
+- **View troubleshooting topic:** [managed-mac-troubleshooting.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/pdfs/dita/managed-mac-onboarding/topics/managed-mac-troubleshooting.dita)
 
 ---
 
