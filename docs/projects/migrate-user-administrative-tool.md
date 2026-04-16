@@ -38,12 +38,12 @@ Administrator-facing instructions covering the tool’s purpose, prerequisites, 
 ### Revised AppleScript
 Portfolio edition of the script with improved comments, prompts, warnings, and readability refinements.
 
-- [Open Revised AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript )
+- [Open Revised AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool.applescript)
 
 ### Original AppleScript
 Original version of the script included to show the basis for revision and improvement.
 
-- [Open Original AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.scpt)
+- [Open Original AppleScript](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/code/migrate-user-tool-original.applescript)
 
 ## Comparison Value
 
