@@ -10,6 +10,36 @@ Rather than presenting the content as a single continuous guide, this sample org
 
 ---
 
+## Why This Sample Is Presented as Source
+
+DITA is a structured XML authoring format used to create modular documentation that can be published in multiple output formats. Because this portfolio sample is intended to demonstrate foundational DITA authoring skills, it is presented as source rather than rendered HTML output.
+
+Presenting the source files makes it possible to show:
+
+- Topic-based organization
+- Separation of concept, task, reference, and troubleshooting content
+- Use of a DITA map to organize a documentation set
+- Basic structured XML authoring practices
+- Adaptation of an existing Markdown guide into modular DITA topics
+
+For this sample, the structure of the documentation is part of the work being demonstrated.
+
+---
+
+## How to Read This Sample
+
+If you are not familiar with DITA, the easiest way to review this sample is:
+
+1. Open the **DITA map** first to see how the documentation set is organized.
+2. Review the **concept topic** to see how explanatory information is separated from instructions.
+3. Review one or two **task topics** to see how procedural steps are structured.
+4. Review the **reference topics** to see how checklist and support information is organized.
+5. Review the **troubleshooting topic** to see how common issues and remedies are grouped.
+
+This approach shows how the original onboarding guide was divided into reusable topic types rather than written as a single linear document.
+
+---
+
 ## DITA Documentation Set Structure
 
 This sample includes the following DITA components:
@@ -59,21 +89,15 @@ Together, these samples demonstrate flexibility across documentation formats and
 
 ---
 
-## Source File Location
+## View the Source Files on GitHub
 
-The DITA source files for this sample are stored in the portfolio repository under:
+Replace the placeholder links below with your actual GitHub URLs.
 
-`docs/assets/dita/managed-mac-onboarding/`
-
----
-
-## View the Source Files
-
-- **View DITA project folder:** [managed-mac-onboarding](https://mackmike.github.io/technical-writing-portfolio-site//assets/pdfs/dita/managed-mac-onboarding/)
-- **View DITA map:** [managed-mac-onboarding.ditamap](https://mackmike.github.io/technical-writing-portfolio-site//assets/pdfs/assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
-- **View overview topic:** [managed-mac-overview.dita](../assets/dita/managed-mac-onboarding/topics/managed-mac-overview.dita)
-- **View initial setup task:** [managed-mac-initial-setup.dita](../assets/dita/managed-mac-onboarding/topics/managed-mac-initial-setup.dita)
-- **View troubleshooting topic:** [managed-mac-troubleshooting.dita](../assets/dita/managed-mac-onboarding/topics/managed-mac-troubleshooting.dita)
+- **View DITA project folder:** [managed-mac-onboarding](https://github.com/MackMike/technical-writing-portfolio-site/tree/main/docs/assets/dita/managed-mac-onboarding)
+- **View DITA map:** [managed-mac-onboarding.ditamap](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
+- **View overview topic:** [managed-mac-overview.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/topics/managed-mac-overview.dita)
+- **View initial setup task:** [managed-mac-initial-setup.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/topics/managed-mac-initial-setup.dita)
+- **View troubleshooting topic:** [managed-mac-troubleshooting.dita](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/topics/managed-mac-troubleshooting.dita)
 
 ---
 
@@ -98,7 +122,7 @@ Below is the topic organization used in this sample:
 
 Example from the task topic `managed-mac-initial-setup.dita`:
 
-```xml
+```
 <task id="managed-mac-initial-setup">
   <title>Set Up Your Managed Mac for First Use</title>
   <shortdesc>Follow these steps to power on the Mac, connect to Wi-Fi, sign in, complete MFA, and allow managed setup to finish.</shortdesc>
