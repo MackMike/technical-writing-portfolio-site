@@ -2,12 +2,6 @@
 
 Administrator-focused documentation sample for an AppleScript tool used to restore ownership and group permissions on a migrated macOS home folder after reimaging.
 
-## Repository Contents
-- `README.md` — administrator guide and usage documentation
-- `MigrateUser-portfolio.applescript` — revised portfolio edition of the script
-- `historical-note.md` — context on the original internal tool and portfolio revisions
-- `portfolio-description.md` — concise project summary
-
 ## Overview
 The **Migrate User** application is an AppleScript-based administrative tool designed to help restore ownership and group permissions on a user’s home folder after a Mac has been reimaged.
 
