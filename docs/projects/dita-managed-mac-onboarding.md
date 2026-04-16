@@ -49,8 +49,8 @@ This sample demonstrates the ability to learn and apply structured authoring con
 
 ## View the Project
 - **View final sample:** [DITA Sample: Getting Started with Your Managed Mac](dita-managed-mac-onboarding-guide.md)
-- **View DITA map:** [managed-mac-onboarding.ditamap](../assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
-- **View source folder:** [managed-mac-onboarding source files](../assets/dita/managed-mac-onboarding/)
+- **View DITA source folder in GitHub:** [managed-mac-onboarding source files](https://github.com/MackMike/technical-writing-portfolio-site/tree/main/docs/assets/dita/managed-mac-onboarding)
+- **View DITA map in GitHub:** [managed-mac-onboarding.ditamap](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
 - **View original Markdown-based sample:** [Getting Started with Your Managed Mac](managed-mac-onboarding-guide.md)
 - **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
