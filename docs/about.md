@@ -1,22 +1,23 @@
 # About
 
-I am a technical writer and editor with a background in macOS systems engineering and enterprise IT. My experience includes creating administrator documentation, user guides, knowledge base articles, workflows, playbooks, and process documentation for both technical teams and end users.
+I am a technical writer and editor with a background in macOS systems engineering, endpoint management, and enterprise IT. I create user documentation, administrator guides, knowledge base articles, workflow documentation, playbooks, and process content for technical teams and end users.
 
-Throughout my IT career, I regularly translated technical processes into documentation that helped support teams, administrators, and end users work more effectively. I created internal how-to guides, getting-started materials, workflow documentation, and support content designed to improve consistency, reduce repeated questions, and make technical processes easier to understand and maintain. That experience led me to focus more directly on technical writing and editing.
+My background in enterprise support and device management gave me regular opportunities to turn complex technical processes into documentation that improved consistency, reduced repeated questions, and helped users and support teams work more effectively. Over time, that documentation work became a central part of my professional focus and led me to pursue technical writing and editing more directly.
 
-I currently serve as a Technical Editor for Apache OpenOffice documentation, where I review and edit user guide content for clarity, consistency, usability, and technical accuracy. I have also completed Scriptorium’s Introduction to DITA course and maintain documentation samples in Markdown and GitHub-based formats as part of my portfolio.
+I currently serve as a Technical Editor for Apache OpenOffice documentation, where I review and revise user guide content for clarity, consistency, usability, and technical accuracy. I have also completed Scriptorium’s *Introduction to DITA* course and maintain portfolio samples in Markdown, GitHub-based formats, and introductory DITA XML.
 
-My technical background includes macOS, JAMF Pro, endpoint management, enterprise support environments, and security-focused systems work. That hands-on experience helps me understand the systems I document and translate complex technical workflows into clear, user-focused content.
+My technical background includes macOS, Jamf Pro, endpoint management, enterprise support environments, and security-focused systems work. That hands-on experience helps me understand the tools and workflows I document and translate technical complexity into clear, audience-focused content.
 
-I am especially interested in work involving:
+I am especially interested in roles involving:
 
 - Technical writing
 - Technical editing
 - User and administrator documentation
-- Knowledge base content
+- Knowledge base and troubleshooting content
 - IT and endpoint documentation
 - Process and workflow documentation
+- Structured authoring and documentation systems
 
 ## External Links
 - [LinkedIn](https://www.linkedin.com/in/miscarborough/)
-- [GitHub](https://github.com/MackMike)
+- [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
