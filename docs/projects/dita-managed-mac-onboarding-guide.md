@@ -69,7 +69,7 @@ The DITA source files for this sample are stored in the portfolio repository und
 
 ## View the Source Files
 
-- **View DITA project folder:** [managed-mac-onboarding](../assets/dita/managed-mac-onboarding/)
+- **View DITA project folder:** [managed-mac-onboarding](../assets/pdfs/dita/managed-mac-onboarding/)
 - **View DITA map:** [managed-mac-onboarding.ditamap](../assets/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
 - **View overview topic:** [managed-mac-overview.dita](../assets/dita/managed-mac-onboarding/topics/managed-mac-overview.dita)
 - **View initial setup task:** [managed-mac-initial-setup.dita](../assets/dita/managed-mac-onboarding/topics/managed-mac-initial-setup.dita)
