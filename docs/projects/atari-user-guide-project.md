@@ -55,7 +55,7 @@ This sample demonstrates how editing and rewriting can significantly improve the
 - **View final sample:** [Atari Home Computer and Peripherals User Guide](https://mackmike.github.io/technical-writing-portfolio-site/projects/atari-user-guide/)
 - **View Markdown/source:** [Atari Home Computer and Peripherals User Guide Source](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/atari-user-guide.md)
 - **View unedited original guide:** [My Atari Primer](https://mackmike.github.io/technical-writing-portfolio-site/assets/pdfs/original-atari-user-guide.pdf)
-- **View repository:** [GitHub Repository](https://github.com/MackMike)
+- **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
 Technical editing, content revision, Markdown, end-user documentation, usability editing
