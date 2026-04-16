@@ -44,7 +44,7 @@ This sample demonstrates the ability to translate enterprise IT onboarding workf
 ## View the Project
 - **View final sample:** [Getting Started with Your Managed Mac](https://mackmike.github.io/technical-writing-portfolio-site/projects/managed-mac-onboarding-guide/)
 - **View Markdown/source:** [Managed Mac Onboarding Guide](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/managed-mac-onboarding-guide.md)
-- **View repository:** [GitHub Repository](https://github.com/MackMike)
+- **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
 Technical writing, end-user documentation, onboarding documentation, task-based writing, troubleshooting documentation
