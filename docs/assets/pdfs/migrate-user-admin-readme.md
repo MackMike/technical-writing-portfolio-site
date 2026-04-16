@@ -98,8 +98,3 @@ If the script fails:
 * confirm that the home folder exists in /Users
 * confirm that the Mac is bound to Active Directory
 * confirm that administrator credentials were entered when prompted
-
-## Additional Project Notes
-
-* [Historical Note](historical-note.md)
-* [Portfolio Description](portfolio-description.md)
