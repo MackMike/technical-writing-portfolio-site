@@ -12,7 +12,7 @@ This portfolio includes selected writing and editing samples in Markdown and Git
 
 ## Featured Projects
 
-### [Managed macOS Onboarding Guide](projects/managed-mac-onboarding/)
+### [Managed macOS Onboarding Guide](projects/managed-mac-onboarding.md)
 Task-based end-user documentation for setting up a company-managed macOS device in an enterprise environment. Demonstrates onboarding workflows, authentication and security integration, and user-focused troubleshooting.
 
 ### [KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs](projects/jamf-managed-mac-compliance-troubleshooting.md)
