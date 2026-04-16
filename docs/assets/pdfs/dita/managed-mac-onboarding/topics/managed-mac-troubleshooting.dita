@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE troubleshooting PUBLIC "-//OASIS//DTD DITA Troubleshooting//EN" "troubleshooting.dtd">
+<troubleshooting id="managed-mac-troubleshooting">
+  <title>Troubleshooting Managed Mac Setup</title>
+  <shortdesc>Use this topic to identify common setup problems and recommended actions.</shortdesc>
+  <troublebody>
+
+    <troubleSolution>
+      <title>I cannot sign in</title>
+      <cause>
+        <p>The email address, password, or network connection may be incorrect, or the account may not be ready.</p>
+      </cause>
+      <remedy>
+        <ul>
+          <li>Verify your email address.
+            <ul>
+              <li>Example: <codeph>jbob@mycompany.com</codeph></li>
+            </ul>
+          </li>
+          <li>Confirm your password is correct and not expired.</li>
+          <li>Check your Wi-Fi connection.</li>
+          <li>Restart your Mac and try again.</li>
+        </ul>
+      </remedy>
+    </troubleSolution>
+
+    <troubleSolution>
+      <title>MFA is not working</title>
+      <cause>
+        <p>The authentication app may not be available, up to date, or presenting a current code.</p>
+      </cause>
+      <remedy>
+        <ul>
+          <li>Check that your authentication app is available and up to date.</li>
+          <li>Retry the MFA prompt.</li>
+          <li>Ensure the code is current before entering it.</li>
+        </ul>
+      </remedy>
+    </troubleSolution>
+
+    <troubleSolution>
+      <title>Zscaler is not connecting</title>
+      <cause>
+        <p>The connection may fail because of incorrect credentials, incomplete MFA, or lack of network connectivity.</p>
+      </cause>
+      <remedy>
+        <ul>
+          <li>Confirm your credentials.</li>
+          <li>Complete MFA if prompted.</li>
+          <li>Restart the application.</li>
+          <li>Check your Wi-Fi connection.</li>
+        </ul>
+      </remedy>
+    </troubleSolution>
+
+    <troubleSolution>
+      <title>Office apps are missing</title>
+      <cause>
+        <p>Application installation may still be in progress or the apps may need to be installed from Self Service.</p>
+      </cause>
+      <remedy>
+        <ul>
+          <li>Open Self Service to install apps.</li>
+          <li>Confirm setup has completed.</li>
+          <li>Wait a few minutes and try again.</li>
+        </ul>
+      </remedy>
+    </troubleSolution>
+
+    <troubleSolution>
+      <title>Self Service is missing</title>
+      <cause>
+        <p>Enrollment may still be completing or the application may not yet be available on the Mac.</p>
+      </cause>
+      <remedy>
+        <ul>
+          <li>Wait a few minutes for enrollment to complete.</li>
+          <li>Restart your Mac.</li>
+          <li>Contact IT if Self Service still does not appear.</li>
+        </ul>
+      </remedy>
+    </troubleSolution>
+
+  </troublebody>
+</troubleshooting>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="managed-mac-zscaler">
+  <title>Connect to Zscaler</title>
+  <shortdesc>Use these steps to connect Zscaler if your organization requires it for secure access to company resources.</shortdesc>
+  <taskbody>
+    <context>
+      <p>Some organizations use Zscaler to provide secure access to company applications and network resources. Depending on your setup, Zscaler may connect automatically.</p>
+    </context>
+
+    <steps>
+      <step>
+        <cmd>Open the <uicontrol>Zscaler</uicontrol> application if it does not open automatically.</cmd>
+      </step>
+
+      <step>
+        <cmd>Sign in with your company account.</cmd>
+        <info>Example: <codeph>jbob@mycompany.com</codeph></info>
+      </step>
+
+      <step>
+        <cmd>Complete MFA if prompted.</cmd>
+      </step>
+
+      <step>
+        <cmd>Confirm that Zscaler shows a connected or active status.</cmd>
+      </step>
+    </steps>
+
+    <postreq>
+      <note type="warning">Some company applications and network resources may not be available until Zscaler is connected.</note>
+    </postreq>
+
+    <result>
+      <p>Zscaler is connected and secure access to required company resources is available.</p>
+    </result>
+  </taskbody>
+</task>

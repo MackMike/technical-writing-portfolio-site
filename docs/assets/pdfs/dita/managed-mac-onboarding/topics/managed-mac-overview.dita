@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="managed-mac-overview">
+  <title>Overview of Managed Mac Setup</title>
+  <shortdesc>This topic explains what users can expect during setup of a company-managed Mac and what tasks are typically completed during onboarding.</shortdesc>
+  <conbody>
+    <p>This guide helps employees set up and begin using a company-managed Mac. It covers common onboarding tasks such as connecting to Wi-Fi, signing in, completing multi-factor authentication (MFA), allowing automated setup to finish, connecting to Zscaler, and accessing company applications such as Microsoft Outlook and other Microsoft 365 tools.</p>
+
+    <note type="tip">Estimated setup time: 20 to 30 minutes.</note>
+
+    <section>
+      <title>What this guide helps you do</title>
+      <ul>
+        <li>Sign in to your Mac with your company account</li>
+        <li>Connect to Wi-Fi</li>
+        <li>Complete MFA using your approved iOS authentication app</li>
+        <li>Allow automated enrollment and setup to finish</li>
+        <li>Connect to Zscaler</li>
+        <li>Access Microsoft 365 and local Office applications</li>
+        <li>Use Self Service to install approved apps</li>
+      </ul>
+    </section>
+
+    <section>
+      <title>What happens during managed setup</title>
+      <p>When you turn on a new or reissued company-managed Mac, the device may automatically enroll in your organization’s device management system. In many enterprise environments, this process is supported by Apple Business Manager and a management platform such as Jamf.</p>
+      <p>During setup, your Mac may automatically apply company settings, security controls, certificates, applications, and other required configurations. Some tasks may complete in the background after you sign in.</p>
+    </section>
+  </conbody>
+</concept>

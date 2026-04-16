@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="managed-mac-apps">
+  <title>Connect to Company Services and Install Approved Apps</title>
+  <shortdesc>Use these steps to connect to the secure company Wi-Fi network, verify Microsoft 365 access, and install approved apps from Self Service.</shortdesc>
+  <taskbody>
+    <context>
+      <p>After initial setup is complete, you may need to connect to additional company services and verify access to required applications.</p>
+    </context>
+
+    <steps>
+      <step>
+        <cmd>Connect to the secure company Wi-Fi network if you are in a company office or your organization requires it.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Select the <uicontrol>Wi-Fi</uicontrol> icon in the menu bar.</cmd>
+          </substep>
+          <substep>
+            <cmd>Choose the approved secure company wireless network.</cmd>
+            <info>Example: <codeph>MyCompany-Secure</codeph></info>
+          </substep>
+          <substep>
+            <cmd>Enter your credentials if prompted.</cmd>
+          </substep>
+          <substep>
+            <cmd>Confirm that the Wi-Fi icon shows an active connection.</cmd>
+          </substep>
+        </substeps>
+      </step>
+
+      <step>
+        <cmd>Verify access to Microsoft 365 and Office applications.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Open an application such as <uicontrol>Outlook</uicontrol> or <uicontrol>Word</uicontrol>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Sign in with your company account if prompted.</cmd>
+            <info>Example: <codeph>jbob@mycompany.com</codeph></info>
+          </substep>
+          <substep>
+            <cmd>Complete MFA if required.</cmd>
+          </substep>
+          <substep>
+            <cmd>Confirm that the application opens and your account is recognized.</cmd>
+          </substep>
+        </substeps>
+        <info>If setting up Outlook, make sure Zscaler is connected first if required by your organization.</info>
+      </step>
+
+      <step>
+        <cmd>Open Self Service and install approved apps if needed.</cmd>
+        <substeps>
+          <substep>
+            <cmd>Open <uicontrol>Applications</uicontrol>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Select <uicontrol>Self Service</uicontrol>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Sign in if prompted.</cmd>
+          </substep>
+          <substep>
+            <cmd>Browse available applications.</cmd>
+          </substep>
+          <substep>
+            <cmd>Select the app you need.</cmd>
+          </substep>
+          <substep>
+            <cmd>Select <uicontrol>Install</uicontrol>.</cmd>
+          </substep>
+          <substep>
+            <cmd>Wait for installation to complete.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    </steps>
+
+    <example>
+      <title>Examples of apps that may be available in Self Service</title>
+      <ul>
+        <li>Microsoft Outlook</li>
+        <li>Microsoft Word</li>
+        <li>Microsoft Excel</li>
+        <li>Microsoft Teams</li>
+        <li>Google Chrome</li>
+        <li>Zoom</li>
+      </ul>
+    </example>
+
+    <result>
+      <p>You have verified access to company services and can install approved applications as needed.</p>
+    </result>
+  </taskbody>
+</task>
