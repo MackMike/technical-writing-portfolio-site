@@ -62,7 +62,7 @@ This sample demonstrates my ability to turn an internal administrative workflow 
 ## View the Project
 
 - **View project page:** [Migrate User Administrative Tool Project](https://mackmike.github.io/technical-writing-portfolio-site/projects/migrate-user-administrative-tool/)
-- **View Markdown/source:** [Migrate User Administrative Tool Project Source](https://mackmike.github.io/technical-writing-portfolio-site/projects/migrate-user-administrative-tool.md)
+- **View Markdown/source:** [Migrate User Administrative Tool Project Source](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/migrate-user-administrative-tool.md)
 - **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
