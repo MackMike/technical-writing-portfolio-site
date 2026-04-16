@@ -52,7 +52,7 @@ This sample demonstrates the value of technical editing as a core documentation 
 ## View the Project
 - **View final sample:** [Apache OpenOffice Technical Editing](https://mackmike.github.io/technical-writing-portfolio-site/projects/openoffice-technical-editing/)
 - **View Markdown/source:** [Apache OpenOffice Technical Editing Source](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/openoffice-technical-editing.md)
-- **View repository:**  [GitHub Repository](https://github.com/MackMike)
+- **View repository:**  [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
 Technical editing, copyediting, content editing, structural editing, end-user documentation/Users/macmike/Desktop/Cleanup By Project/OpenOffice/Links/Project Link/Apache OpenOffice Technical Editing - Michael Scarborough Technical Writing Portfolio.webloc
