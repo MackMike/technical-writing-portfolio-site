@@ -18,7 +18,7 @@ Task-based end-user documentation for setting up a company-managed macOS device 
 ### [KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs](projects/jamf-managed-mac-compliance-troubleshooting.md)
 Internal knowledge base documentation for diagnosing and remediating compliance failures on Jamf-managed Macs. Demonstrates structured troubleshooting, remediation guidance, and support-focused writing for technical teams.
 
-### [Migrate User Administrative Tool Documentation](projects/migrate-user.md)
+### [Migrate User Administrative Tool Documentation](projects/migration-tool-project.md)
 Administrator documentation for an AppleScript-based tool used to restore ownership and group permissions after macOS reimaging. Demonstrates tool documentation, warning and prompt revision, maintainable commenting, and admin-focused messaging.
 
 ### [Apache OpenOffice Technical Editing](projects/openoffice-technical-editing.md)
