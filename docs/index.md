@@ -27,6 +27,10 @@ Administrator documentation for an AppleScript-based tool used to restore owners
 ### [DITA Sample: Managed macOS Onboarding Guide](projects/dita-managed-mac-onboarding.md)
 A structured authoring sample that adapts a managed macOS onboarding guide into DITA using concept, task, reference, troubleshooting, and map-based organization. Demonstrates foundational DITA skills, structured XML authoring, and topic-based documentation design.
 
+---
+
+## Additional Samples
+
 ### [Apache OpenOffice Technical Editing](projects/openoffice-technical-editing-project.md)
 Technical editing sample based on published Apache OpenOffice documentation. Demonstrates structural editing, clarity improvements, consistency editing, and before-and-after editorial examples.
 
