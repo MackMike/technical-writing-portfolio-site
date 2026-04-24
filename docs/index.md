@@ -47,11 +47,11 @@ A Markdown-based user guide created to apply technical writing principles to leg
 - User guides
 - Knowledge base and troubleshooting content
 - Process and workflow documentation
-- Markdown, XML, and GitHub-based documentation
+- Procedural and task-based writing
+- Markdown, XML, GitHub, and version-controlled documentation workflows
 - Structured authoring and DITA fundamentals
 - Topic-based writing
 - macOS and enterprise IT documentation
-
 ---
 
 ## Quick Links
