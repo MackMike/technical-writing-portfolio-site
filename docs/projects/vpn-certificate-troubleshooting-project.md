@@ -42,8 +42,8 @@ The goal of this documentation is to help internal support teams diagnose certif
 This sample demonstrates the ability to create effective internal support documentation for enterprise macOS environments, particularly where access, identity, and security workflows intersect. It shows how technical writing can improve troubleshooting consistency, support faster remediation, and present certificate- and VPN-related support workflows in a clear, usable format for IT teams.
 
 ## View the Project
-- **View final sample:** [Troubleshoot VPN Certificate Issues on Managed macOS Devices](https://mackmike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-managed-macos)
-- **View Markdown/source:** [vpn-certificate-troubleshooting-managed-macos-final.md](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/vpn-certificate-troubleshooting-managed-macos-final.md)
+- **View final sample:** [Troubleshoot VPN Certificate Issues on Managed macOS Devices](https://mackmike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-managed-macos/)
+- **View Markdown/source:** [vpn-certificate-troubleshooting-managed-macos.md](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/vpn-certificate-troubleshooting-managed-macos.md)
 - **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
