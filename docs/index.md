@@ -18,11 +18,14 @@ Task-based end-user documentation for setting up a company-managed macOS device 
 ### [KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs](projects/jamf-managed-mac-compliance-troubleshooting.md)
 Internal knowledge base documentation for diagnosing and remediating compliance failures on Jamf-managed Macs. Demonstrates structured troubleshooting, remediation guidance, and support-focused writing for technical teams.
 
-### [DITA Sample: Managed macOS Onboarding Guide](projects/dita-managed-mac-onboarding.md)
-A structured authoring sample that adapts a managed macOS onboarding guide into DITA using concept, task, reference, troubleshooting, and map-based organization. Demonstrates foundational DITA skills, structured XML authoring, and topic-based documentation design.
+### [KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices](projects/vpn-certificate-troubleshooting-project.md)
+Internal knowledge base documentation for diagnosing and resolving certificate-related VPN connection failures on managed macOS devices. Demonstrates structured troubleshooting, endpoint management awareness, escalation guidance, and support-focused writing for enterprise IT teams.
 
 ### [Migrate User Administrative Tool Documentation](projects/migration-tool-project.md)
 Administrator documentation for an AppleScript-based tool used to restore ownership and group permissions after macOS reimaging. Demonstrates tool documentation, warning, and prompt revision, maintainable commenting, and admin-focused messaging.
+
+### [DITA Sample: Managed macOS Onboarding Guide](projects/dita-managed-mac-onboarding.md)
+A structured authoring sample that adapts a managed macOS onboarding guide into DITA using concept, task, reference, troubleshooting, and map-based organization. Demonstrates foundational DITA skills, structured XML authoring, and topic-based documentation design.
 
 ### [Apache OpenOffice Technical Editing](projects/openoffice-technical-editing-project.md)
 Technical editing sample based on published Apache OpenOffice documentation. Demonstrates structural editing, clarity improvements, consistency editing, and before-and-after editorial examples.
