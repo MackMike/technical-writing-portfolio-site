@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://MackMike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-managed-macos/">
       
       
+        <link rel="prev" href="../jamf-managed-mac-compliance-troubleshooting/">
+      
+      
+        <link rel="next" href="../migration-tool-project/">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>Troubleshooting VPN Certificate Issues on Managed macOS Devices - Michael Scarborough Technical Writing Portfolio</title>
+        <title>KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices - Michael Scarborough Technical Writing Portfolio</title>
       
     
     
@@ -108,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Troubleshooting VPN Certificate Issues on Managed macOS Devices
+              KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices
             
           </span>
         </div>
@@ -282,18 +286,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -314,7 +320,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -385,10 +391,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../project/vpn-certificate-troubleshooting-managed-macos.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -404,6 +437,431 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Audience
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-failure-domains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Domains
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-you-begin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before You Begin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-confirm-the-device-is-still-enrolled-and-current-in-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Confirm the Device Is Still Enrolled and Current in Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Confirm the Device Is Still Enrolled and Current in Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-verify-that-the-expected-certificate-is-present-and-valid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Verify That the Expected Certificate Is Present and Valid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Verify That the Expected Certificate Is Present and Valid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signs-of-certificate-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signs of Certificate Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-review-vpn-profile-and-client-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Review VPN Profile and Client Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Review VPN Profile and Client Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-compare-local-certificate-and-profile-state-with-management-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Compare Local Certificate and Profile State with Management Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Compare Local Certificate and Profile State with Management Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-validate-user-identity-and-certificate-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Validate User Identity and Certificate Alignment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Validate User Identity and Certificate Alignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-standard-remediation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Standard Remediation Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Standard Remediation Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refresh-management-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refresh Management State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redeploy-the-certificate-or-vpn-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redeploy the Certificate or VPN Profile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-stale-or-conflicting-vpn-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove Stale or Conflicting VPN Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retry-certificate-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retry Certificate Renewal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-when-to-remove-and-re-enroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. When to Remove and Re-enroll
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. When to Remove and Re-enroll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indications-for-re-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indications for Re-enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-checks-before-re-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Checks Before Re-enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-re-enrollment-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Re-enrollment Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-escalation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Escalation Criteria
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#escalation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escalation Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
