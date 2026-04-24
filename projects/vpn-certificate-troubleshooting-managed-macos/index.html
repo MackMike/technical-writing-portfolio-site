@@ -21,7 +21,7 @@
     
     
       
-        <title>KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices - Michael Scarborough Technical Writing Portfolio</title>
+        <title>Troubleshooting VPN Certificate Issues on Managed macOS Devices - Michael Scarborough Technical Writing Portfolio</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kb-article-troubleshooting-vpn-certificate-issues-on-managed-macos-devices" class="md-skip">
+        <a href="#troubleshooting-vpn-certificate-issues-on-managed-macos-devices" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices
+              Troubleshooting VPN Certificate Issues on Managed macOS Devices
             
           </span>
         </div>
@@ -527,17 +527,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#audience" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -549,10 +538,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation-goal" class="md-nav__link">
+  <a href="#scope" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Documentation Goal
+        Scope
       
     </span>
   </a>
@@ -560,10 +549,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#what-this-sample-demonstrates" class="md-nav__link">
+  <a href="#common-failure-domains" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What This Sample Demonstrates
+        Common Failure Domains
       
     </span>
   </a>
@@ -571,10 +560,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tools-methods" class="md-nav__link">
+  <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tools / Methods
+        Before You Begin
       
     </span>
   </a>
@@ -582,10 +571,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-writing-considerations" class="md-nav__link">
+  <a href="#workflow-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges / Writing Considerations
+        Workflow Summary
       
     </span>
   </a>
@@ -593,10 +582,327 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deliverables" class="md-nav__link">
+  <a href="#1-confirm-the-device-is-still-enrolled-and-current-in-management" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Deliverables
+        1. Confirm the Device Is Still Enrolled and Current in Management
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Confirm the Device Is Still Enrolled and Current in Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-verify-that-the-expected-certificate-is-present-and-valid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Verify That the Expected Certificate Is Present and Valid
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Verify That the Expected Certificate Is Present and Valid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#signs-of-certificate-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Signs of Certificate Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-review-vpn-profile-and-client-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Review VPN Profile and Client Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Review VPN Profile and Client Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-compare-local-certificate-and-profile-state-with-management-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Compare Local Certificate and Profile State with Management Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Compare Local Certificate and Profile State with Management Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-validate-user-identity-and-certificate-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Validate User Identity and Certificate Alignment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Validate User Identity and Certificate Alignment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#common-failure-patterns_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Failure Patterns
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remediation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-standard-remediation-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Standard Remediation Actions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Standard Remediation Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refresh-management-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Refresh Management State
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redeploy-the-certificate-or-vpn-profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redeploy the Certificate or VPN Profile
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remove-stale-or-conflicting-vpn-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remove Stale or Conflicting VPN Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#retry-certificate-renewal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retry Certificate Renewal
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-when-to-remove-and-re-enroll" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. When to Remove and Re-enroll
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. When to Remove and Re-enroll">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indications-for-re-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indications for Re-enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pre-checks-before-re-enrollment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Checks Before Re-enrollment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommended-re-enrollment-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recommended Re-enrollment Approach
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-escalation-criteria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Escalation Criteria
       
     </span>
   </a>
@@ -604,10 +910,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outcome-why-it-matters" class="md-nav__link">
+  <a href="#escalation-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Outcome / Why It Matters
+        Escalation Checklist
       
     </span>
   </a>
@@ -615,21 +921,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#view-the-project" class="md-nav__link">
+  <a href="#summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        View the Project
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-skills" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Skills
+        Summary
       
     </span>
   </a>
@@ -653,57 +948,349 @@
 
 
 
-<h1 id="kb-article-troubleshooting-vpn-certificate-issues-on-managed-macos-devices">KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices</h1>
-<p><strong>One-sentence summary:</strong><br />
-Internal knowledge base article that helps IT support teams diagnose and remediate certificate-related VPN connection failures on managed macOS devices.</p>
-<h2 id="overview">Overview</h2>
-<p>This project is an internal IT knowledge base article for troubleshooting VPN connection failures caused by certificate-related issues on company-managed Macs. The article guides support teams through practical validation and remediation steps, including confirming management status, checking certificate presence and trust, reviewing VPN profile configuration, comparing local state with management data, validating user identity alignment, and determining when re-enrollment or escalation is appropriate. It was written to support consistent triage and faster resolution of authentication and access issues in enterprise macOS environments.</p>
+<h1 id="troubleshooting-vpn-certificate-issues-on-managed-macos-devices">Troubleshooting VPN Certificate Issues on Managed macOS Devices</h1>
+<p>This article describes how to diagnose and remediate certificate-related VPN connection failures on managed macOS devices. Use it to determine whether the issue is caused by missing or expired certificates, failed profile deployment, broken MDM state, identity mismatch, stale VPN configuration, or a broader certificate or network access problem.</p>
 <h2 id="audience">Audience</h2>
 <ul>
 <li>macOS device management engineers</li>
 <li>Desktop support technicians</li>
-<li>Help Desk teams</li>
+<li>Help Desk teams supporting managed macOS devices</li>
 </ul>
-<h2 id="documentation-goal">Documentation Goal</h2>
-<p>The goal of this documentation is to help internal support teams diagnose certificate-based VPN failures efficiently and follow clear remediation steps. It is intended to improve troubleshooting consistency, reduce unnecessary escalations, and shorten time to resolution for managed macOS devices that lose secure remote access.</p>
-<h2 id="what-this-sample-demonstrates">What This Sample Demonstrates</h2>
+<h2 id="scope">Scope</h2>
+<p>Use this workflow when a managed Mac:</p>
 <ul>
-<li>Internal knowledge base writing</li>
-<li>Technical troubleshooting documentation</li>
-<li>Remediation-focused procedural writing</li>
-<li>Writing for enterprise IT support audiences</li>
-<li>Clear organization of authentication and access workflows</li>
+<li>fails to connect to the company VPN during certificate-based authentication</li>
+<li>repeatedly prompts for a certificate or credentials</li>
+<li>appears to have lost access after reenrollment, password reset, reimage, or profile update</li>
+<li>is missing the expected client certificate in Keychain Access</li>
+<li>appears correctly enrolled but cannot authenticate to VPN resources</li>
 </ul>
-<h2 id="tools-methods">Tools / Methods</h2>
+<h2 id="common-failure-domains">Common Failure Domains</h2>
+<p>Most certificate-related VPN failures fall into one of the following categories:</p>
 <ul>
-<li>Markdown</li>
-<li>MkDocs</li>
-<li>GitHub</li>
-<li>Version-controlled documentation workflow</li>
-<li>Internal knowledge base documentation practices</li>
+<li>missing client certificate</li>
+<li>expired or untrusted certificate</li>
+<li>failed certificate or VPN profile deployment</li>
+<li>broken or incomplete MDM enrollment</li>
+<li>stale or conflicting VPN configuration</li>
+<li>identity or certificate mapping mismatch</li>
+<li>device compliance state, blocking profile delivery, or access</li>
+<li>certificate chain or trust issue</li>
+<li>upstream identity, certificate, or VPN gateway problem</li>
 </ul>
-<h2 id="challenges-writing-considerations">Challenges / Writing Considerations</h2>
+<h2 id="before-you-begin">Before You Begin</h2>
+<p>Collect the following:</p>
 <ul>
-<li>This article was written for a technical internal audience, so it needed to be concise, efficient, and immediately useful during support work.</li>
-<li>A key writing challenge was organizing a troubleshooting workflow that accounts for multiple overlapping failure domains, including certificate state, management health, VPN profile configuration, identity alignment, and broader infrastructure dependencies.</li>
-<li>The content also needed to reflect realistic enterprise macOS support workflows while remaining broadly applicable across managed environments using certificate-based VPN authentication.</li>
+<li>computer name</li>
+<li>serial number</li>
+<li>assigned user</li>
+<li>macOS version</li>
+<li>MDM enrollment status</li>
+<li>recent check-in or inventory timestamp</li>
+<li>current VPN client or configuration name</li>
+<li>certificate name, if known</li>
+<li>recent lifecycle events such as reenrollment, password reset, reimage, profile update, or OS update</li>
 </ul>
-<h2 id="deliverables">Deliverables</h2>
+<p>If available, also collect:</p>
 <ul>
-<li>Internal knowledge base article</li>
-<li>Structured troubleshooting workflow</li>
-<li>Practical remediation and escalation guidance</li>
+<li>the exact VPN error message</li>
+<li>screenshots of the VPN prompt or failure</li>
+<li>profile deployment status</li>
+<li>certificate expiration date</li>
+<li>trust warnings shown in Keychain Access</li>
+<li>recent identity or access policy changes affecting the user</li>
 </ul>
-<h2 id="outcome-why-it-matters">Outcome / Why It Matters</h2>
-<p>This sample demonstrates the ability to create effective internal support documentation for enterprise macOS environments, particularly where access, identity, and security workflows intersect. It shows how technical writing can improve troubleshooting consistency, support faster remediation, and present certificate- and VPN-related support workflows in a clear, usable format for IT teams.</p>
-<h2 id="view-the-project">View the Project</h2>
+<h2 id="workflow-summary">Workflow Summary</h2>
+<p>Follow this sequence:</p>
+<ol>
+<li>Confirm the device is still enrolled and current in management</li>
+<li>Verify that the expected certificate is present and valid</li>
+<li>Review VPN profile and client configuration</li>
+<li>Compare local certificate and profile state with management data</li>
+<li>Validate user identity and certificate alignment</li>
+<li>Refresh management and redeploy affected profiles if needed</li>
+<li>Re-enroll only if the management relationship is broken</li>
+<li>Escalate certificate, identity, or gateway issues when local remediation does not resolve the failure</li>
+</ol>
+<hr />
+<h2 id="1-confirm-the-device-is-still-enrolled-and-current-in-management">1. Confirm the Device Is Still Enrolled and Current in Management</h2>
+<p>In the MDM console, review the device record.</p>
+<p>Validate:</p>
 <ul>
-<li><strong>View final sample:</strong> <a href="https://mackmike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-managed-macos-final/">Troubleshoot VPN Certificate Issues on Managed macOS Devices</a></li>
-<li><strong>View Markdown/source:</strong> <a href="https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/vpn-certificate-troubleshooting-managed-macos-final.md">vpn-certificate-troubleshooting-managed-macos-final.md</a></li>
-<li><strong>View repository:</strong> <a href="https://github.com/MackMike/michael-scarborough-technical-writing-portfolio">GitHub Repository</a></li>
+<li>recent check-in or inventory activity</li>
+<li>management status</li>
+<li>assigned user</li>
+<li>compliance status</li>
+<li>required certificate, VPN, and security profile scope</li>
 </ul>
-<h2 id="related-skills">Related Skills</h2>
-<p>Technical writing, knowledge base writing, troubleshooting documentation, internal IT documentation, enterprise macOS documentation</p>
+<h3 id="interpretation">Interpretation</h3>
+<ul>
+<li><strong>Current check-in with missing VPN functionality</strong> usually means the device is enrolled, but a certificate, profile, or identity dependency is failing.</li>
+<li><strong>Stale check-in and missing certificate or profile state</strong> may indicate broken management connectivity or incomplete enrollment.</li>
+<li><strong>Current record with failed access</strong> may point to certificate trust, profile conflict, or VPN-side rejection.</li>
+</ul>
+<h3 id="remediation">Remediation</h3>
+<p>If the device is out of compliance, not checking in, or missing required management state, resolve that issue first before troubleshooting the VPN workflow further.</p>
+<p>If the device appears current in management, continue to certificate validation.</p>
+<hr />
+<h2 id="2-verify-that-the-expected-certificate-is-present-and-valid">2. Verify That the Expected Certificate Is Present and Valid</h2>
+<p>On the Mac, open <strong>Keychain Access</strong> and confirm that the required client certificate is installed.</p>
+<p>Review:</p>
+<ul>
+<li>whether the expected certificate is present</li>
+<li>which keychain contains it</li>
+<li>whether the associated private key is present</li>
+<li>the certificate expiration date</li>
+<li>whether the certificate is trusted</li>
+</ul>
+<h3 id="signs-of-certificate-problems">Signs of Certificate Problems</h3>
+<ul>
+<li>the certificate is missing entirely</li>
+<li>the certificate is present but expired</li>
+<li>the certificate is present but marked untrusted</li>
+<li>the expected private key is missing</li>
+<li>the certificate appears in the wrong keychain</li>
+<li>multiple similar certificates create ambiguity about which identity should be used</li>
+</ul>
+<h3 id="remediation_1">Remediation</h3>
+<p>If the certificate is missing:</p>
+<ul>
+<li>verify that the relevant certificate payload is still scoped</li>
+<li>verify whether profile deployment failed</li>
+<li>proceed to profile and management refresh steps</li>
+</ul>
+<p>If the certificate is expired:</p>
+<ul>
+<li>renew or redeploy it through the standard management workflow</li>
+<li>confirm that renewal services are reachable</li>
+<li>recheck the certificate after deployment</li>
+</ul>
+<p>If the certificate is present but not trusted:</p>
+<ul>
+<li>review intermediate and root certificate presence</li>
+<li>check whether a trust chain issue affects multiple devices</li>
+<li>escalate if the certificate chain appears broadly invalid</li>
+</ul>
+<p>If the certificate appears healthy, continue to VPN configuration review.</p>
+<hr />
+<h2 id="3-review-vpn-profile-and-client-configuration">3. Review VPN Profile and Client Configuration</h2>
+<p>Confirm that the expected VPN configuration is present and uses the intended authentication method.</p>
+<p>Validate:</p>
+<ul>
+<li>the VPN configuration name</li>
+<li>whether the correct managed VPN profile is installed</li>
+<li>whether a separate VPN client is in use</li>
+<li>whether the configuration expects certificate-based authentication</li>
+<li>whether duplicate or stale VPN configurations exist</li>
+</ul>
+<h3 id="common-failure-patterns">Common Failure Patterns</h3>
+<ul>
+<li>the correct VPN profile is missing</li>
+<li>an outdated VPN profile remains after a profile update</li>
+<li>a user-installed VPN configuration conflicts with the managed one</li>
+<li>the VPN client is outdated</li>
+<li>the VPN profile is present but is not using the intended certificate identity</li>
+</ul>
+<h3 id="remediation_2">Remediation</h3>
+<p>If the VPN profile is missing:</p>
+<ol>
+<li>Confirm the device is in scope for the correct profile</li>
+<li>Confirm MDM commands are completing</li>
+<li>Redeploy the profile if permitted by your workflow</li>
+<li>Validate the profile locally after deployment</li>
+</ol>
+<p>If duplicate or conflicting VPN entries exist:</p>
+<ul>
+<li>remove stale or conflicting entries according to your support policy</li>
+<li>retain the managed configuration</li>
+<li>retry the connection after cleanup</li>
+</ul>
+<p>If the configuration appears correct, continue to management and local-state comparison.</p>
+<hr />
+<h2 id="4-compare-local-certificate-and-profile-state-with-management-data">4. Compare Local Certificate and Profile State with Management Data</h2>
+<p>Do not assume management data reflects the current local state.</p>
+<p>Compare the management record with the Mac for:</p>
+<ul>
+<li>certificate presence</li>
+<li>VPN profile presence</li>
+<li>assigned user</li>
+<li>compliance state</li>
+<li>recent profile deployment activity</li>
+</ul>
+<h3 id="interpretation_1">Interpretation</h3>
+<ul>
+<li><strong>Correct local state with stale management data</strong> usually points to delayed check-in or inventory reporting.</li>
+<li><strong>Correct management scope with missing local profile or certificate</strong> usually points to failed deployment or broken management delivery.</li>
+<li><strong>Correct local profile and certificate with failed VPN access</strong> may indicate identity mismatch, trust issues, or gateway-side rejection.</li>
+</ul>
+<h3 id="remediation_3">Remediation</h3>
+<p>If the local state appears correct but management data is stale:</p>
+<ul>
+<li>run the standard inventory or management refresh workflow</li>
+<li>recheck the device record</li>
+<li>confirm whether downstream systems have refreshed</li>
+</ul>
+<p>If the local state is missing profiles or certificates that should be present:</p>
+<ul>
+<li>validate profile scope</li>
+<li>review command history if available</li>
+<li>proceed to profile redeployment or management refresh</li>
+</ul>
+<hr />
+<h2 id="5-validate-user-identity-and-certificate-alignment">5. Validate User Identity and Certificate Alignment</h2>
+<p>Certificate-based VPN access may fail even when the certificate and profile appear present.</p>
+<p>Confirm:</p>
+<ul>
+<li>the user is signed in with the correct managed account</li>
+<li>the device is assigned to the correct user in management systems</li>
+<li>the certificate subject or identity mapping matches the intended user</li>
+<li>recent password or identity changes have not affected access</li>
+<li>the user still meets any access or compliance conditions required by the VPN service</li>
+</ul>
+<h3 id="common-failure-patterns_1">Common Failure Patterns</h3>
+<ul>
+<li>the user signs in with the wrong account</li>
+<li>the certificate belongs to a different or older identity</li>
+<li>the user was reassigned but the device record was not updated</li>
+<li>an identity provider change affects certificate validation or authorization</li>
+<li>the certificate is valid locally, but the VPN gateway rejects the mapped identity</li>
+</ul>
+<h3 id="remediation_4">Remediation</h3>
+<p>If identity or mapping problems are suspected:</p>
+<ul>
+<li>confirm the assigned user in the management system</li>
+<li>review certificate subject details</li>
+<li>verify whether recent access policy changes apply</li>
+<li>escalate to the identity or access team if mapping appears incorrect outside the device</li>
+</ul>
+<p>If identity alignment appears correct, continue to standard remediation actions.</p>
+<hr />
+<h2 id="6-standard-remediation-actions">6. Standard Remediation Actions</h2>
+<p>Apply the least disruptive remediation first.</p>
+<h3 id="refresh-management-state">Refresh Management State</h3>
+<p>Use when the device appears enrolled and healthy, but management data or profile delivery may be stale.</p>
+<ul>
+<li>trigger a standard management sync</li>
+<li>ask the user to open the approved self-service or management portal, if applicable</li>
+<li>force a policy or profile refresh if supported</li>
+<li>recheck certificate and profile state afterward</li>
+</ul>
+<h3 id="redeploy-the-certificate-or-vpn-profile">Redeploy the Certificate or VPN Profile</h3>
+<p>Use when the required certificate or VPN profile is missing, expired, or incorrectly installed.</p>
+<ul>
+<li>confirm the device is in scope</li>
+<li>redeploy the affected profile or certificate payload</li>
+<li>confirm installation completes successfully</li>
+<li>validate certificate presence in Keychain Access</li>
+<li>retry the VPN connection</li>
+</ul>
+<h3 id="remove-stale-or-conflicting-vpn-configuration">Remove Stale or Conflicting VPN Configuration</h3>
+<p>Use when duplicate or outdated VPN settings are present.</p>
+<ul>
+<li>remove stale or user-created conflicting entries according to policy</li>
+<li>retain the managed VPN configuration</li>
+<li>reapply the managed profile if needed</li>
+<li>retry the connection</li>
+</ul>
+<h3 id="retry-certificate-renewal">Retry Certificate Renewal</h3>
+<p>Use when the certificate exists but has expired or failed to renew.</p>
+<ul>
+<li>confirm the renewal workflow is still valid</li>
+<li>verify connectivity to required certificate services</li>
+<li>redeploy or renew using the standard certificate workflow</li>
+<li>validate the renewed certificate locally</li>
+</ul>
+<hr />
+<h2 id="7-when-to-remove-and-re-enroll">7. When to Remove and Re-enroll</h2>
+<p>Re-enrollment should not be the first remediation step. Use it when the management relationship itself is broken.</p>
+<h3 id="indications-for-re-enrollment">Indications for Re-enrollment</h3>
+<p>Proceed to re-enrollment if one or more of these are true:</p>
+<ul>
+<li>the required management profile is missing</li>
+<li>profile deployment repeatedly fails despite correct scope</li>
+<li>the certificate payload cannot be restored through normal management workflows</li>
+<li>management commands consistently fail or remain unacknowledged</li>
+<li>the Mac was partially unenrolled, erased, restored, or reimaged</li>
+<li>the device record and local management state are clearly out of sync</li>
+</ul>
+<h3 id="pre-checks-before-re-enrollment">Pre-Checks Before Re-enrollment</h3>
+<p>Before removing anything, verify:</p>
+<ul>
+<li>whether the device is expected to use Automated Device Enrollment or another standard enrollment workflow</li>
+<li>whether the user can complete any required setup steps</li>
+<li>whether certificates, VPN settings, or related security tools will need to be restored</li>
+<li>whether FileVault and recovery workflows are preserved according to policy</li>
+</ul>
+<h3 id="recommended-re-enrollment-approach">Recommended Re-enrollment Approach</h3>
+<p>Use the organization’s approved reenrollment workflow. In general:</p>
+<ol>
+<li>Document the current state</li>
+<li>serial number</li>
+<li>assigned user</li>
+<li>certificate state</li>
+<li>VPN configuration state</li>
+<li>recent errors</li>
+<li>
+<p>remediation steps already attempted</p>
+</li>
+<li>
+<p>Remove broken management artifacts only if approved by your process</p>
+</li>
+<li>
+<p>Re-enroll the Mac using the approved method</p>
+</li>
+<li>
+<p>Confirm the following after enrollment</p>
+</li>
+<li>the management profile is present</li>
+<li>the device checks in successfully</li>
+<li>the required certificate installs</li>
+<li>the required VPN profile installs</li>
+<li>the user can authenticate successfully if no upstream issue remains</li>
+</ol>
+<h3 id="important">Important</h3>
+<p>If your environment treats full erase-and-reprovision as the trusted recovery path for broken management state, follow that process instead of manual cleanup.</p>
+<hr />
+<h2 id="8-escalation-criteria">8. Escalation Criteria</h2>
+<p>Escalate after standard remediation only if the issue remains in one of the following categories:</p>
+<ul>
+<li>certificate chain or trust failure</li>
+<li>repeated certificate deployment or renewal failure</li>
+<li>persistent identity mapping problem</li>
+<li>VPN gateway rejection despite correct local certificate and profile state</li>
+<li>broad profile deployment or management failure</li>
+<li>repeated reenrollment failure</li>
+<li>infrastructure issues affecting certificate, identity, or VPN services</li>
+</ul>
+<h2 id="escalation-checklist">Escalation Checklist</h2>
+<p>Include:</p>
+<ul>
+<li>computer name</li>
+<li>serial number</li>
+<li>assigned user</li>
+<li>macOS version</li>
+<li>recent management check-in or inventory timestamp</li>
+<li>certificate name and expiration date</li>
+<li>VPN configuration name</li>
+<li>MDM or management profile status</li>
+<li>profile deployment status</li>
+<li>exact VPN symptom or error</li>
+<li>screenshots, if available</li>
+<li>remediation steps already performed</li>
+<li>recent lifecycle changes such as password reset, reenrollment, reimage, or OS update</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>When a managed Mac fails certificate-based VPN authentication:</p>
+<ol>
+<li>confirm the device is still managed and current</li>
+<li>validate certificate presence, trust, and expiration</li>
+<li>review VPN profile and client configuration</li>
+<li>compare local state with management data</li>
+<li>verify user identity and certificate alignment</li>
+<li>apply the least disruptive remediation first</li>
+<li>re-enroll only when the management relationship is broken</li>
+<li>escalate certificate, identity, or gateway problems when local remediation does not resolve the issue</li>
+</ol>
 
 
 
