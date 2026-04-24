@@ -2,11 +2,11 @@
 
 ## Technical Writer and Editor
 
-Technical writer and editor with a background in macOS systems engineering and enterprise IT. I create administrator guides, user documentation, knowledge base articles, workflow documentation, and structured writing samples for technical teams and end users.
+Technical writer and editor with a background in macOS systems engineering and enterprise IT. I create user guides, administrator documentation, knowledge base articles, workflow documentation, and structured writing samples for technical teams and end users.
 
-My experience includes documenting real-world macOS and IT support workflows, with a focus on clarity, structure, usability, and audience-appropriate communication. I also serve as a Technical Editor for Apache OpenOffice documentation, where I review and improve published user guide content for consistency, readability, and technical accuracy.
+My experience includes documenting real-world technical workflows in support, administration, and enterprise environments, with a focus on clarity, structure, usability, and audience-appropriate communication. I also serve as a Technical Editor for Apache OpenOffice documentation, reviewing and improving published user guide content for consistency, readability, and technical accuracy.
 
-This portfolio includes selected writing and editing samples in Markdown, XML, and GitHub-based formats, including onboarding guides, troubleshooting content, administrator documentation, technical editing work, and introductory DITA-based structured authoring samples. I have also completed Scriptorium’s *Introduction to DITA* course, with additional interest in structured authoring and modern documentation workflows.
+This portfolio includes selected writing and editing samples in Markdown, XML, and GitHub-based formats, including onboarding guides, troubleshooting content, administrator documentation, technical editing work, and introductory DITA-based structured authoring samples. I have also completed Scriptorium’s *Introduction to DITA* course and have a strong interest in Markdown-based documentation, structured authoring, and modern documentation workflows.
 
 ---
 
