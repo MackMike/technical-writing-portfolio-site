@@ -28,9 +28,9 @@ Technical writer and editor with a background in macOS systems engineering, endp
 
 ### Aether Project Generalist — Outlier AI
 **Dec 2025–Present**
-- Evaluate and improve AI-generated content for grammar, clarity, coherence, and communication quality.
-- Apply editorial judgment to strengthen readability, consistency, tone, and audience appropriateness.
-- Support language quality efforts requiring close review of structure, phrasing, and comprehension.
+-- Evaluate and improve AI-generated content for grammar, clarity, coherence, and communication quality.
+-- Apply editorial judgment to strengthen readability, consistency, tone, and audience appropriateness.
+-- Support language quality efforts requiring close review of structure, phrasing, and comprehension.
 
 ### macOS Systems Engineer — BlackRock, Inc.
 **Mar 2018–Mar 2024**
