@@ -3,6 +3,8 @@ site_url: https://MackMike.github.io/technical-writing-portfolio-site/
 
 theme:
   name: material
+  logo: assets/pdfs/logo.svg
+  favicon: images/favicon.png
 
 extra:
   analytics:
