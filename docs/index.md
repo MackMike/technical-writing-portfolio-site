@@ -39,19 +39,22 @@ A Markdown-based user guide created to apply technical writing principles to leg
 
 ---
 
-## Documentation Strengths
+## Skills
 
-- Technical writing
-- Technical editing
-- Administrator documentation
-- User guides
+- Technical writing and editing
+- User and administrator documentation
 - Knowledge base and troubleshooting content
 - Process and workflow documentation
 - Procedural and task-based writing
-- Markdown, XML, GitHub, and version-controlled documentation workflows
-- Structured authoring and DITA fundamentals
-- Topic-based writing
-- macOS and enterprise IT documentation
+- Structured authoring and topic-based writing
+
+## Tools
+
+- Markdown
+- GitHub and version-controlled documentation workflows
+DITA / XML (foundational)
+- macOS and Jamf Pro (subject-matter platforms)
+
 ---
 
 ## Quick Links
