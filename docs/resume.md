@@ -1,5 +1,5 @@
 ## Professional Summary
-Technical writer and editor with a background in macOS systems engineering, endpoint management, and enterprise IT. Experienced in creating user guides, administrator documentation, knowledge base content, troubleshooting materials, workflows, playbooks, and process documentation for technical teams and end users. Combines strong writing and editing skills with hands-on expertise in macOS, Jamf Pro, security-focused enterprise environments, and managed device workflows. Portfolio includes Markdown-based documentation, technical editing samples, and introductory DITA-based structured authoring work.
+Technical writer and editor drawing on a deep background in enterprise systems engineering and endpoint management. Experienced in creating user guides, administrator documentation, knowledge base content, troubleshooting materials, workflows, playbooks, and process documentation for technical teams and end users. Combines strong writing and editing skills with hands-on expertise in macOS, Jamf Pro, security-focused enterprise environments, and managed device workflows. Portfolio includes Markdown-based documentation, technical editing samples, and introductory DITA-based structured authoring work.
 
 [Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
 
