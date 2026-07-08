@@ -1,8 +1,8 @@
 # About
 
-I am a technical writer and editor with a background in macOS systems engineering, endpoint management, and enterprise IT. I create user guides, administrator documentation, knowledge base articles, workflow documentation, playbooks, and process content for technical teams and end users.
+I'm a technical writer and editor who turns complex technical systems into documentation people can actually use. I create user guides, administrator documentation, knowledge base articles, workflow documentation, playbooks, and process content for technical teams and end users.
 
-My background in enterprise support and device management gave me regular opportunities to turn complex technical processes into documentation that improved consistency, reduced repeated questions, and helped users and support teams work more effectively. Over time, that documentation work became a central part of my professional focus and led me to pursue technical writing and editing more directly.
+My path into this field came through enterprise IT and device management, where I regularly turned complex technical processes into documentation that improved consistency, reduced repeated questions, and helped users and support teams work more effectively. That work became the part of my job I cared about most, which led me to pursue technical writing and editing directly.
 
 I currently serve as a Technical Editor for Apache OpenOffice documentation, where I review and revise user guide content for clarity, consistency, usability, and technical accuracy. I have also completed Scriptorium’s *Introduction to DITA* course and maintain portfolio samples in Markdown, GitHub-based formats, and introductory DITA XML.
 
