@@ -1,5 +1,5 @@
 ## Professional Summary
-Technical writer and editor drawing on a deep background in enterprise systems engineering and endpoint management. Experienced in creating user guides, administrator documentation, knowledge base content, troubleshooting materials, workflows, playbooks, and process documentation for technical teams and end users. Combines strong writing and editing skills with hands-on expertise in macOS, Jamf Pro, security-focused enterprise environments, and managed device workflows. Portfolio includes Markdown-based documentation, technical editing samples, and introductory DITA-based structured authoring work.
+Technical writer and editor with a background in enterprise systems engineering, endpoint management, and managed-device environments. Experienced in creating user guides, administrator documentation, knowledge base articles, troubleshooting content, workflow documentation, and process materials for technical teams and end users. Combines strong writing and editing skills with hands-on expertise in macOS, Jamf Pro, and security-focused enterprise environments. Portfolio includes Markdown-based documentation, technical editing samples, and foundational DITA-based structured authoring work.
 
 [Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
 
@@ -30,17 +30,17 @@ Technical writer and editor drawing on a deep background in enterprise systems e
 ### Aether Project Generalist — Outlier AI
 **Dec 2025–Present**
 
-* Evaluate and improve AI-generated content for grammar, clarity, coherence, and communication quality.
-* Apply editorial judgment to strengthen readability, consistency, tone, and audience appropriateness.
-* Support language quality efforts requiring close review of structure, phrasing, and comprehension.
+* Review AI-generated content for grammar, clarity, coherence, and communication quality.
+* Apply editorial judgment to improve readability, consistency, tone, and audience appropriateness.
+* Support language quality work requiring close review of structure, phrasing, and comprehension.
 
 ### macOS Systems Engineer — BlackRock, Inc.
 **Mar 2018–Mar 2024**
 
 * Created and maintained internal technical documentation, including how-to guides, knowledge base content, engineering workflows, and evaluations of new technologies.
-* Wrote getting-started documentation for end users to support onboarding and reduce repeated support questions.
-* Documented workflows for engineers and support teams to improve consistency, knowledge sharing, and process adoption.
-* Developed process documentation for a user-elevated-rights automation workflow, reducing manual intervention and supporting IT Support and Help Desk teams.
+* Wrote getting-started documentation for end users to support onboarding and provide a reusable reference for common setup questions.
+* Documented workflows for engineers and support teams to improve consistency, support knowledge sharing, and clarify operational processes.
+* Developed process documentation for a user-elevated-rights automation workflow to support a more consistent and less manual process for IT Support and Help Desk teams.
 * Translated complex macOS administration and security procedures into clear, reusable documentation for technical and operational audiences.
 
 ## Education and Training
