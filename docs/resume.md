@@ -4,6 +4,9 @@ Technical writer and editor with a background in enterprise systems engineering,
 [Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
 
 ## Core Skills
+
+**Documentation**
+
 - Technical writing
 - Technical editing
 - User guides
@@ -11,11 +14,17 @@ Technical writer and editor with a background in enterprise systems engineering,
 - Knowledge base documentation
 - Troubleshooting documentation
 - Process and workflow documentation
+
+**Content and Structure**
+
 - Information architecture
-- Markdown
-- GitHub
 - Structured authoring fundamentals
 - DITA fundamentals
+
+**Tools and Collaboration**
+
+- Markdown
+- GitHub
 - Cross-functional collaboration
 
 ## Selected Experience
