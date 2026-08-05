@@ -39,6 +39,24 @@ A Markdown-based user guide created to apply technical writing principles to leg
 
 ---
 
+## Featured LinkedIn Posts
+
+A small selection of LinkedIn posts that reflect how I think about technical writing, documentation quality, and user-centered communication.
+
+- [Audience Awareness — and Why It Matters](https://tinyurl.com/4x3vuh3j)  
+  On designing documentation for readers with different levels of experience, context, and confidence.
+
+- [Documentation as User Support — and Why It Matters](https://tinyurl.com/4xrru9pv)  
+  On how effective documentation anticipates user questions and reduces the need for support tickets.
+
+- [Administrator Content — and Why It Matters](https://tinyurl.com/2rx58ahp)  
+  On writing administrator documentation that supports higher-impact decisions with clear scope, warnings, and outcomes.
+
+- [Confirmation Before Detail — and Why It Matters](https://tinyurl.com/4rw65rs2)  
+  On structuring troubleshooting content so readers can quickly decide whether a procedure matches their issue.
+  
+---
+
 ## Skills
 
 - Technical writing and editing
