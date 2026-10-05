@@ -180,6 +180,6 @@ Example from the task topic `managed-mac-initial-setup.dita`:
 This excerpt shows how procedural content is structured in DITA, using a task topic, short description, prerequisites, and ordered steps.
 
 ## Notes
-This sample was created as a foundational DITA writing project for a technical writing portfolio. The scope was intentionally limited to core DITA topic types and map structure in order to demonstrate basic structured authoring concepts clearly.
+I created this sample as a foundational DITA writing project for my technical writing portfolio. The scope was intentionally limited to core DITA topic types and map structure in order to demonstrate basic structured authoring concepts clearly.
 
 If needed, this sample could later be expanded to include content reuse, conditional processing, or generated output using a DITA publishing toolchain.
