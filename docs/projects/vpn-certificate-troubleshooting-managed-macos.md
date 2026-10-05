@@ -1,6 +1,6 @@
 # Troubleshooting VPN Certificate Issues on Managed macOS Devices
 
-This article describes how to diagnose and remediate certificate-related VPN connection failures on managed macOS devices. Use it to determine whether the issue is caused by missing or expired certificates, failed profile deployment, broken MDM state, identity mismatch, stale VPN configuration, or a broader certificate or network access problem.
+This article describes how to diagnose and remediate certificate-related VPN connection failures on managed macOS devices. Use it to determine whether the issue is caused by missing or expired certificates, failed profile deployment, a broken MDM state, an identity mismatch, a stale VPN configuration, or a broader certificate or network access problem.
 
 ## Audience
 
@@ -67,6 +67,47 @@ Follow this sequence:
 6. Refresh management and redeploy affected profiles if needed
 7. Re-enroll only if the management relationship is broken
 8. Escalate certificate, identity, or gateway issues when local remediation does not resolve the failure
+
+The diagram below shows the same sequence as a decision path. Each check is explained in detail in the numbered sections that follow.
+
+```mermaid
+flowchart TD
+    Start(["VPN certificate failure on a managed Mac"]) --> S1{"Step 1: Device enrolled and current in management?"}
+
+    S1 -- No --> F1["Resolve the compliance or check-in issue first"]
+    S1 -- Yes --> S2{"Step 2: Certificate present, valid, and trusted?"}
+
+    S2 -- No --> F2["Redeploy or renew the certificate"]
+    S2 -- Yes --> S3{"Step 3: VPN profile correct with no conflicting entries?"}
+
+    S3 -- No --> F3["Redeploy the profile or remove stale VPN entries"]
+    S3 -- Yes --> S4{"Step 4: Local state matches management data?"}
+
+    S4 -- No --> F4["Refresh management state and redeploy missing items"]
+    S4 -- Yes --> S5{"Step 5: User identity aligned with the certificate?"}
+
+    S5 -- No --> F5["Correct the user assignment or certificate mapping"]
+    S5 -- Yes --> Esc
+
+    F1 --> Retry
+    F2 --> Retry
+    F3 --> Retry
+    F4 --> Retry
+    F5 --> Retry
+
+    Retry{"VPN connects?"}
+    Retry -- Yes --> Done(["Resolved"])
+    Retry -- No --> Broken{"Step 7: Management relationship broken?"}
+
+    Broken -- Yes --> Reenroll["Re-enroll using the approved workflow"]
+    Broken -- No --> Esc
+
+    Reenroll --> Retry2{"VPN connects?"}
+    Retry2 -- Yes --> Done
+    Retry2 -- No --> Esc
+
+    Esc(["Step 8: Escalate with the escalation checklist"])
+```
 
 ---
 
