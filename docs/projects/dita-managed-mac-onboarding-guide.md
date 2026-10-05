@@ -22,7 +22,7 @@ Presenting the source files makes it possible to show:
 - Basic structured XML authoring practices
 - Adaptation of an existing Markdown guide into modular DITA topics
 
-For this sample, the structure of the documentation is part of the work being demonstrated.
+For this sample, the documentation structure is part of the work being demonstrated.
 
 ---
 
@@ -41,6 +41,42 @@ This approach shows how the original onboarding guide was divided into reusable 
 ---
 
 ## DITA Documentation Set Structure
+
+The diagram below shows how the DITA map brings together the topics in this sample, grouped by topic type.
+
+```mermaid
+flowchart LR
+    Map(["managed-mac-onboarding.ditamap"])
+
+    subgraph Concept["Concept topic"]
+        C1["managed-mac-overview.dita"]
+    end
+
+    subgraph Reference["Reference topics"]
+        R1["managed-mac-prerequisites.dita"]
+        R2["managed-mac-readiness-check.dita"]
+        R3["managed-mac-support-info.dita"]
+    end
+
+    subgraph Task["Task topics"]
+        T1["managed-mac-initial-setup.dita"]
+        T2["managed-mac-zscaler.dita"]
+        T3["managed-mac-apps.dita"]
+    end
+
+    subgraph Troubleshooting["Troubleshooting topic"]
+        TS1["managed-mac-troubleshooting.dita"]
+    end
+
+    Map --> C1
+    Map --> R1
+    Map --> R2
+    Map --> R3
+    Map --> T1
+    Map --> T2
+    Map --> T3
+    Map --> TS1
+```
 
 This sample includes the following DITA components:
 
@@ -91,7 +127,6 @@ Together, these samples demonstrate flexibility across documentation formats and
 
 ## View the Source Files on GitHub
 
-Replace the placeholder links below with your actual GitHub URLs.
 
 - **View DITA project folder:** [managed-mac-onboarding](https://github.com/MackMike/technical-writing-portfolio-site/tree/main/docs/assets/pdfs/dita/managed-mac-onboarding)
 - **View DITA map:** [managed-mac-onboarding.ditamap](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/pdfs/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
@@ -122,7 +157,7 @@ Below is the topic organization used in this sample:
 
 Example from the task topic `managed-mac-initial-setup.dita`:
 
-```
+```xml
 <task id="managed-mac-initial-setup">
   <title>Set Up Your Managed Mac for First Use</title>
   <shortdesc>Follow these steps to power on the Mac, connect to Wi-Fi, sign in, complete MFA, and allow managed setup to finish.</shortdesc>
