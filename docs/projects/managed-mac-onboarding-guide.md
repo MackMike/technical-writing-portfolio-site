@@ -18,6 +18,27 @@ By the end of this guide, you will be able to:
 
 ---
 
+## Setup at a Glance
+
+The diagram below shows the order of the main setup tasks. Each step is explained in detail in the sections that follow.
+
+```mermaid
+flowchart TD
+    A["Turn on the Mac"] --> B["Connect to Wi-Fi"]
+    B --> C["Sign in with your company account"]
+    C --> D{"Prompted for MFA?"}
+    D -- Yes --> E["Approve on your iOS device"]
+    D -- No --> F
+    E --> F["Allow managed setup to finish"]
+    F --> G["Connect to Zscaler"]
+    G --> H["Connect to secure company Wi-Fi (if applicable)"]
+    H --> I["Open Microsoft 365 and Office apps"]
+    I --> J["Install any missing apps from Self Service"]
+    J --> K(["Your Mac is ready"])
+```
+
+---
+
 ## Before You Begin
 
 Before starting setup, make sure you have:
@@ -246,6 +267,35 @@ When contacting support, include:
 ---
 
 ## Troubleshooting
+
+Use the diagram to find the problem you are having, try the suggested fixes, and then check whether it is resolved. The sections below the diagram list each fix in detail.
+
+```mermaid
+flowchart TD
+    S{"What is not working?"}
+    S --> A["I cannot sign in"]
+    S --> B["MFA is not working"]
+    S --> C["Zscaler is not connecting"]
+    S --> D["Office apps are missing"]
+    S --> E["Self Service is missing"]
+
+    A --> A1["Check email, password, and Wi-Fi, then restart the Mac"]
+    B --> B1["Update the authentication app, then retry with a current code"]
+    C --> C1["Confirm credentials, complete MFA, restart Zscaler"]
+    D --> D1["Install from Self Service, or wait a few minutes"]
+    E --> E1["Wait for enrollment to finish, then restart the Mac"]
+
+    A1 --> R{"Working now?"}
+    B1 --> R
+    C1 --> R
+    D1 --> R
+    E1 --> R
+
+    R -- Yes --> OK(["Continue setup"])
+    R -- No --> IT(["Contact IT support with your serial number"])
+```
+
+---
 
 ### I cannot sign in
 
