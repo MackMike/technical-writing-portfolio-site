@@ -166,7 +166,6 @@ If you are working in a company office or connected to Zscaler, you may now conn
 3. Enter your credentials if prompted
 4. Confirm that the Wi-Fi icon shows an active connection
 
-
 ---
 
 ## Access Microsoft 365 and Office Applications
