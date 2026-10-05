@@ -564,6 +564,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#setup-at-a-glance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Setup at a Glance
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#before-you-begin" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -823,6 +834,21 @@
 <li>Use Self Service to install approved apps</li>
 </ul>
 <hr />
+<h2 id="setup-at-a-glance">Setup at a Glance</h2>
+<p>The diagram below shows the order of the main setup tasks. Each step is explained in detail in the sections that follow.</p>
+<pre class="mermaid"><code>flowchart TD
+    A["Turn on the Mac"] --&gt; B["Connect to Wi-Fi"]
+    B --&gt; C["Sign in with your company account"]
+    C --&gt; D{"Prompted for MFA?"}
+    D -- Yes --&gt; E["Approve on your iOS device"]
+    D -- No --&gt; F
+    E --&gt; F["Allow managed setup to finish"]
+    F --&gt; G["Connect to Zscaler"]
+    G --&gt; H["Connect to secure company Wi-Fi (if applicable)"]
+    H --&gt; I["Open Microsoft 365 and Office apps"]
+    I --&gt; J["Install any missing apps from Self Service"]
+    J --&gt; K(["Your Mac is ready"])</code></pre>
+<hr />
 <h2 id="before-you-begin">Before You Begin</h2>
 <p>Before starting setup, make sure you have:</p>
 <ul>
@@ -1044,6 +1070,30 @@ Do not share your company password or MFA verification code. IT will never ask f
 </ul>
 <hr />
 <h2 id="troubleshooting">Troubleshooting</h2>
+<p>Use the diagram to find the problem you are having, try the suggested fixes, and then check whether it is resolved. The sections below the diagram list each fix in detail.</p>
+<pre class="mermaid"><code>flowchart TD
+    S{"What is not working?"}
+    S --&gt; A["I cannot sign in"]
+    S --&gt; B["MFA is not working"]
+    S --&gt; C["Zscaler is not connecting"]
+    S --&gt; D["Office apps are missing"]
+    S --&gt; E["Self Service is missing"]
+
+    A --&gt; A1["Check email, password, and Wi-Fi, then restart the Mac"]
+    B --&gt; B1["Update the authentication app, then retry with a current code"]
+    C --&gt; C1["Confirm credentials, complete MFA, restart Zscaler"]
+    D --&gt; D1["Install from Self Service, or wait a few minutes"]
+    E --&gt; E1["Wait for enrollment to finish, then restart the Mac"]
+
+    A1 --&gt; R{"Working now?"}
+    B1 --&gt; R
+    C1 --&gt; R
+    D1 --&gt; R
+    E1 --&gt; R
+
+    R -- Yes --&gt; OK(["Continue setup"])
+    R -- No --&gt; IT(["Contact IT support with your serial number"])</code></pre>
+<hr />
 <h3 id="i-cannot-sign-in">I cannot sign in</h3>
 <ul>
 <li>
