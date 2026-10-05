@@ -975,7 +975,7 @@
 
 
 <h1 id="troubleshooting-vpn-certificate-issues-on-managed-macos-devices">Troubleshooting VPN Certificate Issues on Managed macOS Devices</h1>
-<p>This article describes how to diagnose and remediate certificate-related VPN connection failures on managed macOS devices. Use it to determine whether the issue is caused by missing or expired certificates, failed profile deployment, broken MDM state, identity mismatch, stale VPN configuration, or a broader certificate or network access problem.</p>
+<p>This article describes how to diagnose and remediate certificate-related VPN connection failures on managed macOS devices. Use it to determine whether the issue is caused by missing or expired certificates, failed profile deployment, a broken MDM state, an identity mismatch, a stale VPN configuration, or a broader certificate or network access problem.</p>
 <h2 id="audience">Audience</h2>
 <ul>
 <li>macOS device management engineers</li>
@@ -1038,6 +1038,43 @@
 <li>Re-enroll only if the management relationship is broken</li>
 <li>Escalate certificate, identity, or gateway issues when local remediation does not resolve the failure</li>
 </ol>
+<p>The diagram below shows the same sequence as a decision path. Each check is explained in detail in the numbered sections that follow.</p>
+<pre class="mermaid"><code>flowchart TD
+    Start(["VPN certificate failure on a managed Mac"]) --&gt; S1{"Step 1: Device enrolled and current in management?"}
+
+    S1 -- No --&gt; F1["Resolve the compliance or check-in issue first"]
+    S1 -- Yes --&gt; S2{"Step 2: Certificate present, valid, and trusted?"}
+
+    S2 -- No --&gt; F2["Redeploy or renew the certificate"]
+    S2 -- Yes --&gt; S3{"Step 3: VPN profile correct with no conflicting entries?"}
+
+    S3 -- No --&gt; F3["Redeploy the profile or remove stale VPN entries"]
+    S3 -- Yes --&gt; S4{"Step 4: Local state matches management data?"}
+
+    S4 -- No --&gt; F4["Refresh management state and redeploy missing items"]
+    S4 -- Yes --&gt; S5{"Step 5: User identity aligned with the certificate?"}
+
+    S5 -- No --&gt; F5["Correct the user assignment or certificate mapping"]
+    S5 -- Yes --&gt; Esc
+
+    F1 --&gt; Retry
+    F2 --&gt; Retry
+    F3 --&gt; Retry
+    F4 --&gt; Retry
+    F5 --&gt; Retry
+
+    Retry{"VPN connects?"}
+    Retry -- Yes --&gt; Done(["Resolved"])
+    Retry -- No --&gt; Broken{"Step 7: Management relationship broken?"}
+
+    Broken -- Yes --&gt; Reenroll["Re-enroll using the approved workflow"]
+    Broken -- No --&gt; Esc
+
+    Reenroll --&gt; Retry2{"VPN connects?"}
+    Retry2 -- Yes --&gt; Done
+    Retry2 -- No --&gt; Esc
+
+    Esc(["Step 8: Escalate with the escalation checklist"])</code></pre>
 <hr />
 <h2 id="1-confirm-the-device-is-still-enrolled-and-current-in-management">1. Confirm the Device Is Still Enrolled and Current in Management</h2>
 <p>In the MDM console, review the device record.</p>
