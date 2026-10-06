@@ -24,6 +24,7 @@ The goal of this documentation is to help internal support teams diagnose compli
 ## Tools / Methods
 - Markdown
 - MkDocs
+- Mermaid
 - GitHub
 - Version-controlled documentation workflow
 - Internal knowledge base documentation practices
@@ -31,7 +32,8 @@ The goal of this documentation is to help internal support teams diagnose compli
 ## Challenges / Writing Considerations
 * This article was written for a technical internal audience, so it needed to be concise, efficient, and immediately useful during support work. 
 * A key writing challenge was balancing diagnosis with remediation by providing not only validation steps but also actionable next steps such as profile redeployment, policy reruns, inventory updates, and reenrollment decision points. 
-* The content also needed to reflect realistic Jamf Pro workflows and terminology without becoming overly dependent on a single organization’s environment or security configuration.
+* The content also needed to reflect realistic Jamf Pro workflows and terminology without becoming overly dependent on a single organization’s environment or security configuration. 
+* The workflow was reorganized into three phases with a decision-flow diagram so readers can start at the check that matches their symptom instead of reading every step in order. The article is scoped to a classic profile-and-policy Jamf Pro workflow and notes where newer features may change how device state is reported.
 
 ## Deliverables
 - Internal knowledge base article
