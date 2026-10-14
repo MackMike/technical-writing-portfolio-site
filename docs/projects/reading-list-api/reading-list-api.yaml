@@ -1,0 +1,475 @@
+openapi: 3.1.0
+info:
+  title: Reading List API
+  version: 1.0.0
+  summary: Track the books you want to read, are reading, or have finished.
+  description: |
+    The Reading List API lets you keep a personal catalog of books and track
+    your progress through each one.
+
+    **This is a fictional API.** It was designed for a technical writing
+    portfolio and has no production backend. You can try every endpoint
+    against a local mock server. See the
+    [Quickstart](quickstart/) for setup steps.
+
+    ## What you can do
+
+    - List books, optionally filtered by reading status
+    - Retrieve a single book by its ID
+    - Add a book to your reading list
+
+    ## Authentication
+
+    Every request must include an API key in the `X-API-Key` header.
+    See the [Authentication guide](authentication/) for details.
+
+    ## Errors
+
+    Errors use the Problem Details format
+    ([RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html)) with the
+    `application/problem+json` media type.
+    See the [Error handling guide](errors/) for details.
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+  contact:
+    name: Michael Scarborough
+    url: https://MackMike.github.io/technical-writing-portfolio-site/
+
+servers:
+  - url: http://127.0.0.1:4010
+    description: Local Prism mock server
+
+tags:
+  - name: Books
+    description: List, retrieve, and add books on your reading list.
+
+security:
+  - ApiKeyAuth: []
+
+paths:
+  /books:
+    get:
+      operationId: listBooks
+      tags: [Books]
+      summary: List books
+      description: |
+        Returns the books on your reading list, most recently added first.
+
+        Use the `status` parameter to return only books with a given reading
+        status. Use `limit` to cap the number of books returned.
+      parameters:
+        - name: status
+          in: query
+          required: false
+          description: Return only books with this reading status.
+          schema:
+            $ref: '#/components/schemas/BookStatus'
+        - name: limit
+          in: query
+          required: false
+          description: Maximum number of books to return.
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: A list of books.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BookList'
+              examples:
+                default:
+                  summary: Two books on the list
+                  value:
+                    items:
+                      - id: bk_002
+                        title: API Patterns
+                        author: R. Designer
+                        status: reading
+                        createdAt: '2026-10-02T14:30:00Z'
+                      - id: bk_001
+                        title: Docs for Developers
+                        author: A. Writer
+                        status: unread
+                        createdAt: '2026-09-28T09:15:00Z'
+        '400':
+          $ref: '#/components/responses/InvalidQueryError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+      x-codeSamples:
+        - lang: curl
+          label: curl
+          source: |
+            curl "http://127.0.0.1:4010/books?status=unread&limit=10" \
+              -H "X-API-Key: demo-key"
+        - lang: JavaScript
+          label: JavaScript
+          source: |
+            const response = await fetch(
+              "http://127.0.0.1:4010/books?status=unread&limit=10",
+              { headers: { "X-API-Key": "demo-key" } }
+            );
+            const data = await response.json();
+            console.log(data.items);
+        - lang: Python
+          label: Python
+          source: |
+            import requests
+
+            response = requests.get(
+                "http://127.0.0.1:4010/books",
+                params={"status": "unread", "limit": 10},
+                headers={"X-API-Key": "demo-key"},
+            )
+            print(response.json()["items"])
+
+    post:
+      operationId: createBook
+      tags: [Books]
+      summary: Add a book
+      description: |
+        Adds a book to your reading list. The server assigns the book's `id`
+        and `createdAt` timestamp.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BookInput'
+            examples:
+              default:
+                summary: A book you plan to read
+                value:
+                  title: The Art of API Docs
+                  author: Jane Example
+                  status: unread
+      responses:
+        '201':
+          description: The book was added.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+              examples:
+                default:
+                  summary: The newly created book
+                  value:
+                    id: bk_003
+                    title: The Art of API Docs
+                    author: Jane Example
+                    status: unread
+                    createdAt: '2026-10-14T18:45:00Z'
+        '400':
+          $ref: '#/components/responses/BadRequestError'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+      x-codeSamples:
+        - lang: curl
+          label: curl
+          source: |
+            curl -X POST http://127.0.0.1:4010/books \
+              -H "Content-Type: application/json" \
+              -H "X-API-Key: demo-key" \
+              -d '{"title": "The Art of API Docs", "author": "Jane Example", "status": "unread"}'
+        - lang: JavaScript
+          label: JavaScript
+          source: |
+            const response = await fetch("http://127.0.0.1:4010/books", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "X-API-Key": "demo-key",
+              },
+              body: JSON.stringify({
+                title: "The Art of API Docs",
+                author: "Jane Example",
+                status: "unread",
+              }),
+            });
+            const book = await response.json();
+            console.log(book.id);
+        - lang: Python
+          label: Python
+          source: |
+            import requests
+
+            response = requests.post(
+                "http://127.0.0.1:4010/books",
+                headers={"X-API-Key": "demo-key"},
+                json={
+                    "title": "The Art of API Docs",
+                    "author": "Jane Example",
+                    "status": "unread",
+                },
+            )
+            print(response.json()["id"])
+
+  /books/{bookId}:
+    get:
+      operationId: getBook
+      tags: [Books]
+      summary: Get a book
+      description: Returns a single book by its ID.
+      parameters:
+        - name: bookId
+          in: path
+          required: true
+          description: >
+            The book's unique identifier, as returned in the `id` field when
+            the book was created. IDs start with `bk_`.
+          schema:
+            type: string
+          example: bk_001
+      responses:
+        '200':
+          description: The requested book.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Book'
+              examples:
+                default:
+                  summary: A book that has not been started
+                  value:
+                    id: bk_001
+                    title: Docs for Developers
+                    author: A. Writer
+                    status: unread
+                    createdAt: '2026-09-28T09:15:00Z'
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '404':
+          $ref: '#/components/responses/NotFoundError'
+      x-codeSamples:
+        - lang: curl
+          label: curl
+          source: |
+            curl http://127.0.0.1:4010/books/bk_001 \
+              -H "X-API-Key: demo-key"
+        - lang: JavaScript
+          label: JavaScript
+          source: |
+            const response = await fetch("http://127.0.0.1:4010/books/bk_001", {
+              headers: { "X-API-Key": "demo-key" },
+            });
+            const book = await response.json();
+            console.log(book.title);
+        - lang: Python
+          label: Python
+          source: |
+            import requests
+
+            response = requests.get(
+                "http://127.0.0.1:4010/books/bk_001",
+                headers={"X-API-Key": "demo-key"},
+            )
+            print(response.json()["title"])
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: >
+        Your API key, sent in the `X-API-Key` request header. For this
+        portfolio sample, use the demo key `demo-key`.
+
+  schemas:
+    BookStatus:
+      type: string
+      description: >
+        Reading status. `unread` means you have not started the book,
+        `reading` means you are partway through it, and `finished` means you
+        have completed it.
+      enum: [unread, reading, finished]
+      example: unread
+
+    Book:
+      type: object
+      description: A book on your reading list.
+      required: [id, title, author, status, createdAt]
+      properties:
+        id:
+          type: string
+          description: >
+            Unique identifier for the book. Assigned by the server when the
+            book is created.
+          example: bk_001
+        title:
+          type: string
+          description: The book's title.
+          example: Docs for Developers
+        author:
+          type: string
+          description: The book's author. For multiple authors, use a single comma-separated string.
+          example: A. Writer
+        status:
+          $ref: '#/components/schemas/BookStatus'
+        createdAt:
+          type: string
+          format: date-time
+          description: >
+            When the book was added to the list, in UTC, formatted as an
+            ISO 8601 date-time.
+          example: '2026-09-28T09:15:00Z'
+
+    BookInput:
+      type: object
+      description: The fields you provide when adding a book.
+      required: [title, author, status]
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+          description: The book's title. Between 1 and 200 characters.
+          example: The Art of API Docs
+        author:
+          type: string
+          minLength: 1
+          maxLength: 100
+          description: The book's author. Between 1 and 100 characters.
+          example: Jane Example
+        status:
+          $ref: '#/components/schemas/BookStatus'
+
+    BookList:
+      type: object
+      description: A list of books.
+      required: [items]
+      properties:
+        items:
+          type: array
+          description: The books that matched the request.
+          items:
+            $ref: '#/components/schemas/Book'
+
+    Problem:
+      type: object
+      description: >
+        An error response in the Problem Details format
+        ([RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html)).
+      required: [type, title, status, detail]
+      properties:
+        type:
+          type: string
+          format: uri
+          description: A URI that identifies the kind of error.
+          example: https://example.com/problems/not-found
+        title:
+          type: string
+          description: A short, human-readable summary of the error kind.
+          example: Resource not found
+        status:
+          type: integer
+          description: The HTTP status code of the response.
+          example: 404
+        detail:
+          type: string
+          description: A human-readable explanation of this occurrence of the error.
+          example: No book exists with ID bk_999.
+        instance:
+          type: string
+          description: The request path that produced the error.
+          example: /books/bk_999
+        errors:
+          type: array
+          description: >
+            Field-level problems. Present only on `400` responses caused by
+            invalid input.
+          items:
+            $ref: '#/components/schemas/FieldError'
+
+    FieldError:
+      type: object
+      description: A problem with one field of the request.
+      required: [field, message]
+      properties:
+        field:
+          type: string
+          description: >
+            The name of the invalid field or query parameter.
+          example: status
+        message:
+          type: string
+          description: What is wrong with the value and how to fix it.
+          example: Must be one of unread, reading, or finished.
+
+  responses:
+    BadRequestError:
+      description: >
+        The request was invalid. The `errors` array lists each invalid field.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          examples:
+            default:
+              summary: Missing and invalid fields
+              value:
+                type: https://example.com/problems/bad-request
+                title: Bad request
+                status: 400
+                detail: The request body is invalid.
+                instance: /books
+                errors:
+                  - field: title
+                    message: This field is required.
+                  - field: status
+                    message: Must be one of unread, reading, or finished.
+
+    InvalidQueryError:
+      description: >
+        A query parameter was invalid. The `errors` array lists each invalid
+        parameter.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          examples:
+            default:
+              summary: Out-of-range limit
+              value:
+                type: https://example.com/problems/bad-request
+                title: Bad request
+                status: 400
+                detail: One or more query parameters are invalid.
+                instance: /books
+                errors:
+                  - field: limit
+                    message: Must be an integer between 1 and 100.
+
+    UnauthorizedError:
+      description: The `X-API-Key` header is missing or the key is not valid.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          examples:
+            default:
+              value:
+                type: https://example.com/problems/unauthorized
+                title: Unauthorized
+                status: 401
+                detail: The X-API-Key header is missing or invalid.
+                instance: /books
+
+    NotFoundError:
+      description: No book exists with the requested ID.
+      content:
+        application/problem+json:
+          schema:
+            $ref: '#/components/schemas/Problem'
+          examples:
+            default:
+              value:
+                type: https://example.com/problems/not-found
+                title: Resource not found
+                status: 404
+                detail: No book exists with ID bk_999.
+                instance: /books/bk_999
