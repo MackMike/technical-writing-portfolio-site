@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf8" />
+  <title>Reading List API Reference</title>
+  <!-- needed for adaptive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script src="https://cdn.redocly.com/redoc/v2.5.4/bundles/redoc.standalone.js" integrity="sha384-w447zOpYfw/1Tv/5AK9NfHTlQIqE3RVR6KY62jCyy9zNDgO64cMwGGP1Fj0zJVf5" crossorigin="anonymous"></script><style data-styled="true" data-styled-version="6.4.2">.kktglN{width:calc(100% - 40%);padding:0 40px;}/*!sc*/
+@media print,screen and (max-width: 75rem){.kktglN{width:100%;padding:40px 40px;}}/*!sc*/
+.kmAAAV{width:calc(100% - 40%);padding:0 40px;}/*!sc*/
+@media print,screen and (max-width: 75rem){.kmAAAV{width:100%;padding:0px 40px;}}/*!sc*/
+data-styled.g5[id="sc-hKVpXn"]{content:"kktglN,kmAAAV,"}/*!sc*/
+.jleRXN{padding:40px 0;}/*!sc*/
+.jleRXN:last-child{min-height:calc(100vh + 1px);}/*!sc*/
+.jleRXN>.jleRXN:last-child{min-height:initial;}/*!sc*/
+@media print,screen and (max-width: 75rem){.jleRXN{padding:0;}}/*!sc*/
+.grDwca{padding:40px 0;position:relative;}/*!sc*/
+.grDwca:last-child{min-height:calc(100vh + 1px);}/*!sc*/
+.grDwca>.grDwca:last-child{min-height:initial;}/*!sc*/
+@media print,screen and (max-width: 75rem){.grDwca{padding:0;}}/*!sc*/
+.grDwca:not(:last-of-type):after{position:absolute;bottom:0;width:100%;display:block;content:'';border-bottom:1px solid rgba(0, 0, 0, 0.2);}/*!sc*/
+data-styled.g6[id="sc-eCQgVK"]{content:"jleRXN,grDwca,"}/*!sc*/
+.fpMlmc{width:40%;color:#ffffff;background-color:#263238;padding:0 40px;}/*!sc*/
+@media print,screen and (max-width: 75rem){.fpMlmc{width:100%;padding:40px 40px;}}/*!sc*/
+data-styled.g7[id="sc-jSppWd"]{content:"fpMlmc,"}/*!sc*/
+.bdQQyo{background-color:#263238;}/*!sc*/
+data-styled.g8[id="sc-gKkgUA"]{content:"bdQQyo,"}/*!sc*/
+.lhRBUS{display:flex;width:100%;padding:0;}/*!sc*/
+@media print,screen and (max-width: 75rem){.lhRBUS{flex-direction:column;}}/*!sc*/
+data-styled.g9[id="sc-iCECmn"]{content:"lhRBUS,"}/*!sc*/
+.eRMVDe{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.85714em;line-height:1.6em;color:#333333;}/*!sc*/
+data-styled.g10[id="sc-fuztkK"]{content:"eRMVDe,"}/*!sc*/
+.MOVBZ{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.57143em;line-height:1.6em;color:#333333;margin:0 0 20px;}/*!sc*/
+data-styled.g11[id="sc-qdQOe"]{content:"MOVBZ,"}/*!sc*/
+.iSbGeC{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.27em;line-height:1.6em;color:#333333;}/*!sc*/
+data-styled.g12[id="sc-jrIDTr"]{content:"iSbGeC,"}/*!sc*/
+.iamDfj{color:#ffffff;}/*!sc*/
+data-styled.g13[id="sc-kEbgWM"]{content:"iamDfj,"}/*!sc*/
+.jprlAr{border-bottom:1px solid rgba(38, 50, 56, 0.3);margin:1em 0 1em 0;color:rgba(38, 50, 56, 0.7);font-weight:normal;text-transform:uppercase;font-size:0.929em;line-height:20px;}/*!sc*/
+data-styled.g14[id="sc-iqkkDd"]{content:"jprlAr,"}/*!sc*/
+.jmoZom{cursor:pointer;margin-left:-20px;padding:0;line-height:1;width:20px;display:inline-block;outline:0;}/*!sc*/
+.jmoZom:before{content:'';width:15px;height:15px;background-size:contain;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxIDUwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuMiA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAwbDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGwtMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MCAxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zIDM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUuNiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLjYtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgMTMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQgMzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg==');opacity:0.5;visibility:hidden;display:inline-block;vertical-align:middle;}/*!sc*/
+h1:hover>.jmoZom::before,h2:hover>.jmoZom::before,.jmoZom:hover::before{visibility:visible;}/*!sc*/
+data-styled.g15[id="sc-crPgjm"]{content:"jmoZom,"}/*!sc*/
+.kdgFPv{height:18px;width:18px;min-width:18px;vertical-align:middle;float:right;transition:transform 0.2s ease-out;transform:rotateZ(-90deg);}/*!sc*/
+.bEEWJa{height:1.3em;width:1.3em;min-width:1.3em;vertical-align:middle;transition:transform 0.2s ease-out;transform:rotateZ(-90deg);}/*!sc*/
+.gngmNp{height:1.5em;width:1.5em;min-width:1.5em;vertical-align:middle;float:left;transition:transform 0.2s ease-out;transform:rotateZ(-90deg);}/*!sc*/
+.gngmNp polygon{fill:#1d8127;}/*!sc*/
+.hJoFRR{height:1.5em;width:1.5em;min-width:1.5em;vertical-align:middle;float:left;transition:transform 0.2s ease-out;transform:rotateZ(-90deg);}/*!sc*/
+.hJoFRR polygon{fill:#d41f1c;}/*!sc*/
+.bQKUih{height:20px;width:20px;min-width:20px;vertical-align:middle;float:right;transition:transform 0.2s ease-out;transform:rotateZ(0);}/*!sc*/
+.bQKUih polygon{fill:white;}/*!sc*/
+data-styled.g16[id="sc-dYjPD"]{content:"kdgFPv,bEEWJa,gngmNp,hJoFRR,bQKUih,"}/*!sc*/
+.jFNAwF{border-left:1px solid #7c7cbb;box-sizing:border-box;position:relative;padding:10px 10px 10px 0;}/*!sc*/
+@media screen and (max-width: 50rem){.jFNAwF{display:block;overflow:hidden;}}/*!sc*/
+tr:first-of-type>.jFNAwF,tr.last>.jFNAwF{border-left-width:0;background-position:top left;background-repeat:no-repeat;background-size:1px 100%;}/*!sc*/
+tr:first-of-type>.jFNAwF{background-image:linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 22px,
+      #7c7cbb 22px,
+      #7c7cbb 100%
+    );}/*!sc*/
+tr.last>.jFNAwF{background-image:linear-gradient(
+      to bottom,
+      #7c7cbb 0%,
+      #7c7cbb 22px,
+      transparent 22px,
+      transparent 100%
+    );}/*!sc*/
+tr.last+tr>.jFNAwF{border-left-color:transparent;}/*!sc*/
+tr.last:first-child>.jFNAwF{background:none;border-left-color:transparent;}/*!sc*/
+data-styled.g19[id="sc-hCcPtG"]{content:"jFNAwF,"}/*!sc*/
+.lcdEEX{vertical-align:top;line-height:20px;white-space:nowrap;font-size:13px;font-family:Courier,monospace;}/*!sc*/
+.lcdEEX.deprecated{text-decoration:line-through;color:#707070;}/*!sc*/
+data-styled.g21[id="sc-fFCZOx"]{content:"lcdEEX,"}/*!sc*/
+.gLpZiQ{border-bottom:1px solid #9fb4be;padding:10px 0;width:75%;box-sizing:border-box;}/*!sc*/
+tr.expanded .gLpZiQ{border-bottom:none;}/*!sc*/
+@media screen and (max-width: 50rem){.gLpZiQ{padding:0 20px;border-bottom:none;border-left:1px solid #7c7cbb;}tr.last>.gLpZiQ{border-left:none;}}/*!sc*/
+data-styled.g22[id="sc-bjLslk"]{content:"gLpZiQ,"}/*!sc*/
+.kkMuqc{color:#7c7cbb;font-family:Courier,monospace;margin-right:10px;}/*!sc*/
+.kkMuqc::before{content:'';display:inline-block;vertical-align:middle;width:10px;height:1px;background:#7c7cbb;}/*!sc*/
+.kkMuqc::after{content:'';display:inline-block;vertical-align:middle;width:1px;background:#7c7cbb;height:7px;}/*!sc*/
+data-styled.g23[id="sc-ieCSdj"]{content:"kkMuqc,"}/*!sc*/
+.bsjUmE{border-collapse:separate;border-radius:3px;font-size:14px;border-spacing:0;width:100%;}/*!sc*/
+.bsjUmE >tr{vertical-align:middle;}/*!sc*/
+@media screen and (max-width: 50rem){.bsjUmE{display:block;}.bsjUmE >tr,.bsjUmE >tbody>tr{display:block;}}/*!sc*/
+@media screen and (max-width: 50rem) and (-ms-high-contrast:none){.bsjUmE td{float:left;width:100%;}}/*!sc*/
+.bsjUmE .sc-dILkzW,.bsjUmE .sc-dILkzW .sc-dILkzW .sc-dILkzW,.bsjUmE .sc-dILkzW .sc-dILkzW .sc-dILkzW .sc-dILkzW .sc-dILkzW{margin:1em;margin-right:0;background:#fafafa;}/*!sc*/
+.bsjUmE .sc-dILkzW .sc-dILkzW,.bsjUmE .sc-dILkzW .sc-dILkzW .sc-dILkzW .sc-dILkzW,.bsjUmE .sc-dILkzW .sc-dILkzW .sc-dILkzW .sc-dILkzW .sc-dILkzW .sc-dILkzW{background:#ffffff;}/*!sc*/
+data-styled.g25[id="sc-hHopjF"]{content:"bsjUmE,"}/*!sc*/
+.fcGuQW >ul{list-style:none;padding:0;margin:0;margin:0 -5px;}/*!sc*/
+.fcGuQW >ul >li{padding:5px 10px;display:inline-block;background-color:#11171a;border-bottom:1px solid rgba(0, 0, 0, 0.5);cursor:pointer;text-align:center;outline:none;color:#ccc;margin:0 5px 5px 5px;border:1px solid #07090b;border-radius:5px;min-width:60px;font-size:0.9em;font-weight:bold;}/*!sc*/
+.fcGuQW >ul >li.react-tabs__tab--selected{color:#333333;background:#ffffff;}/*!sc*/
+.fcGuQW >ul >li.react-tabs__tab--selected:focus{outline:auto;}/*!sc*/
+.fcGuQW >ul >li:only-child{flex:none;min-width:100px;}/*!sc*/
+.fcGuQW >ul >li.tab-success{color:#33d143;}/*!sc*/
+.fcGuQW >ul >li.tab-success.react-tabs__tab--selected{color:#1d8127;}/*!sc*/
+.fcGuQW >ul >li.tab-redirect{color:#ffa500;}/*!sc*/
+.fcGuQW >ul >li.tab-redirect.react-tabs__tab--selected{color:#996300;}/*!sc*/
+.fcGuQW >ul >li.tab-info{color:#30aadc;}/*!sc*/
+.fcGuQW >ul >li.tab-info.react-tabs__tab--selected{color:#186c8e;}/*!sc*/
+.fcGuQW >ul >li.tab-error{color:#eb6d6b;}/*!sc*/
+.fcGuQW >ul >li.tab-error.react-tabs__tab--selected{color:#d41f1c;}/*!sc*/
+.fcGuQW >.react-tabs__tab-panel{background:#11171a;}/*!sc*/
+.fcGuQW >.react-tabs__tab-panel>div,.fcGuQW >.react-tabs__tab-panel>pre{padding:20px;margin:0;}/*!sc*/
+.fcGuQW >.react-tabs__tab-panel>div>pre{padding:0;}/*!sc*/
+data-styled.g31[id="sc-cxxQMU"]{content:"fcGuQW,"}/*!sc*/
+.fiNpIH code[class*='language-'],.fiNpIH pre[class*='language-']{text-shadow:0 -0.1em 0.2em black;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;}/*!sc*/
+@media print{.fiNpIH code[class*='language-'],.fiNpIH pre[class*='language-']{text-shadow:none;}}/*!sc*/
+.fiNpIH pre[class*='language-']{padding:1em;margin:0.5em 0;overflow:auto;}/*!sc*/
+.fiNpIH .token.comment,.fiNpIH .token.prolog,.fiNpIH .token.doctype,.fiNpIH .token.cdata{color:hsl(30, 20%, 50%);}/*!sc*/
+.fiNpIH .token.punctuation{opacity:0.7;}/*!sc*/
+.fiNpIH .namespace{opacity:0.7;}/*!sc*/
+.fiNpIH .token.property,.fiNpIH .token.tag,.fiNpIH .token.number,.fiNpIH .token.constant,.fiNpIH .token.symbol{color:#4a8bb3;}/*!sc*/
+.fiNpIH .token.boolean{color:#e64441;}/*!sc*/
+.fiNpIH .token.selector,.fiNpIH .token.attr-name,.fiNpIH .token.string,.fiNpIH .token.char,.fiNpIH .token.builtin,.fiNpIH .token.inserted{color:#a0fbaa;}/*!sc*/
+.fiNpIH .token.selector+a,.fiNpIH .token.attr-name+a,.fiNpIH .token.string+a,.fiNpIH .token.char+a,.fiNpIH .token.builtin+a,.fiNpIH .token.inserted+a,.fiNpIH .token.selector+a:visited,.fiNpIH .token.attr-name+a:visited,.fiNpIH .token.string+a:visited,.fiNpIH .token.char+a:visited,.fiNpIH .token.builtin+a:visited,.fiNpIH .token.inserted+a:visited{color:#4ed2ba;text-decoration:underline;}/*!sc*/
+.fiNpIH .token.property.string{color:white;}/*!sc*/
+.fiNpIH .token.operator,.fiNpIH .token.entity,.fiNpIH .token.url,.fiNpIH .token.variable{color:hsl(40, 90%, 60%);}/*!sc*/
+.fiNpIH .token.atrule,.fiNpIH .token.attr-value,.fiNpIH .token.keyword{color:hsl(350, 40%, 70%);}/*!sc*/
+.fiNpIH .token.regex,.fiNpIH .token.important{color:#e90;}/*!sc*/
+.fiNpIH .token.important,.fiNpIH .token.bold{font-weight:bold;}/*!sc*/
+.fiNpIH .token.italic{font-style:italic;}/*!sc*/
+.fiNpIH .token.entity{cursor:help;}/*!sc*/
+.fiNpIH .token.deleted{color:red;}/*!sc*/
+data-styled.g33[id="sc-iJSMbW"]{content:"fiNpIH,"}/*!sc*/
+.dzKJV{opacity:0.7;transition:opacity 0.3s ease;text-align:right;}/*!sc*/
+.dzKJV:focus-within{opacity:1;}/*!sc*/
+.dzKJV >button{background-color:transparent;border:0;color:inherit;padding:2px 10px;font-family:Roboto,sans-serif;font-size:14px;line-height:1.5em;cursor:pointer;outline:0;}/*!sc*/
+.dzKJV >button :hover,.dzKJV >button :focus{background:rgba(255, 255, 255, 0.1);}/*!sc*/
+data-styled.g34[id="sc-giQkEn"]{content:"dzKJV,"}/*!sc*/
+.hsxFzL:hover .sc-giQkEn{opacity:1;}/*!sc*/
+data-styled.g35[id="sc-ezjgic"]{content:"hsxFzL,"}/*!sc*/
+.kBZzKJ{font-family:Courier,monospace;font-size:13px;overflow-x:auto;margin:0;white-space:pre;}/*!sc*/
+data-styled.g36[id="sc-bYgEKt"]{content:"kBZzKJ,"}/*!sc*/
+.iOXjCz{position:relative;}/*!sc*/
+data-styled.g38[id="sc-kLEbxe"]{content:"iOXjCz,"}/*!sc*/
+.kxMqOs{margin-left:10px;text-transform:none;font-size:0.929em;color:black;}/*!sc*/
+data-styled.g42[id="sc-gXvOjn"]{content:"kxMqOs,"}/*!sc*/
+.htbHfQ{font-family:Roboto,sans-serif;font-weight:400;line-height:1.5em;}/*!sc*/
+.htbHfQ p:last-child{margin-bottom:0;}/*!sc*/
+.htbHfQ h1{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.85714em;line-height:1.6em;color:#32329f;margin-top:0;}/*!sc*/
+.htbHfQ h2{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.57143em;line-height:1.6em;color:#333333;}/*!sc*/
+.htbHfQ code{color:#c62828;background-color:rgba(38, 50, 56, 0.05);font-family:Courier,monospace;border-radius:2px;border:1px solid rgba(38, 50, 56, 0.1);padding:0 5px;font-size:13px;font-weight:400;word-break:break-word;}/*!sc*/
+.htbHfQ pre{font-family:Courier,monospace;white-space:pre;background-color:#11171a;color:white;padding:20px;overflow-x:auto;line-height:normal;border-radius:0;border:1px solid rgba(38, 50, 56, 0.1);}/*!sc*/
+.htbHfQ pre code{background-color:transparent;color:white;padding:0;}/*!sc*/
+.htbHfQ pre code:before,.htbHfQ pre code:after{content:none;}/*!sc*/
+.htbHfQ blockquote{margin:0;margin-bottom:1em;padding:0 15px;color:#777;border-left:4px solid #ddd;}/*!sc*/
+.htbHfQ img{max-width:100%;box-sizing:content-box;}/*!sc*/
+.htbHfQ ul,.htbHfQ ol{padding-left:2em;margin:0;margin-bottom:1em;}/*!sc*/
+.htbHfQ ul ul,.htbHfQ ol ul,.htbHfQ ul ol,.htbHfQ ol ol{margin-bottom:0;margin-top:0;}/*!sc*/
+.htbHfQ table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all;border-collapse:collapse;border-spacing:0;margin-top:1.5em;margin-bottom:1.5em;}/*!sc*/
+.htbHfQ table tr{background-color:#fff;border-top:1px solid #ccc;}/*!sc*/
+.htbHfQ table tr:nth-child(2n){background-color:#fafafa;}/*!sc*/
+.htbHfQ table th,.htbHfQ table td{padding:6px 13px;border:1px solid #ddd;}/*!sc*/
+.htbHfQ table th{text-align:left;font-weight:bold;}/*!sc*/
+.htbHfQ .share-link{cursor:pointer;margin-left:-20px;padding:0;line-height:1;width:20px;display:inline-block;outline:0;}/*!sc*/
+.htbHfQ .share-link:before{content:'';width:15px;height:15px;background-size:contain;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxIDUwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuMiA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAwbDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGwtMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MCAxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zIDM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUuNiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLjYtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgMTMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQgMzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg==');opacity:0.5;visibility:hidden;display:inline-block;vertical-align:middle;}/*!sc*/
+.htbHfQ h1:hover>.share-link::before,.htbHfQ h2:hover>.share-link::before,.htbHfQ .share-link:hover::before{visibility:visible;}/*!sc*/
+.htbHfQ a{text-decoration:underline;color:#32329f;}/*!sc*/
+.htbHfQ a:visited{color:#32329f;}/*!sc*/
+.htbHfQ a:hover{color:#6868cf;text-decoration:underline;}/*!sc*/
+.bWgCZK{font-family:Roboto,sans-serif;font-weight:400;line-height:1.5em;}/*!sc*/
+.bWgCZK p:last-child{margin-bottom:0;}/*!sc*/
+.bWgCZK p:first-child{margin-top:0;}/*!sc*/
+.bWgCZK p:last-child{margin-bottom:0;}/*!sc*/
+.bWgCZK h1{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.85714em;line-height:1.6em;color:#32329f;margin-top:0;}/*!sc*/
+.bWgCZK h2{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.57143em;line-height:1.6em;color:#333333;}/*!sc*/
+.bWgCZK code{color:#c62828;background-color:rgba(38, 50, 56, 0.05);font-family:Courier,monospace;border-radius:2px;border:1px solid rgba(38, 50, 56, 0.1);padding:0 5px;font-size:13px;font-weight:400;word-break:break-word;}/*!sc*/
+.bWgCZK pre{font-family:Courier,monospace;white-space:pre;background-color:#11171a;color:white;padding:20px;overflow-x:auto;line-height:normal;border-radius:0;border:1px solid rgba(38, 50, 56, 0.1);}/*!sc*/
+.bWgCZK pre code{background-color:transparent;color:white;padding:0;}/*!sc*/
+.bWgCZK pre code:before,.bWgCZK pre code:after{content:none;}/*!sc*/
+.bWgCZK blockquote{margin:0;margin-bottom:1em;padding:0 15px;color:#777;border-left:4px solid #ddd;}/*!sc*/
+.bWgCZK img{max-width:100%;box-sizing:content-box;}/*!sc*/
+.bWgCZK ul,.bWgCZK ol{padding-left:2em;margin:0;margin-bottom:1em;}/*!sc*/
+.bWgCZK ul ul,.bWgCZK ol ul,.bWgCZK ul ol,.bWgCZK ol ol{margin-bottom:0;margin-top:0;}/*!sc*/
+.bWgCZK table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all;border-collapse:collapse;border-spacing:0;margin-top:1.5em;margin-bottom:1.5em;}/*!sc*/
+.bWgCZK table tr{background-color:#fff;border-top:1px solid #ccc;}/*!sc*/
+.bWgCZK table tr:nth-child(2n){background-color:#fafafa;}/*!sc*/
+.bWgCZK table th,.bWgCZK table td{padding:6px 13px;border:1px solid #ddd;}/*!sc*/
+.bWgCZK table th{text-align:left;font-weight:bold;}/*!sc*/
+.bWgCZK .share-link{cursor:pointer;margin-left:-20px;padding:0;line-height:1;width:20px;display:inline-block;outline:0;}/*!sc*/
+.bWgCZK .share-link:before{content:'';width:15px;height:15px;background-size:contain;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxIDUwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuMiA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAwbDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGwtMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MCAxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zIDM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUuNiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLjYtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgMTMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQgMzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg==');opacity:0.5;visibility:hidden;display:inline-block;vertical-align:middle;}/*!sc*/
+.bWgCZK h1:hover>.share-link::before,.bWgCZK h2:hover>.share-link::before,.bWgCZK .share-link:hover::before{visibility:visible;}/*!sc*/
+.bWgCZK a{text-decoration:underline;color:#32329f;}/*!sc*/
+.bWgCZK a:visited{color:#32329f;}/*!sc*/
+.bWgCZK a:hover{color:#6868cf;text-decoration:underline;}/*!sc*/
+.iHFyeq{font-family:Roboto,sans-serif;font-weight:400;line-height:1.5em;}/*!sc*/
+.iHFyeq p:last-child{margin-bottom:0;}/*!sc*/
+.iHFyeq p:first-child{margin-top:0;}/*!sc*/
+.iHFyeq p:last-child{margin-bottom:0;}/*!sc*/
+.iHFyeq p{display:inline-block;}/*!sc*/
+.iHFyeq h1{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.85714em;line-height:1.6em;color:#32329f;margin-top:0;}/*!sc*/
+.iHFyeq h2{font-family:Montserrat,sans-serif;font-weight:400;font-size:1.57143em;line-height:1.6em;color:#333333;}/*!sc*/
+.iHFyeq code{color:#c62828;background-color:rgba(38, 50, 56, 0.05);font-family:Courier,monospace;border-radius:2px;border:1px solid rgba(38, 50, 56, 0.1);padding:0 5px;font-size:13px;font-weight:400;word-break:break-word;}/*!sc*/
+.iHFyeq pre{font-family:Courier,monospace;white-space:pre;background-color:#11171a;color:white;padding:20px;overflow-x:auto;line-height:normal;border-radius:0;border:1px solid rgba(38, 50, 56, 0.1);}/*!sc*/
+.iHFyeq pre code{background-color:transparent;color:white;padding:0;}/*!sc*/
+.iHFyeq pre code:before,.iHFyeq pre code:after{content:none;}/*!sc*/
+.iHFyeq blockquote{margin:0;margin-bottom:1em;padding:0 15px;color:#777;border-left:4px solid #ddd;}/*!sc*/
+.iHFyeq img{max-width:100%;box-sizing:content-box;}/*!sc*/
+.iHFyeq ul,.iHFyeq ol{padding-left:2em;margin:0;margin-bottom:1em;}/*!sc*/
+.iHFyeq ul ul,.iHFyeq ol ul,.iHFyeq ul ol,.iHFyeq ol ol{margin-bottom:0;margin-top:0;}/*!sc*/
+.iHFyeq table{display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all;border-collapse:collapse;border-spacing:0;margin-top:1.5em;margin-bottom:1.5em;}/*!sc*/
+.iHFyeq table tr{background-color:#fff;border-top:1px solid #ccc;}/*!sc*/
+.iHFyeq table tr:nth-child(2n){background-color:#fafafa;}/*!sc*/
+.iHFyeq table th,.iHFyeq table td{padding:6px 13px;border:1px solid #ddd;}/*!sc*/
+.iHFyeq table th{text-align:left;font-weight:bold;}/*!sc*/
+.iHFyeq .share-link{cursor:pointer;margin-left:-20px;padding:0;line-height:1;width:20px;display:inline-block;outline:0;}/*!sc*/
+.iHFyeq .share-link:before{content:'';width:15px;height:15px;background-size:contain;background-image:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsPSIjMDEwMTAxIiBkPSJNNDU5LjcgMjMzLjRsLTkwLjUgOTAuNWMtNTAgNTAtMTMxIDUwLTE4MSAwIC03LjktNy44LTE0LTE2LjctMTkuNC0yNS44bDQyLjEtNDIuMWMyLTIgNC41LTMuMiA2LjgtNC41IDIuOSA5LjkgOCAxOS4zIDE1LjggMjcuMiAyNSAyNSA2NS42IDI0LjkgOTAuNSAwbDkwLjUtOTAuNWMyNS0yNSAyNS02NS42IDAtOTAuNSAtMjQuOS0yNS02NS41LTI1LTkwLjUgMGwtMzIuMiAzMi4yYy0yNi4xLTEwLjItNTQuMi0xMi45LTgxLjYtOC45bDY4LjYtNjguNmM1MC01MCAxMzEtNTAgMTgxIDBDNTA5LjYgMTAyLjMgNTA5LjYgMTgzLjQgNDU5LjcgMjMzLjR6TTIyMC4zIDM4Mi4ybC0zMi4yIDMyLjJjLTI1IDI0LjktNjUuNiAyNC45LTkwLjUgMCAtMjUtMjUtMjUtNjUuNiAwLTkwLjVsOTAuNS05MC41YzI1LTI1IDY1LjUtMjUgOTAuNSAwIDcuOCA3LjggMTIuOSAxNy4yIDE1LjggMjcuMSAyLjQtMS40IDQuOC0yLjUgNi44LTQuNWw0Mi4xLTQyYy01LjQtOS4yLTExLjYtMTgtMTkuNC0yNS44IC01MC01MC0xMzEtNTAtMTgxIDBsLTkwLjUgOTAuNWMtNTAgNTAtNTAgMTMxIDAgMTgxIDUwIDUwIDEzMSA1MCAxODEgMGw2OC42LTY4LjZDMjc0LjYgMzk1LjEgMjQ2LjQgMzkyLjMgMjIwLjMgMzgyLjJ6Ii8+PC9zdmc+Cg==');opacity:0.5;visibility:hidden;display:inline-block;vertical-align:middle;}/*!sc*/
+.iHFyeq h1:hover>.share-link::before,.iHFyeq h2:hover>.share-link::before,.iHFyeq .share-link:hover::before{visibility:visible;}/*!sc*/
+.iHFyeq a{text-decoration:underline;color:#32329f;}/*!sc*/
+.iHFyeq a:visited{color:#32329f;}/*!sc*/
+.iHFyeq a:hover{color:#6868cf;text-decoration:underline;}/*!sc*/
+data-styled.g43[id="sc-cBEgGa"]{content:"htbHfQ,bWgCZK,iHFyeq,"}/*!sc*/
+.dDDioG{display:inline;}/*!sc*/
+data-styled.g44[id="sc-ciCrSJ"]{content:"dDDioG,"}/*!sc*/
+.feYhXE{position:relative;}/*!sc*/
+data-styled.g45[id="sc-jcgtOs"]{content:"feYhXE,"}/*!sc*/
+.hHzuQA:hover>.sc-giQkEn{opacity:1;}/*!sc*/
+data-styled.g50[id="sc-cTZdpT"]{content:"hHzuQA,"}/*!sc*/
+.jgTAJz{font-family:Courier,monospace;font-size:13px;white-space:pre;contain:content;overflow-x:auto;}/*!sc*/
+.jgTAJz .redoc-json code>.collapser{display:none;pointer-events:none;}/*!sc*/
+.jgTAJz .callback-function{color:gray;}/*!sc*/
+.jgTAJz .collapser:after{content:'-';cursor:pointer;}/*!sc*/
+.jgTAJz .collapsed>.collapser:after{content:'+';cursor:pointer;}/*!sc*/
+.jgTAJz .ellipsis:after{content:' … ';}/*!sc*/
+.jgTAJz .collapsible{margin-left:2em;}/*!sc*/
+.jgTAJz .hoverable{padding-top:1px;padding-bottom:1px;padding-left:2px;padding-right:2px;border-radius:2px;}/*!sc*/
+.jgTAJz .hovered{background-color:rgba(235, 238, 249, 1);}/*!sc*/
+.jgTAJz .collapser{background-color:transparent;border:0;color:#fff;font-family:Courier,monospace;font-size:13px;padding-right:6px;padding-left:6px;padding-top:0;padding-bottom:0;display:flex;align-items:center;justify-content:center;width:15px;height:15px;position:absolute;top:4px;left:-1.5em;cursor:default;user-select:none;-webkit-user-select:none;padding:2px;}/*!sc*/
+.jgTAJz .collapser:focus{outline-color:#fff;outline-style:dotted;outline-width:1px;}/*!sc*/
+.jgTAJz ul{list-style-type:none;padding:0px;margin:0px 0px 0px 26px;}/*!sc*/
+.jgTAJz li{position:relative;display:block;}/*!sc*/
+.jgTAJz .hoverable{display:inline-block;}/*!sc*/
+.jgTAJz .selected{outline-style:solid;outline-width:1px;outline-style:dotted;}/*!sc*/
+.jgTAJz .collapsed>.collapsible{display:none;}/*!sc*/
+.jgTAJz .ellipsis{display:none;}/*!sc*/
+.jgTAJz .collapsed>.ellipsis{display:inherit;}/*!sc*/
+data-styled.g51[id="sc-jNDflC"]{content:"jgTAJz,"}/*!sc*/
+.kgKexQ{padding:0.9em;background-color:rgba(38,50,56,0.4);margin:0 0 10px 0;display:block;font-family:Montserrat,sans-serif;font-size:0.929em;line-height:1.5em;}/*!sc*/
+data-styled.g52[id="sc-dPqFhK"]{content:"kgKexQ,"}/*!sc*/
+.BuCyN{font-family:Montserrat,sans-serif;font-size:12px;position:absolute;z-index:1;top:-11px;left:12px;font-weight:600;color:rgba(255,255,255,0.7);}/*!sc*/
+data-styled.g53[id="sc-bBzIOb"]{content:"BuCyN,"}/*!sc*/
+.bMFMGt{position:relative;}/*!sc*/
+data-styled.g54[id="sc-cNSlRw"]{content:"bMFMGt,"}/*!sc*/
+.jUCYlq{margin-top:15px;}/*!sc*/
+data-styled.g57[id="sc-hUheUT"]{content:"jUCYlq,"}/*!sc*/
+.jMRTsl{vertical-align:middle;font-size:13px;line-height:20px;}/*!sc*/
+data-styled.g59[id="sc-gSILEF"]{content:"jMRTsl,"}/*!sc*/
+.NncTE{color:rgba(102,102,102,0.9);}/*!sc*/
+data-styled.g60[id="sc-lbpDNm"]{content:"NncTE,"}/*!sc*/
+.kUjPnZ{color:#666;}/*!sc*/
+data-styled.g61[id="sc-iNyHtD"]{content:"kUjPnZ,"}/*!sc*/
+.ehlihR{color:#666;word-break:break-word;}/*!sc*/
+data-styled.g62[id="sc-jePOid"]{content:"ehlihR,"}/*!sc*/
+.dHYagA{color:#d41f1c;font-size:0.9em;font-weight:normal;margin-left:20px;line-height:1;}/*!sc*/
+data-styled.g63[id="sc-eIYgEQ"]{content:"dHYagA,"}/*!sc*/
+.OXDYs{border-radius:2px;word-break:break-word;background-color:rgba(51,51,51,0.05);color:rgba(51,51,51,0.9);padding:0 5px;border:1px solid rgba(51,51,51,0.1);font-family:Courier,monospace;}/*!sc*/
+.sc-lbFCLI+.sc-lbFCLI{margin-left:0;}/*!sc*/
+data-styled.g67[id="sc-lbFCLI"]{content:"OXDYs,"}/*!sc*/
+.enoyBT{border-radius:2px;background-color:rgba(104,104,207,0.05);color:rgba(50,50,159,0.9);margin:0 5px;padding:0 5px;border:1px solid rgba(50,50,159,0.1);}/*!sc*/
+.sc-cljLBy+.sc-cljLBy{margin-left:0;}/*!sc*/
+data-styled.g69[id="sc-cljLBy"]{content:"enoyBT,"}/*!sc*/
+.hAYuWG:after{content:' and ';font-weight:normal;}/*!sc*/
+.hAYuWG:last-child:after{content:none;}/*!sc*/
+.hAYuWG a{text-decoration:underline;color:#32329f;}/*!sc*/
+.hAYuWG a:visited{color:#32329f;}/*!sc*/
+.hAYuWG a:hover{color:#6868cf;text-decoration:underline;}/*!sc*/
+data-styled.g82[id="sc-hPfayn"]{content:"hAYuWG,"}/*!sc*/
+.hFacFb{white-space:nowrap;}/*!sc*/
+.hFacFb:after{content:' or ';white-space:pre;}/*!sc*/
+.hFacFb:last-child:after,.hFacFb:only-child:after{content:none;}/*!sc*/
+.hFacFb a{text-decoration:underline;color:#32329f;}/*!sc*/
+.hFacFb a:visited{color:#32329f;}/*!sc*/
+.hFacFb a:hover{color:#6868cf;text-decoration:underline;}/*!sc*/
+data-styled.g83[id="sc-dtnsVa"]{content:"hFacFb,"}/*!sc*/
+.jdqJPb{flex:1 1 auto;cursor:pointer;}/*!sc*/
+data-styled.g84[id="sc-dalEhJ"]{content:"jdqJPb,"}/*!sc*/
+.cVAkzL{width:75%;text-overflow:ellipsis;border-radius:4px;overflow:hidden;}/*!sc*/
+@media screen and (max-width: 50rem){.cVAkzL{margin-top:10px;}}/*!sc*/
+data-styled.g85[id="sc-jTPGds"]{content:"cVAkzL,"}/*!sc*/
+.kEkHzF{display:inline-block;margin:0;}/*!sc*/
+data-styled.g86[id="sc-jQQpTv"]{content:"kEkHzF,"}/*!sc*/
+.kGZLat{width:100%;display:flex;margin:1em 0;flex-direction:row;}/*!sc*/
+@media screen and (max-width: 50rem){.kGZLat{flex-direction:column;}}/*!sc*/
+data-styled.g87[id="sc-fuYIqi"]{content:"kGZLat,"}/*!sc*/
+.cBgvIi{margin-top:0;margin-bottom:0.5em;}/*!sc*/
+data-styled.g93[id="sc-ctiVdb"]{content:"cBgvIi,"}/*!sc*/
+.ldPigm::before{content:'|';display:inline-block;opacity:0.5;width:15px;text-align:center;}/*!sc*/
+.ldPigm:last-child::after{display:none;}/*!sc*/
+data-styled.g95[id="sc-brKBMN"]{content:"ldPigm,"}/*!sc*/
+.iVyheB{overflow:hidden;}/*!sc*/
+data-styled.g96[id="sc-gILgRS"]{content:"iVyheB,"}/*!sc*/
+.juJQo{display:flex;flex-wrap:wrap;margin-left:-15px;}/*!sc*/
+data-styled.g97[id="sc-euUkyj"]{content:"juJQo,"}/*!sc*/
+.jjsIAS{width:9ex;display:inline-block;height:13px;line-height:13px;background-color:#333;border-radius:3px;background-repeat:no-repeat;background-position:6px 4px;font-size:7px;font-family:Verdana,sans-serif;color:white;text-transform:uppercase;text-align:center;font-weight:bold;vertical-align:middle;margin-right:6px;margin-top:2px;}/*!sc*/
+.jjsIAS.get{background-color:#2F8132;}/*!sc*/
+.jjsIAS.post{background-color:#186FAF;}/*!sc*/
+.jjsIAS.put{background-color:#95507c;}/*!sc*/
+.jjsIAS.options{background-color:#947014;}/*!sc*/
+.jjsIAS.patch{background-color:#bf581d;}/*!sc*/
+.jjsIAS.delete{background-color:#cc3333;}/*!sc*/
+.jjsIAS.basic{background-color:#707070;}/*!sc*/
+.jjsIAS.link{background-color:#07818F;}/*!sc*/
+.jjsIAS.head{background-color:#A23DAD;}/*!sc*/
+.jjsIAS.hook{background-color:#32329f;}/*!sc*/
+.jjsIAS.schema{background-color:#707070;}/*!sc*/
+data-styled.g101[id="sc-XpSrr"]{content:"jjsIAS,"}/*!sc*/
+.dqIuaF{margin:0;padding:0;}/*!sc*/
+.dqIuaF:first-child{padding-bottom:32px;}/*!sc*/
+.sc-ilnrqe .sc-ilnrqe{font-size:0.929em;}/*!sc*/
+.gTfiRs{margin:0;padding:0;display:none;}/*!sc*/
+.gTfiRs:first-child{padding-bottom:32px;}/*!sc*/
+.sc-ilnrqe .sc-ilnrqe{font-size:0.929em;}/*!sc*/
+data-styled.g102[id="sc-ilnrqe"]{content:"dqIuaF,gTfiRs,"}/*!sc*/
+.cQETmj{list-style:none inside none;overflow:hidden;text-overflow:ellipsis;padding:0;}/*!sc*/
+data-styled.g103[id="sc-uMZhz"]{content:"cQETmj,"}/*!sc*/
+.buxoPL{cursor:pointer;color:#333333;margin:0;padding:12.5px 20px;display:flex;justify-content:space-between;font-family:Montserrat,sans-serif;font-size:0.929em;text-transform:none;background-color:#fafafa;}/*!sc*/
+.buxoPL:hover{color:#32329f;background-color:#e1e1e1;}/*!sc*/
+.buxoPL .sc-dYjPD{height:1.5em;width:1.5em;}/*!sc*/
+.buxoPL .sc-dYjPD polygon{fill:#333333;}/*!sc*/
+.cGOuox{cursor:pointer;color:#333333;margin:0;padding:12.5px 20px;display:flex;justify-content:space-between;font-family:Montserrat,sans-serif;background-color:#fafafa;}/*!sc*/
+.cGOuox:hover{color:#32329f;background-color:#ededed;}/*!sc*/
+.cGOuox .sc-dYjPD{height:1.5em;width:1.5em;}/*!sc*/
+.cGOuox .sc-dYjPD polygon{fill:#333333;}/*!sc*/
+data-styled.g104[id="sc-bitxrY"]{content:"buxoPL,cGOuox,"}/*!sc*/
+.ehBKwY{display:inline-block;vertical-align:middle;width:calc(100% - 38px);overflow:hidden;text-overflow:ellipsis;}/*!sc*/
+data-styled.g105[id="sc-eHoOIp"]{content:"ehBKwY,"}/*!sc*/
+.gtBLyN{font-size:0.8em;margin-top:10px;text-align:center;position:fixed;width:260px;bottom:0;background:#fafafa;}/*!sc*/
+.gtBLyN a,.gtBLyN a:visited,.gtBLyN a:hover{color:#333333!important;padding:5px 0;border-top:1px solid #e1e1e1;text-decoration:none;display:flex;align-items:center;justify-content:center;}/*!sc*/
+.gtBLyN img{width:15px;margin-right:5px;}/*!sc*/
+@media screen and (max-width: 50rem){.gtBLyN{width:100%;}}/*!sc*/
+data-styled.g106[id="sc-hAkAFK"]{content:"gtBLyN,"}/*!sc*/
+.fYxpnv{cursor:pointer;position:relative;margin-bottom:5px;}/*!sc*/
+data-styled.g112[id="sc-fXwuWv"]{content:"fYxpnv,"}/*!sc*/
+.dsIRaZ{font-family:Courier,monospace;margin-left:10px;flex:1;overflow-x:hidden;text-overflow:ellipsis;}/*!sc*/
+data-styled.g113[id="sc-FpjRO"]{content:"dsIRaZ,"}/*!sc*/
+.jzaJhV{outline:0;color:inherit;width:100%;text-align:left;cursor:pointer;padding:10px 30px 10px 20px;border-radius:4px 4px 0 0;background-color:#11171a;display:flex;white-space:nowrap;align-items:center;border:1px solid transparent;border-bottom:0;transition:border-color 0.25s ease;}/*!sc*/
+.jzaJhV ..sc-FpjRO{color:#ffffff;}/*!sc*/
+.jzaJhV:focus{box-shadow:inset 0 2px 2px rgba(0, 0, 0, 0.45),0 2px 0 rgba(128, 128, 128, 0.25);}/*!sc*/
+data-styled.g114[id="sc-jWMFtl"]{content:"jzaJhV,"}/*!sc*/
+.hlSrtW{font-size:0.929em;line-height:20px;background-color:#2F8132;color:#ffffff;padding:3px 10px;text-transform:uppercase;font-family:Montserrat,sans-serif;margin:0;}/*!sc*/
+.hOENFc{font-size:0.929em;line-height:20px;background-color:#186FAF;color:#ffffff;padding:3px 10px;text-transform:uppercase;font-family:Montserrat,sans-serif;margin:0;}/*!sc*/
+data-styled.g115[id="sc-eEFuoE"]{content:"hlSrtW,hOENFc,"}/*!sc*/
+.tUxhh{position:absolute;width:100%;z-index:100;background:#fafafa;color:#263238;box-sizing:border-box;box-shadow:0 0 6px rgba(0, 0, 0, 0.33);overflow:hidden;border-bottom-left-radius:4px;border-bottom-right-radius:4px;transition:all 0.25s ease;visibility:hidden;transform:translateY(-50%) scaleY(0);}/*!sc*/
+data-styled.g116[id="sc-fmtEmb"]{content:"tUxhh,"}/*!sc*/
+.bAnPPh{padding:10px;}/*!sc*/
+data-styled.g117[id="sc-ljIcGq"]{content:"bAnPPh,"}/*!sc*/
+.PEJyb{padding:5px;border:1px solid #ccc;background:#fff;word-break:break-all;color:#32329f;}/*!sc*/
+.PEJyb >span{color:#333333;}/*!sc*/
+data-styled.g118[id="sc-jlJOIR"]{content:"PEJyb,"}/*!sc*/
+.bxWqzP{text-transform:lowercase;margin-left:0;line-height:1.5em;}/*!sc*/
+data-styled.g119[id="sc-dTCDEk"]{content:"bxWqzP,"}/*!sc*/
+.iSTZHA{display:block;border:0;width:100%;text-align:left;padding:10px;border-radius:2px;margin-bottom:4px;line-height:1.5em;cursor:pointer;color:#1d8127;background-color:rgba(29,129,39,0.07);}/*!sc*/
+.iSTZHA:focus{outline:auto #1d8127;}/*!sc*/
+.cKkXxa{display:block;border:0;width:100%;text-align:left;padding:10px;border-radius:2px;margin-bottom:4px;line-height:1.5em;cursor:pointer;color:#d41f1c;background-color:rgba(212,31,28,0.07);}/*!sc*/
+.cKkXxa:focus{outline:auto #d41f1c;}/*!sc*/
+data-styled.g121[id="sc-cbuLjy"]{content:"iSTZHA,cKkXxa,"}/*!sc*/
+.cqDULz{vertical-align:top;}/*!sc*/
+data-styled.g124[id="sc-fXmTIC"]{content:"cqDULz,"}/*!sc*/
+.hgNHCh{font-size:1.3em;padding:0.2em 0;margin:3em 0 1.1em;color:#333333;font-weight:normal;}/*!sc*/
+data-styled.g125[id="sc-fINhYD"]{content:"hgNHCh,"}/*!sc*/
+.ktZmcf{margin-bottom:30px;}/*!sc*/
+data-styled.g130[id="sc-iFUzrA"]{content:"ktZmcf,"}/*!sc*/
+.kjuNaM{user-select:none;width:20px;height:20px;align-self:center;display:flex;flex-direction:column;color:#32329f;}/*!sc*/
+data-styled.g131[id="sc-iruNHB"]{content:"kjuNaM,"}/*!sc*/
+.cczbHe{width:260px;background-color:#fafafa;overflow:hidden;display:flex;flex-direction:column;backface-visibility:hidden;height:100vh;position:sticky;position:-webkit-sticky;top:0;}/*!sc*/
+@media screen and (max-width: 50rem){.cczbHe{position:fixed;z-index:20;width:100%;background:#fafafa;display:none;}}/*!sc*/
+@media print{.cczbHe{display:none;}}/*!sc*/
+data-styled.g132[id="sc-eVYbGh"]{content:"cczbHe,"}/*!sc*/
+.ddPveE{outline:none;user-select:none;background-color:#f2f2f2;color:#32329f;display:none;cursor:pointer;position:fixed;right:20px;z-index:100;border-radius:50%;box-shadow:0 0 20px rgba(0, 0, 0, 0.3);bottom:44px;width:60px;height:60px;padding:0 20px;}/*!sc*/
+@media screen and (max-width: 50rem){.ddPveE{display:flex;}}/*!sc*/
+.ddPveE svg{color:#0065FB;}/*!sc*/
+@media print{.ddPveE{display:none;}}/*!sc*/
+data-styled.g133[id="sc-kTmAaw"]{content:"ddPveE,"}/*!sc*/
+.jetsmW{font-family:Roboto,sans-serif;font-size:14px;font-weight:400;line-height:1.5em;color:#333333;display:flex;position:relative;text-align:left;-webkit-font-smoothing:antialiased;font-smoothing:antialiased;text-rendering:optimizeSpeed!important;tap-highlight-color:rgba(0, 0, 0, 0);text-size-adjust:100%;}/*!sc*/
+.jetsmW *{box-sizing:border-box;-webkit-tap-highlight-color:rgba(255, 255, 255, 0);}/*!sc*/
+data-styled.g134[id="sc-dwkskT"]{content:"jetsmW,"}/*!sc*/
+.ldXCvc{z-index:1;position:relative;overflow:hidden;width:calc(100% - 260px);contain:layout;}/*!sc*/
+@media print,screen and (max-width: 50rem){.ldXCvc{width:100%;}}/*!sc*/
+data-styled.g135[id="sc-jtyQFi"]{content:"ldXCvc,"}/*!sc*/
+.bjzTxL{background:#263238;position:absolute;top:0;bottom:0;right:0;width:calc((100% - 260px) * 0.4);}/*!sc*/
+@media print,screen and (max-width: 75rem){.bjzTxL{display:none;}}/*!sc*/
+data-styled.g136[id="sc-ekVkVN"]{content:"bjzTxL,"}/*!sc*/
+.uMSfb{padding:5px 0;}/*!sc*/
+data-styled.g137[id="sc-kijJqc"]{content:"uMSfb,"}/*!sc*/
+.fTcICO{width:calc(100% - 40px);box-sizing:border-box;margin:0 20px;padding:5px 10px 5px 20px;border:0;border-bottom:1px solid #e1e1e1;font-family:Roboto,sans-serif;font-weight:bold;font-size:13px;color:#333333;background-color:transparent;outline:none;}/*!sc*/
+data-styled.g138[id="sc-cLhBAz"]{content:"fTcICO,"}/*!sc*/
+.kAmnlO{position:absolute;left:20px;height:1.8em;width:0.9em;}/*!sc*/
+.kAmnlO path{fill:#333333;}/*!sc*/
+data-styled.g139[id="sc-iIvZUO"]{content:"kAmnlO,"}/*!sc*/
+</style>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+  
+      <div id="redoc"><div class="sc-dwkskT jetsmW redoc-wrap"><div class="sc-eVYbGh cczbHe menu-content" style="top:0px;height:calc(100vh - 0px)"><div role="search" class="sc-kijJqc uMSfb"><svg class="sc-iIvZUO kAmnlO search-icon" version="1.1" viewBox="0 0 1000 1000" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px"><path d="M968.2,849.4L667.3,549c83.9-136.5,66.7-317.4-51.7-435.6C477.1-25,252.5-25,113.9,113.4c-138.5,138.3-138.5,362.6,0,501C219.2,730.1,413.2,743,547.6,666.5l301.9,301.4c43.6,43.6,76.9,14.9,104.2-12.4C981,928.3,1011.8,893,968.2,849.4z M524.5,522c-88.9,88.7-233,88.7-321.8,0c-88.9-88.7-88.9-232.6,0-321.3c88.9-88.7,233-88.7,321.8,0C613.4,289.4,613.4,433.3,524.5,522z"></path></svg><input placeholder="Search..." aria-label="Search" type="text" class="sc-cLhBAz fTcICO search-input" value=""/></div><div class="sc-kLEbxe iOXjCz scrollbar-container undefined"><ul role="menu" class="sc-ilnrqe dqIuaF"><li tabindex="0" depth="1" data-item-id="section/What-you-can-do" role="menuitem" aria-label="What you can do" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY buxoPL -depth1"><span width="calc(100% - 38px)" title="What you can do" class="sc-eHoOIp ehBKwY">What you can do</span></label></li><li tabindex="0" depth="1" data-item-id="section/Authentication" role="menuitem" aria-label="Authentication" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY buxoPL -depth1"><span width="calc(100% - 38px)" title="Authentication" class="sc-eHoOIp ehBKwY">Authentication</span></label></li><li tabindex="0" depth="1" data-item-id="section/Errors" role="menuitem" aria-label="Errors" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY buxoPL -depth1"><span width="calc(100% - 38px)" title="Errors" class="sc-eHoOIp ehBKwY">Errors</span></label></li><li tabindex="0" depth="1" data-item-id="tag/Books" role="menuitem" aria-label="Books" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY buxoPL -depth1"><span width="calc(100% - 38px)" title="Books" class="sc-eHoOIp ehBKwY">Books</span><svg class="sc-dYjPD kdgFPv" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></label><ul role="menu" class="sc-ilnrqe gTfiRs"><li tabindex="0" depth="2" data-item-id="tag/Books/operation/listBooks" role="menuitem" aria-label="List books" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY cGOuox -depth2"><span type="get" class="sc-XpSrr jjsIAS operation-type get">get</span><span tabindex="0" width="calc(100% - 38px)" class="sc-eHoOIp ehBKwY">List books</span></label></li><li tabindex="0" depth="2" data-item-id="tag/Books/operation/createBook" role="menuitem" aria-label="Add a book" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY cGOuox -depth2"><span type="post" class="sc-XpSrr jjsIAS operation-type post">post</span><span tabindex="0" width="calc(100% - 38px)" class="sc-eHoOIp ehBKwY">Add a book</span></label></li><li tabindex="0" depth="2" data-item-id="tag/Books/operation/getBook" role="menuitem" aria-label="Get a book" aria-expanded="false" class="sc-uMZhz cQETmj"><label class="sc-bitxrY cGOuox -depth2"><span type="get" class="sc-XpSrr jjsIAS operation-type get">get</span><span tabindex="0" width="calc(100% - 38px)" class="sc-eHoOIp ehBKwY">Get a book</span></label></li></ul></li></ul><div class="sc-hAkAFK gtBLyN"><a target="_blank" rel="noopener noreferrer" href="https://redocly.com/redoc/">API docs by Redocly</a></div></div></div><div class="sc-kTmAaw ddPveE"><div class="sc-iruNHB kjuNaM"><svg class="" style="transform:translate(2px, -4px) rotate(180deg);transition:transform 0.2s ease" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15"><g transform="translate(904.92214,-879.1482)"><path d="
+          m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+          -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+          0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+          -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+          -174.68583 0.6895,0 26.281,25.03215 56.8701,
+          55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+          -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+          -104.0616 -231.873,-231.248 z
+        " fill="currentColor"></path></g></svg><svg class="" style="transform:translate(2px, 4px);transition:transform 0.2s ease" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15"><g transform="translate(904.92214,-879.1482)"><path d="
+          m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
+          -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
+          0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
+          -174.6858 c 96.079,-96.07721 175.253196,-174.68583 175.942696,
+          -174.68583 0.6895,0 26.281,25.03215 56.8701,
+          55.627 l 55.6165,55.627 -231.245496,231.24803 c -127.185,127.1864
+          -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
+          -104.0616 -231.873,-231.248 z
+        " fill="currentColor"></path></g></svg></div></div><div class="sc-jtyQFi ldXCvc api-content"><div class="sc-eCQgVK jleRXN"><div class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN api-info"><h1 class="sc-fuztkK sc-ctiVdb eRMVDe cBgvIi">Reading List API<!-- --> <span>(<!-- -->1.0.0<!-- -->)</span></h1><p>Download OpenAPI specification<!-- -->:</p><div class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"><div class="sc-gILgRS iVyheB"><div class="sc-euUkyj juJQo"> <span class="sc-brKBMN ldPigm">URL: <a href="https://MackMike.github.io/technical-writing-portfolio-site/">https://MackMike.github.io/technical-writing-portfolio-site/</a></span> <span class="sc-brKBMN ldPigm">License:<!-- --> <a href="https://opensource.org/licenses/MIT">MIT</a></span> </div></div></div><div data-role="redoc-summary" html="&lt;p&gt;Track the books you want to read, are reading, or have finished.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"><p>Track the books you want to read, are reading, or have finished.</p>
+</div><div data-role="redoc-description" html="&lt;p&gt;The Reading List API lets you keep a personal catalog of books and track
+your progress through each one.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;This is a fictional API.&lt;/strong&gt; It was designed for a technical writing
+portfolio and has no production backend. You can try every endpoint
+against a local mock server. See the
+&lt;a href=&quot;quickstart/&quot;&gt;Quickstart&lt;/a&gt; for setup steps.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"><p>The Reading List API lets you keep a personal catalog of books and track
+your progress through each one.</p>
+<p><strong>This is a fictional API.</strong> It was designed for a technical writing
+portfolio and has no production backend. You can try every endpoint
+against a local mock server. See the
+<a href="quickstart/">Quickstart</a> for setup steps.</p>
+</div></div></div></div><div id="section/What-you-can-do" data-section-id="section/What-you-can-do" class="sc-eCQgVK jleRXN"><div class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-jrIDTr iSbGeC"><a class="sc-crPgjm jmoZom" href="#section/What-you-can-do" aria-label="section/What-you-can-do"></a>What you can do</h2></div></div><div class="sc-hKVpXn kmAAAV"><div class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ redoc-markdown " html="&lt;ul&gt;
+&lt;li&gt;List books, optionally filtered by reading status&lt;/li&gt;
+&lt;li&gt;Retrieve a single book by its ID&lt;/li&gt;
+&lt;li&gt;Add a book to your reading list&lt;/li&gt;
+&lt;/ul&gt;
+"><ul>
+<li>List books, optionally filtered by reading status</li>
+<li>Retrieve a single book by its ID</li>
+<li>Add a book to your reading list</li>
+</ul>
+</div></div></div><div id="section/Authentication" data-section-id="section/Authentication" class="sc-eCQgVK jleRXN"><div class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-jrIDTr iSbGeC"><a class="sc-crPgjm jmoZom" href="#section/Authentication" aria-label="section/Authentication"></a>Authentication</h2></div></div><div class="sc-hKVpXn kmAAAV"><div class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ redoc-markdown " html="&lt;p&gt;Every request must include an API key in the &lt;code&gt;X-API-Key&lt;/code&gt; header.
+See the &lt;a href=&quot;authentication/&quot;&gt;Authentication guide&lt;/a&gt; for details.&lt;/p&gt;
+"><p>Every request must include an API key in the <code>X-API-Key</code> header.
+See the <a href="authentication/">Authentication guide</a> for details.</p>
+</div></div></div><div id="section/Errors" data-section-id="section/Errors" class="sc-eCQgVK jleRXN"><div class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-jrIDTr iSbGeC"><a class="sc-crPgjm jmoZom" href="#section/Errors" aria-label="section/Errors"></a>Errors</h2></div></div><div class="sc-hKVpXn kmAAAV"><div class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ redoc-markdown " html="&lt;p&gt;Errors use the Problem Details format
+(&lt;a href=&quot;https://www.rfc-editor.org/rfc/rfc9457.html&quot;&gt;RFC 9457&lt;/a&gt;) with the
+&lt;code&gt;application/problem+json&lt;/code&gt; media type.
+See the &lt;a href=&quot;errors/&quot;&gt;Error handling guide&lt;/a&gt; for details.&lt;/p&gt;
+"><p>Errors use the Problem Details format
+(<a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457</a>) with the
+<code>application/problem+json</code> media type.
+See the <a href="errors/">Error handling guide</a> for details.</p>
+</div></div></div><div id="tag/Books" data-section-id="tag/Books" class="sc-eCQgVK jleRXN"><div class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-qdQOe MOVBZ"><a class="sc-crPgjm jmoZom" href="#tag/Books" aria-label="tag/Books"></a>Books</h2></div></div><div class="sc-hKVpXn kmAAAV"><div class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ redoc-markdown " html="&lt;p&gt;List, retrieve, and add books on your reading list.&lt;/p&gt;
+"><p>List, retrieve, and add books on your reading list.</p>
+</div></div></div><div id="tag/Books/operation/listBooks" data-section-id="tag/Books/operation/listBooks" class="sc-eCQgVK grDwca"><div data-section-id="operation/listBooks" id="operation/listBooks" class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-qdQOe MOVBZ"><a class="sc-crPgjm jmoZom" href="#tag/Books/operation/listBooks" aria-label="tag/Books/operation/listBooks"></a>List books<!-- --> </h2><div class="sc-iFUzrA ktZmcf"><div html="&lt;p&gt;Returns the books on your reading list, most recently added first.&lt;/p&gt;
+&lt;p&gt;Use the &lt;code&gt;status&lt;/code&gt; parameter to return only books with a given reading
+status. Use &lt;code&gt;limit&lt;/code&gt; to cap the number of books returned.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"><p>Returns the books on your reading list, most recently added first.</p>
+<p>Use the <code>status</code> parameter to return only books with a given reading
+status. Use <code>limit</code> to cap the number of books returned.</p>
+</div></div><div class="sc-fuYIqi kGZLat"><div class="sc-dalEhJ jdqJPb"><h5 class="sc-iqkkDd sc-jQQpTv jprlAr kEkHzF">Authorizations:</h5><svg class="sc-dYjPD bEEWJa" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></div><div class="sc-jTPGds cVAkzL"><span class="sc-dtnsVa hFacFb"><span class="sc-hPfayn hAYuWG"><i>ApiKeyAuth</i></span></span></div></div><div><h5 class="sc-iqkkDd jprlAr">query<!-- --> Parameters</h5><table class="sc-hHopjF bsjUmE"><tbody><tr class=""><td kind="field" title="status" class="sc-hCcPtG sc-fFCZOx jFNAwF lcdEEX"><span class="sc-ieCSdj kkMuqc"></span><span class="property-name">status</span></td><td class="sc-bjLslk gLpZiQ"><div><div><span class="sc-gSILEF sc-lbpDNm jMRTsl NncTE"></span><span class="sc-gSILEF sc-iNyHtD jMRTsl kUjPnZ">string</span><span class="sc-gSILEF sc-jePOid jMRTsl ehlihR"> (<!-- -->BookStatus<!-- -->) </span></div><div><span class="sc-gSILEF jMRTsl"> <!-- -->Enum<!-- -->:</span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">&quot;unread&quot;</span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">&quot;reading&quot;</span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">&quot;finished&quot;</span> </div> <div><span class="sc-gSILEF jMRTsl"> <!-- -->Example:<!-- --> </span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">status=unread</span></div><div><div html="&lt;p&gt;Return only books with this reading status.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>Return only books with this reading status.</p>
+</div></div></div></td></tr><tr class="last "><td kind="field" title="limit" class="sc-hCcPtG sc-fFCZOx jFNAwF lcdEEX"><span class="sc-ieCSdj kkMuqc"></span><span class="property-name">limit</span></td><td class="sc-bjLslk gLpZiQ"><div><div><span class="sc-gSILEF sc-lbpDNm jMRTsl NncTE"></span><span class="sc-gSILEF sc-iNyHtD jMRTsl kUjPnZ">integer</span><span> <span class="sc-gSILEF sc-cljLBy jMRTsl enoyBT"> <!-- -->[ 1 .. 100 ]<!-- --> </span></span></div><div><span class="sc-gSILEF jMRTsl"> <!-- -->Default:<!-- --> </span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">20</span></div> <div><div html="&lt;p&gt;Maximum number of books to return.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>Maximum number of books to return.</p>
+</div></div></div></td></tr></tbody></table></div><div><h3 class="sc-fINhYD hgNHCh">Responses</h3><div><button class="sc-cbuLjy iSTZHA"><svg class="sc-dYjPD gngmNp" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">200<!-- --> </strong><div html="&lt;p&gt;A list of books.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>A list of books.</p>
+</div></button></div><div><button class="sc-cbuLjy cKkXxa"><svg class="sc-dYjPD hJoFRR" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">400<!-- --> </strong><div html="&lt;p&gt;A query parameter was invalid. The &lt;code&gt;errors&lt;/code&gt; array lists each invalid parameter.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>A query parameter was invalid. The <code>errors</code> array lists each invalid parameter.</p>
+</div></button></div><div><button class="sc-cbuLjy cKkXxa"><svg class="sc-dYjPD hJoFRR" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">401<!-- --> </strong><div html="&lt;p&gt;The &lt;code&gt;X-API-Key&lt;/code&gt; header is missing or the key is not valid.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>The <code>X-API-Key</code> header is missing or the key is not valid.</p>
+</div></button></div></div></div><div class="sc-jSppWd sc-gKkgUA fpMlmc bdQQyo"><div class="sc-fXwuWv fYxpnv"><button class="sc-jWMFtl jzaJhV"><span type="get" class="sc-eEFuoE hlSrtW http-verb get">get</span><span class="sc-FpjRO dsIRaZ">/books</span><svg class="sc-dYjPD bQKUih" style="margin-right:-25px" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></button><div aria-hidden="true" class="sc-fmtEmb tUxhh"><div class="sc-ljIcGq bAnPPh"><div html="&lt;p&gt;Local Prism mock server&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>Local Prism mock server</p>
+</div><div tabindex="0" role="button"><div class="sc-jlJOIR PEJyb"><span>http://127.0.0.1:4010</span>/books</div></div></div></div></div><div><h3 class="sc-kEbgWM iamDfj"> <!-- -->Request samples<!-- --> </h3><div class="sc-cxxQMU fcGuQW" data-rttabs="true"><ul class="react-tabs__tab-list" role="tablist"><li class="react-tabs__tab react-tabs__tab--selected" role="tab" id="tab_R_iiqa_0" aria-selected="true" aria-disabled="false" aria-controls="panel_R_iiqa_0" tabindex="0" data-rttab="true">curl</li><li class="react-tabs__tab" role="tab" id="tab_R_iiqa_1" aria-selected="false" aria-disabled="false" aria-controls="panel_R_iiqa_1" data-rttab="true">JavaScript</li><li class="react-tabs__tab" role="tab" id="tab_R_iiqa_2" aria-selected="false" aria-disabled="false" aria-controls="panel_R_iiqa_2" data-rttab="true">Python</li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="panel_R_iiqa_0" aria-labelledby="tab_R_iiqa_0"><div class="sc-ezjgic hsxFzL"><div class="sc-giQkEn dzKJV"><button><div class="sc-jcgtOs feYhXE">Copy</div></button></div><pre class="sc-iJSMbW sc-bYgEKt fiNpIH kBZzKJ">curl <span class="token string">"http://127.0.0.1:4010/books?status=unread&amp;limit=10"</span> \
+  <span class="token operator">-</span>H <span class="token string">"X-API-Key: demo-key"</span>
+</pre></div></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_iiqa_1" aria-labelledby="tab_R_iiqa_1"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_iiqa_2" aria-labelledby="tab_R_iiqa_2"></div></div></div><div><h3 class="sc-kEbgWM iamDfj"> <!-- -->Response samples<!-- --> </h3><div class="sc-cxxQMU fcGuQW" data-rttabs="true"><ul class="react-tabs__tab-list" role="tablist"><li class="tab-success react-tabs__tab--selected" role="tab" id="tab_R_jiqa_0" aria-selected="true" aria-disabled="false" aria-controls="panel_R_jiqa_0" tabindex="0" data-rttab="true">200</li><li class="tab-error" role="tab" id="tab_R_jiqa_1" aria-selected="false" aria-disabled="false" aria-controls="panel_R_jiqa_1" data-rttab="true">400</li><li class="tab-error" role="tab" id="tab_R_jiqa_2" aria-selected="false" aria-disabled="false" aria-controls="panel_R_jiqa_2" data-rttab="true">401</li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="panel_R_jiqa_0" aria-labelledby="tab_R_jiqa_0"><div><div class="sc-cNSlRw bMFMGt"><span class="sc-bBzIOb BuCyN">Content type</span><div class="sc-dPqFhK kgKexQ">application/json</div></div><div class="sc-hUheUT jUCYlq"><div class="sc-cTZdpT hHzuQA"><div class="sc-giQkEn dzKJV"><button><div class="sc-jcgtOs feYhXE">Copy</div></button><button> Expand all </button><button> Collapse all </button></div><div tabindex="0" class="sc-iJSMbW fiNpIH sc-jNDflC jgTAJz"><div class="redoc-json"><code><button class="collapser" aria-label="collapse"></button><span class="token punctuation">{</span><span class="ellipsis"></span><ul class="obj collapsible"><li><div class="hoverable "><span class="property token string">"items"</span>: <button class="collapser" aria-label="collapse"></button><span class="token punctuation">[</span><span class="ellipsis"></span><ul class="array collapsible"><li><div class="hoverable collapsed"><button class="collapser" aria-label="expand"></button><span class="token punctuation">{</span><span class="ellipsis"></span><ul class="obj collapsible"><li><div class="hoverable collapsed"><span class="property token string">"id"</span>: <span class="token string">&quot;bk_002&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"title"</span>: <span class="token string">&quot;API Patterns&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"author"</span>: <span class="token string">&quot;R. Designer&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"status"</span>: <span class="token string">&quot;reading&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"createdAt"</span>: <span class="token string">&quot;2026-10-02T14:30:00Z&quot;</span></div></li></ul><span class="token punctuation">}</span>,</div></li><li><div class="hoverable collapsed"><button class="collapser" aria-label="expand"></button><span class="token punctuation">{</span><span class="ellipsis"></span><ul class="obj collapsible"><li><div class="hoverable collapsed"><span class="property token string">"id"</span>: <span class="token string">&quot;bk_001&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"title"</span>: <span class="token string">&quot;Docs for Developers&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"author"</span>: <span class="token string">&quot;A. Writer&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"status"</span>: <span class="token string">&quot;unread&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable collapsed"><span class="property token string">"createdAt"</span>: <span class="token string">&quot;2026-09-28T09:15:00Z&quot;</span></div></li></ul><span class="token punctuation">}</span></div></li></ul><span class="token punctuation">]</span></div></li></ul><span class="token punctuation">}</span></code></div></div></div></div></div></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_jiqa_1" aria-labelledby="tab_R_jiqa_1"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_jiqa_2" aria-labelledby="tab_R_jiqa_2"></div></div></div></div></div></div><div id="tag/Books/operation/createBook" data-section-id="tag/Books/operation/createBook" class="sc-eCQgVK grDwca"><div data-section-id="operation/createBook" id="operation/createBook" class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-qdQOe MOVBZ"><a class="sc-crPgjm jmoZom" href="#tag/Books/operation/createBook" aria-label="tag/Books/operation/createBook"></a>Add a book<!-- --> </h2><div class="sc-iFUzrA ktZmcf"><div html="&lt;p&gt;Adds a book to your reading list. The server assigns the book&amp;#39;s &lt;code&gt;id&lt;/code&gt;
+and &lt;code&gt;createdAt&lt;/code&gt; timestamp.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"><p>Adds a book to your reading list. The server assigns the book&#39;s <code>id</code>
+and <code>createdAt</code> timestamp.</p>
+</div></div><div class="sc-fuYIqi kGZLat"><div class="sc-dalEhJ jdqJPb"><h5 class="sc-iqkkDd sc-jQQpTv jprlAr kEkHzF">Authorizations:</h5><svg class="sc-dYjPD bEEWJa" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></div><div class="sc-jTPGds cVAkzL"><span class="sc-dtnsVa hFacFb"><span class="sc-hPfayn hAYuWG"><i>ApiKeyAuth</i></span></span></div></div><h5 class="sc-iqkkDd jprlAr">Request Body schema: <span class="sc-gXvOjn kxMqOs">application/json</span><div class="sc-gSILEF sc-eIYgEQ sc-dTCDEk jMRTsl dHYagA bxWqzP">required</div></h5><div html="" class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"></div><table class="sc-hHopjF bsjUmE"><tbody><tr class=""><td kind="field" title="title" class="sc-hCcPtG sc-fFCZOx jFNAwF lcdEEX"><span class="sc-ieCSdj kkMuqc"></span><span class="property-name">title</span><div class="sc-gSILEF sc-eIYgEQ jMRTsl dHYagA">required</div></td><td class="sc-bjLslk gLpZiQ"><div><div><span class="sc-gSILEF sc-lbpDNm jMRTsl NncTE"></span><span class="sc-gSILEF sc-iNyHtD jMRTsl kUjPnZ">string</span><span> <span class="sc-gSILEF sc-cljLBy jMRTsl enoyBT"> <!-- -->[ 1 .. 200 ] characters<!-- --> </span></span></div> <div><div html="&lt;p&gt;The book&amp;#39;s title. Between 1 and 200 characters.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>The book&#39;s title. Between 1 and 200 characters.</p>
+</div></div></div></td></tr><tr class=""><td kind="field" title="author" class="sc-hCcPtG sc-fFCZOx jFNAwF lcdEEX"><span class="sc-ieCSdj kkMuqc"></span><span class="property-name">author</span><div class="sc-gSILEF sc-eIYgEQ jMRTsl dHYagA">required</div></td><td class="sc-bjLslk gLpZiQ"><div><div><span class="sc-gSILEF sc-lbpDNm jMRTsl NncTE"></span><span class="sc-gSILEF sc-iNyHtD jMRTsl kUjPnZ">string</span><span> <span class="sc-gSILEF sc-cljLBy jMRTsl enoyBT"> <!-- -->[ 1 .. 100 ] characters<!-- --> </span></span></div> <div><div html="&lt;p&gt;The book&amp;#39;s author. Between 1 and 100 characters.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>The book&#39;s author. Between 1 and 100 characters.</p>
+</div></div></div></td></tr><tr class="last "><td kind="field" title="status" class="sc-hCcPtG sc-fFCZOx jFNAwF lcdEEX"><span class="sc-ieCSdj kkMuqc"></span><span class="property-name">status</span><div class="sc-gSILEF sc-eIYgEQ jMRTsl dHYagA">required</div></td><td class="sc-bjLslk gLpZiQ"><div><div><span class="sc-gSILEF sc-lbpDNm jMRTsl NncTE"></span><span class="sc-gSILEF sc-iNyHtD jMRTsl kUjPnZ">string</span><span class="sc-gSILEF sc-jePOid jMRTsl ehlihR"> (<!-- -->BookStatus<!-- -->) </span></div><div><span class="sc-gSILEF jMRTsl"> <!-- -->Enum<!-- -->:</span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">&quot;unread&quot;</span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">&quot;reading&quot;</span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">&quot;finished&quot;</span> </div> <div><div html="&lt;p&gt;Reading status. &lt;code&gt;unread&lt;/code&gt; means you have not started the book, &lt;code&gt;reading&lt;/code&gt; means you are partway through it, and &lt;code&gt;finished&lt;/code&gt; means you have completed it.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>Reading status. <code>unread</code> means you have not started the book, <code>reading</code> means you are partway through it, and <code>finished</code> means you have completed it.</p>
+</div></div></div></td></tr></tbody></table><div><h3 class="sc-fINhYD hgNHCh">Responses</h3><div><button class="sc-cbuLjy iSTZHA"><svg class="sc-dYjPD gngmNp" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">201<!-- --> </strong><div html="&lt;p&gt;The book was added.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>The book was added.</p>
+</div></button></div><div><button class="sc-cbuLjy cKkXxa"><svg class="sc-dYjPD hJoFRR" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">400<!-- --> </strong><div html="&lt;p&gt;The request was invalid. The &lt;code&gt;errors&lt;/code&gt; array lists each invalid field.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>The request was invalid. The <code>errors</code> array lists each invalid field.</p>
+</div></button></div><div><button class="sc-cbuLjy cKkXxa"><svg class="sc-dYjPD hJoFRR" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">401<!-- --> </strong><div html="&lt;p&gt;The &lt;code&gt;X-API-Key&lt;/code&gt; header is missing or the key is not valid.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>The <code>X-API-Key</code> header is missing or the key is not valid.</p>
+</div></button></div></div></div><div class="sc-jSppWd sc-gKkgUA fpMlmc bdQQyo"><div class="sc-fXwuWv fYxpnv"><button class="sc-jWMFtl jzaJhV"><span type="post" class="sc-eEFuoE hOENFc http-verb post">post</span><span class="sc-FpjRO dsIRaZ">/books</span><svg class="sc-dYjPD bQKUih" style="margin-right:-25px" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></button><div aria-hidden="true" class="sc-fmtEmb tUxhh"><div class="sc-ljIcGq bAnPPh"><div html="&lt;p&gt;Local Prism mock server&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>Local Prism mock server</p>
+</div><div tabindex="0" role="button"><div class="sc-jlJOIR PEJyb"><span>http://127.0.0.1:4010</span>/books</div></div></div></div></div><div><h3 class="sc-kEbgWM iamDfj"> <!-- -->Request samples<!-- --> </h3><div class="sc-cxxQMU fcGuQW" data-rttabs="true"><ul class="react-tabs__tab-list" role="tablist"><li class="react-tabs__tab react-tabs__tab--selected" role="tab" id="tab_R_ijaa_0" aria-selected="true" aria-disabled="false" aria-controls="panel_R_ijaa_0" tabindex="0" data-rttab="true">Payload</li><li class="react-tabs__tab" role="tab" id="tab_R_ijaa_1" aria-selected="false" aria-disabled="false" aria-controls="panel_R_ijaa_1" data-rttab="true">curl</li><li class="react-tabs__tab" role="tab" id="tab_R_ijaa_2" aria-selected="false" aria-disabled="false" aria-controls="panel_R_ijaa_2" data-rttab="true">JavaScript</li><li class="react-tabs__tab" role="tab" id="tab_R_ijaa_3" aria-selected="false" aria-disabled="false" aria-controls="panel_R_ijaa_3" data-rttab="true">Python</li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="panel_R_ijaa_0" aria-labelledby="tab_R_ijaa_0"><div><div class="sc-cNSlRw bMFMGt"><span class="sc-bBzIOb BuCyN">Content type</span><div class="sc-dPqFhK kgKexQ">application/json</div></div><div class="sc-hUheUT jUCYlq"><div class="sc-cTZdpT hHzuQA"><div class="sc-giQkEn dzKJV"><button><div class="sc-jcgtOs feYhXE">Copy</div></button></div><div tabindex="0" class="sc-iJSMbW fiNpIH sc-jNDflC jgTAJz"><div class="redoc-json"><code><button class="collapser" aria-label="collapse"></button><span class="token punctuation">{</span><span class="ellipsis"></span><ul class="obj collapsible"><li><div class="hoverable "><span class="property token string">"title"</span>: <span class="token string">&quot;The Art of API Docs&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"author"</span>: <span class="token string">&quot;Jane Example&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"status"</span>: <span class="token string">&quot;unread&quot;</span></div></li></ul><span class="token punctuation">}</span></code></div></div></div></div></div></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_ijaa_1" aria-labelledby="tab_R_ijaa_1"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_ijaa_2" aria-labelledby="tab_R_ijaa_2"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_ijaa_3" aria-labelledby="tab_R_ijaa_3"></div></div></div><div><h3 class="sc-kEbgWM iamDfj"> <!-- -->Response samples<!-- --> </h3><div class="sc-cxxQMU fcGuQW" data-rttabs="true"><ul class="react-tabs__tab-list" role="tablist"><li class="tab-success react-tabs__tab--selected" role="tab" id="tab_R_jjaa_0" aria-selected="true" aria-disabled="false" aria-controls="panel_R_jjaa_0" tabindex="0" data-rttab="true">201</li><li class="tab-error" role="tab" id="tab_R_jjaa_1" aria-selected="false" aria-disabled="false" aria-controls="panel_R_jjaa_1" data-rttab="true">400</li><li class="tab-error" role="tab" id="tab_R_jjaa_2" aria-selected="false" aria-disabled="false" aria-controls="panel_R_jjaa_2" data-rttab="true">401</li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="panel_R_jjaa_0" aria-labelledby="tab_R_jjaa_0"><div><div class="sc-cNSlRw bMFMGt"><span class="sc-bBzIOb BuCyN">Content type</span><div class="sc-dPqFhK kgKexQ">application/json</div></div><div class="sc-hUheUT jUCYlq"><div class="sc-cTZdpT hHzuQA"><div class="sc-giQkEn dzKJV"><button><div class="sc-jcgtOs feYhXE">Copy</div></button></div><div tabindex="0" class="sc-iJSMbW fiNpIH sc-jNDflC jgTAJz"><div class="redoc-json"><code><button class="collapser" aria-label="collapse"></button><span class="token punctuation">{</span><span class="ellipsis"></span><ul class="obj collapsible"><li><div class="hoverable "><span class="property token string">"id"</span>: <span class="token string">&quot;bk_003&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"title"</span>: <span class="token string">&quot;The Art of API Docs&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"author"</span>: <span class="token string">&quot;Jane Example&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"status"</span>: <span class="token string">&quot;unread&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"createdAt"</span>: <span class="token string">&quot;2026-10-14T18:45:00Z&quot;</span></div></li></ul><span class="token punctuation">}</span></code></div></div></div></div></div></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_jjaa_1" aria-labelledby="tab_R_jjaa_1"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_jjaa_2" aria-labelledby="tab_R_jjaa_2"></div></div></div></div></div></div><div id="tag/Books/operation/getBook" data-section-id="tag/Books/operation/getBook" class="sc-eCQgVK grDwca"><div data-section-id="operation/getBook" id="operation/getBook" class="sc-iCECmn lhRBUS"><div class="sc-hKVpXn kktglN"><h2 class="sc-qdQOe MOVBZ"><a class="sc-crPgjm jmoZom" href="#tag/Books/operation/getBook" aria-label="tag/Books/operation/getBook"></a>Get a book<!-- --> </h2><div class="sc-iFUzrA ktZmcf"><div html="&lt;p&gt;Returns a single book by its ID.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH htbHfQ"><p>Returns a single book by its ID.</p>
+</div></div><div class="sc-fuYIqi kGZLat"><div class="sc-dalEhJ jdqJPb"><h5 class="sc-iqkkDd sc-jQQpTv jprlAr kEkHzF">Authorizations:</h5><svg class="sc-dYjPD bEEWJa" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></div><div class="sc-jTPGds cVAkzL"><span class="sc-dtnsVa hFacFb"><span class="sc-hPfayn hAYuWG"><i>ApiKeyAuth</i></span></span></div></div><div><h5 class="sc-iqkkDd jprlAr">path<!-- --> Parameters</h5><table class="sc-hHopjF bsjUmE"><tbody><tr class="last "><td kind="field" title="bookId" class="sc-hCcPtG sc-fFCZOx jFNAwF lcdEEX"><span class="sc-ieCSdj kkMuqc"></span><span class="property-name">bookId</span><div class="sc-gSILEF sc-eIYgEQ jMRTsl dHYagA">required</div></td><td class="sc-bjLslk gLpZiQ"><div><div><span class="sc-gSILEF sc-lbpDNm jMRTsl NncTE"></span><span class="sc-gSILEF sc-iNyHtD jMRTsl kUjPnZ">string</span></div> <div><span class="sc-gSILEF jMRTsl"> <!-- -->Example:<!-- --> </span> <span class="sc-gSILEF sc-lbFCLI jMRTsl OXDYs">bk_001</span></div><div><div html="&lt;p&gt;The book&amp;#39;s unique identifier, as returned in the &lt;code&gt;id&lt;/code&gt; field when the book was created. IDs start with &lt;code&gt;bk_&lt;/code&gt;.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>The book&#39;s unique identifier, as returned in the <code>id</code> field when the book was created. IDs start with <code>bk_</code>.</p>
+</div></div></div></td></tr></tbody></table></div><div><h3 class="sc-fINhYD hgNHCh">Responses</h3><div><button class="sc-cbuLjy iSTZHA"><svg class="sc-dYjPD gngmNp" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">200<!-- --> </strong><div html="&lt;p&gt;The requested book.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>The requested book.</p>
+</div></button></div><div><button class="sc-cbuLjy cKkXxa"><svg class="sc-dYjPD hJoFRR" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">401<!-- --> </strong><div html="&lt;p&gt;The &lt;code&gt;X-API-Key&lt;/code&gt; header is missing or the key is not valid.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>The <code>X-API-Key</code> header is missing or the key is not valid.</p>
+</div></button></div><div><button class="sc-cbuLjy cKkXxa"><svg class="sc-dYjPD hJoFRR" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg><strong class="sc-fXmTIC cqDULz">404<!-- --> </strong><div html="&lt;p&gt;No book exists with the requested ID.&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa sc-ciCrSJ fiNpIH iHFyeq dDDioG"><p>No book exists with the requested ID.</p>
+</div></button></div></div></div><div class="sc-jSppWd sc-gKkgUA fpMlmc bdQQyo"><div class="sc-fXwuWv fYxpnv"><button class="sc-jWMFtl jzaJhV"><span type="get" class="sc-eEFuoE hlSrtW http-verb get">get</span><span class="sc-FpjRO dsIRaZ">/books/{bookId}</span><svg class="sc-dYjPD bQKUih" style="margin-right:-25px" version="1.1" viewBox="0 0 24 24" x="0" xmlns="http://www.w3.org/2000/svg" y="0" aria-hidden="true"><polygon points="17.3 8.3 12 13.6 6.7 8.3 5.3 9.7 12 16.4 18.7 9.7 "></polygon></svg></button><div aria-hidden="true" class="sc-fmtEmb tUxhh"><div class="sc-ljIcGq bAnPPh"><div html="&lt;p&gt;Local Prism mock server&lt;/p&gt;
+" class="sc-iJSMbW sc-cBEgGa fiNpIH bWgCZK"><p>Local Prism mock server</p>
+</div><div tabindex="0" role="button"><div class="sc-jlJOIR PEJyb"><span>http://127.0.0.1:4010</span>/books/{bookId}</div></div></div></div></div><div><h3 class="sc-kEbgWM iamDfj"> <!-- -->Request samples<!-- --> </h3><div class="sc-cxxQMU fcGuQW" data-rttabs="true"><ul class="react-tabs__tab-list" role="tablist"><li class="react-tabs__tab react-tabs__tab--selected" role="tab" id="tab_R_ijqa_0" aria-selected="true" aria-disabled="false" aria-controls="panel_R_ijqa_0" tabindex="0" data-rttab="true">curl</li><li class="react-tabs__tab" role="tab" id="tab_R_ijqa_1" aria-selected="false" aria-disabled="false" aria-controls="panel_R_ijqa_1" data-rttab="true">JavaScript</li><li class="react-tabs__tab" role="tab" id="tab_R_ijqa_2" aria-selected="false" aria-disabled="false" aria-controls="panel_R_ijqa_2" data-rttab="true">Python</li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="panel_R_ijqa_0" aria-labelledby="tab_R_ijqa_0"><div class="sc-ezjgic hsxFzL"><div class="sc-giQkEn dzKJV"><button><div class="sc-jcgtOs feYhXE">Copy</div></button></div><pre class="sc-iJSMbW sc-bYgEKt fiNpIH kBZzKJ">curl http<span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span><span class="token number">127.0</span><span class="token number">.0</span><span class="token number">.1</span><span class="token punctuation">:</span><span class="token number">4010</span><span class="token operator">/</span>books<span class="token operator">/</span>bk_001 \
+  <span class="token operator">-</span>H <span class="token string">"X-API-Key: demo-key"</span>
+</pre></div></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_ijqa_1" aria-labelledby="tab_R_ijqa_1"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_ijqa_2" aria-labelledby="tab_R_ijqa_2"></div></div></div><div><h3 class="sc-kEbgWM iamDfj"> <!-- -->Response samples<!-- --> </h3><div class="sc-cxxQMU fcGuQW" data-rttabs="true"><ul class="react-tabs__tab-list" role="tablist"><li class="tab-success react-tabs__tab--selected" role="tab" id="tab_R_jjqa_0" aria-selected="true" aria-disabled="false" aria-controls="panel_R_jjqa_0" tabindex="0" data-rttab="true">200</li><li class="tab-error" role="tab" id="tab_R_jjqa_1" aria-selected="false" aria-disabled="false" aria-controls="panel_R_jjqa_1" data-rttab="true">401</li><li class="tab-error" role="tab" id="tab_R_jjqa_2" aria-selected="false" aria-disabled="false" aria-controls="panel_R_jjqa_2" data-rttab="true">404</li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="panel_R_jjqa_0" aria-labelledby="tab_R_jjqa_0"><div><div class="sc-cNSlRw bMFMGt"><span class="sc-bBzIOb BuCyN">Content type</span><div class="sc-dPqFhK kgKexQ">application/json</div></div><div class="sc-hUheUT jUCYlq"><div class="sc-cTZdpT hHzuQA"><div class="sc-giQkEn dzKJV"><button><div class="sc-jcgtOs feYhXE">Copy</div></button></div><div tabindex="0" class="sc-iJSMbW fiNpIH sc-jNDflC jgTAJz"><div class="redoc-json"><code><button class="collapser" aria-label="collapse"></button><span class="token punctuation">{</span><span class="ellipsis"></span><ul class="obj collapsible"><li><div class="hoverable "><span class="property token string">"id"</span>: <span class="token string">&quot;bk_001&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"title"</span>: <span class="token string">&quot;Docs for Developers&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"author"</span>: <span class="token string">&quot;A. Writer&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"status"</span>: <span class="token string">&quot;unread&quot;</span><span class="token punctuation">,</span></div></li><li><div class="hoverable "><span class="property token string">"createdAt"</span>: <span class="token string">&quot;2026-09-28T09:15:00Z&quot;</span></div></li></ul><span class="token punctuation">}</span></code></div></div></div></div></div></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_jjqa_1" aria-labelledby="tab_R_jjqa_1"></div><div class="react-tabs__tab-panel" role="tabpanel" id="panel_R_jjqa_2" aria-labelledby="tab_R_jjqa_2"></div></div></div></div></div></div></div><div class="sc-ekVkVN bjzTxL"></div></div></div>
+      <script>
+      const __redoc_state = {"menu":{"activeItemIdx":-1},"spec":{"data":{"openapi":"3.1.0","info":{"title":"Reading List API","version":"1.0.0","summary":"Track the books you want to read, are reading, or have finished.","description":"The Reading List API lets you keep a personal catalog of books and track\nyour progress through each one.\n\n**This is a fictional API.** It was designed for a technical writing\nportfolio and has no production backend. You can try every endpoint\nagainst a local mock server. See the\n[Quickstart](quickstart/) for setup steps.\n\n## What you can do\n\n- List books, optionally filtered by reading status\n- Retrieve a single book by its ID\n- Add a book to your reading list\n\n## Authentication\n\nEvery request must include an API key in the `X-API-Key` header.\nSee the [Authentication guide](authentication/) for details.\n\n## Errors\n\nErrors use the Problem Details format\n([RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html)) with the\n`application/problem+json` media type.\nSee the [Error handling guide](errors/) for details.\n","license":{"name":"MIT","url":"https://opensource.org/licenses/MIT"},"contact":{"name":"Michael Scarborough","url":"https://MackMike.github.io/technical-writing-portfolio-site/"}},"servers":[{"url":"http://127.0.0.1:4010","description":"Local Prism mock server"}],"tags":[{"name":"Books","description":"List, retrieve, and add books on your reading list."}],"security":[{"ApiKeyAuth":[]}],"paths":{"/books":{"get":{"operationId":"listBooks","tags":["Books"],"summary":"List books","description":"Returns the books on your reading list, most recently added first.\n\nUse the `status` parameter to return only books with a given reading\nstatus. Use `limit` to cap the number of books returned.\n","parameters":[{"name":"status","in":"query","required":false,"description":"Return only books with this reading status.","schema":{"$ref":"#/components/schemas/BookStatus"}},{"name":"limit","in":"query","required":false,"description":"Maximum number of books to return.","schema":{"type":"integer","minimum":1,"maximum":100,"default":20}}],"responses":{"200":{"description":"A list of books.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/BookList"},"examples":{"default":{"summary":"Two books on the list","value":{"items":[{"id":"bk_002","title":"API Patterns","author":"R. Designer","status":"reading","createdAt":"2026-10-02T14:30:00Z"},{"id":"bk_001","title":"Docs for Developers","author":"A. Writer","status":"unread","createdAt":"2026-09-28T09:15:00Z"}]}}}}}},"400":{"$ref":"#/components/responses/InvalidQueryError"},"401":{"$ref":"#/components/responses/UnauthorizedError"}},"x-codeSamples":[{"lang":"curl","label":"curl","source":"curl \"http://127.0.0.1:4010/books?status=unread&limit=10\" \\\n  -H \"X-API-Key: demo-key\"\n"},{"lang":"JavaScript","label":"JavaScript","source":"const response = await fetch(\n  \"http://127.0.0.1:4010/books?status=unread&limit=10\",\n  { headers: { \"X-API-Key\": \"demo-key\" } }\n);\nconst data = await response.json();\nconsole.log(data.items);\n"},{"lang":"Python","label":"Python","source":"import requests\n\nresponse = requests.get(\n    \"http://127.0.0.1:4010/books\",\n    params={\"status\": \"unread\", \"limit\": 10},\n    headers={\"X-API-Key\": \"demo-key\"},\n)\nprint(response.json()[\"items\"])\n"}]},"post":{"operationId":"createBook","tags":["Books"],"summary":"Add a book","description":"Adds a book to your reading list. The server assigns the book's `id`\nand `createdAt` timestamp.\n","requestBody":{"required":true,"content":{"application/json":{"schema":{"$ref":"#/components/schemas/BookInput"},"examples":{"default":{"summary":"A book you plan to read","value":{"title":"The Art of API Docs","author":"Jane Example","status":"unread"}}}}}},"responses":{"201":{"description":"The book was added.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Book"},"examples":{"default":{"summary":"The newly created book","value":{"id":"bk_003","title":"The Art of API Docs","author":"Jane Example","status":"unread","createdAt":"2026-10-14T18:45:00Z"}}}}}},"400":{"$ref":"#/components/responses/BadRequestError"},"401":{"$ref":"#/components/responses/UnauthorizedError"}},"x-codeSamples":[{"lang":"curl","label":"curl","source":"curl -X POST http://127.0.0.1:4010/books \\\n  -H \"Content-Type: application/json\" \\\n  -H \"X-API-Key: demo-key\" \\\n  -d '{\"title\": \"The Art of API Docs\", \"author\": \"Jane Example\", \"status\": \"unread\"}'\n"},{"lang":"JavaScript","label":"JavaScript","source":"const response = await fetch(\"http://127.0.0.1:4010/books\", {\n  method: \"POST\",\n  headers: {\n    \"Content-Type\": \"application/json\",\n    \"X-API-Key\": \"demo-key\",\n  },\n  body: JSON.stringify({\n    title: \"The Art of API Docs\",\n    author: \"Jane Example\",\n    status: \"unread\",\n  }),\n});\nconst book = await response.json();\nconsole.log(book.id);\n"},{"lang":"Python","label":"Python","source":"import requests\n\nresponse = requests.post(\n    \"http://127.0.0.1:4010/books\",\n    headers={\"X-API-Key\": \"demo-key\"},\n    json={\n        \"title\": \"The Art of API Docs\",\n        \"author\": \"Jane Example\",\n        \"status\": \"unread\",\n    },\n)\nprint(response.json()[\"id\"])\n"}]}},"/books/{bookId}":{"get":{"operationId":"getBook","tags":["Books"],"summary":"Get a book","description":"Returns a single book by its ID.","parameters":[{"name":"bookId","in":"path","required":true,"description":"The book's unique identifier, as returned in the `id` field when the book was created. IDs start with `bk_`.\n","schema":{"type":"string"},"example":"bk_001"}],"responses":{"200":{"description":"The requested book.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Book"},"examples":{"default":{"summary":"A book that has not been started","value":{"id":"bk_001","title":"Docs for Developers","author":"A. Writer","status":"unread","createdAt":"2026-09-28T09:15:00Z"}}}}}},"401":{"$ref":"#/components/responses/UnauthorizedError"},"404":{"$ref":"#/components/responses/NotFoundError"}},"x-codeSamples":[{"lang":"curl","label":"curl","source":"curl http://127.0.0.1:4010/books/bk_001 \\\n  -H \"X-API-Key: demo-key\"\n"},{"lang":"JavaScript","label":"JavaScript","source":"const response = await fetch(\"http://127.0.0.1:4010/books/bk_001\", {\n  headers: { \"X-API-Key\": \"demo-key\" },\n});\nconst book = await response.json();\nconsole.log(book.title);\n"},{"lang":"Python","label":"Python","source":"import requests\n\nresponse = requests.get(\n    \"http://127.0.0.1:4010/books/bk_001\",\n    headers={\"X-API-Key\": \"demo-key\"},\n)\nprint(response.json()[\"title\"])\n"}]}}},"components":{"securitySchemes":{"ApiKeyAuth":{"type":"apiKey","in":"header","name":"X-API-Key","description":"Your API key, sent in the `X-API-Key` request header. For this portfolio sample, use the demo key `demo-key`.\n"}},"schemas":{"BookStatus":{"type":"string","description":"Reading status. `unread` means you have not started the book, `reading` means you are partway through it, and `finished` means you have completed it.\n","enum":["unread","reading","finished"],"example":"unread"},"Book":{"type":"object","description":"A book on your reading list.","required":["id","title","author","status","createdAt"],"properties":{"id":{"type":"string","description":"Unique identifier for the book. Assigned by the server when the book is created.\n","example":"bk_001"},"title":{"type":"string","description":"The book's title.","example":"Docs for Developers"},"author":{"type":"string","description":"The book's author. For multiple authors, use a single comma-separated string.","example":"A. Writer"},"status":{"$ref":"#/components/schemas/BookStatus"},"createdAt":{"type":"string","format":"date-time","description":"When the book was added to the list, in UTC, formatted as an ISO 8601 date-time.\n","example":"2026-09-28T09:15:00Z"}}},"BookInput":{"type":"object","description":"The fields you provide when adding a book.","required":["title","author","status"],"properties":{"title":{"type":"string","minLength":1,"maxLength":200,"description":"The book's title. Between 1 and 200 characters.","example":"The Art of API Docs"},"author":{"type":"string","minLength":1,"maxLength":100,"description":"The book's author. Between 1 and 100 characters.","example":"Jane Example"},"status":{"$ref":"#/components/schemas/BookStatus"}}},"BookList":{"type":"object","description":"A list of books.","required":["items"],"properties":{"items":{"type":"array","description":"The books that matched the request.","items":{"$ref":"#/components/schemas/Book"}}}},"Problem":{"type":"object","description":"An error response in the Problem Details format ([RFC 9457](https://www.rfc-editor.org/rfc/rfc9457.html)).\n","required":["type","title","status","detail"],"properties":{"type":{"type":"string","format":"uri","description":"A URI that identifies the kind of error.","example":"https://example.com/problems/not-found"},"title":{"type":"string","description":"A short, human-readable summary of the error kind.","example":"Resource not found"},"status":{"type":"integer","description":"The HTTP status code of the response.","example":404},"detail":{"type":"string","description":"A human-readable explanation of this occurrence of the error.","example":"No book exists with ID bk_999."},"instance":{"type":"string","description":"The request path that produced the error.","example":"/books/bk_999"},"errors":{"type":"array","description":"Field-level problems. Present only on `400` responses caused by invalid input.\n","items":{"$ref":"#/components/schemas/FieldError"}}}},"FieldError":{"type":"object","description":"A problem with one field of the request.","required":["field","message"],"properties":{"field":{"type":"string","description":"The name of the invalid field or query parameter.\n","example":"status"},"message":{"type":"string","description":"What is wrong with the value and how to fix it.","example":"Must be one of unread, reading, or finished."}}}},"responses":{"BadRequestError":{"description":"The request was invalid. The `errors` array lists each invalid field.\n","content":{"application/problem+json":{"schema":{"$ref":"#/components/schemas/Problem"},"examples":{"default":{"summary":"Missing and invalid fields","value":{"type":"https://example.com/problems/bad-request","title":"Bad request","status":400,"detail":"The request body is invalid.","instance":"/books","errors":[{"field":"title","message":"This field is required."},{"field":"status","message":"Must be one of unread, reading, or finished."}]}}}}}},"InvalidQueryError":{"description":"A query parameter was invalid. The `errors` array lists each invalid parameter.\n","content":{"application/problem+json":{"schema":{"$ref":"#/components/schemas/Problem"},"examples":{"default":{"summary":"Out-of-range limit","value":{"type":"https://example.com/problems/bad-request","title":"Bad request","status":400,"detail":"One or more query parameters are invalid.","instance":"/books","errors":[{"field":"limit","message":"Must be an integer between 1 and 100."}]}}}}}},"UnauthorizedError":{"description":"The `X-API-Key` header is missing or the key is not valid.","content":{"application/problem+json":{"schema":{"$ref":"#/components/schemas/Problem"},"examples":{"default":{"value":{"type":"https://example.com/problems/unauthorized","title":"Unauthorized","status":401,"detail":"The X-API-Key header is missing or invalid.","instance":"/books"}}}}}},"NotFoundError":{"description":"No book exists with the requested ID.","content":{"application/problem+json":{"schema":{"$ref":"#/components/schemas/Problem"},"examples":{"default":{"value":{"type":"https://example.com/problems/not-found","title":"Resource not found","status":404,"detail":"No book exists with ID bk_999.","instance":"/books/bk_999"}}}}}}}}}},"searchIndex":{"store":["section/What-you-can-do","section/Authentication","section/Errors","tag/Books","tag/Books/operation/listBooks","tag/Books/operation/createBook","tag/Books/operation/getBook"],"index":{"version":"2.3.9","fields":["title","description"],"fieldVectors":[["title/0",[]],["description/0",[0,2.431,1,0.465,2,0.213,3,1.447,4,1.447,5,0.714,6,1.005,7,1.005,8,1.005,9,0.715,10,0.497]],["title/1",[11,1.226]],["description/1",[11,1.259,12,1.812,13,1.812,14,1.812,15,1.812,16,1.812,17,1.812,18,1.259,19,1.812,20,1.259]],["title/2",[21,1.226]],["description/2",[18,1.067,20,1.506,21,1.506,22,1.067,23,1.535,24,1.535,25,1.535,26,1.535,27,1.535,28,1.535,29,1.535,30,1.535,31,1.535]],["title/3",[2,0.155]],["description/3",[1,0.602,2,0.185,5,0.728,7,1.471,10,0.728]],["title/4",[1,0.287,2,0.112]],["description/4",[1,0.283,2,0.218,5,0.647,6,1.308,22,1.308,32,1.563,33,1.265,34,1.265,35,1.265,36,1.265,37,1.265,38,1.265,39,1.265,40,1.265]],["title/5",[2,0.112,10,0.44]],["description/5",[1,0.391,2,0.208,5,0.601,9,0.864,10,0.601,41,1.749,42,1.749,43,1.749,44,1.749,45,1.749]],["title/6",[2,0.155]],["description/6",[2,0.194,8,1.536,9,1.091,32,1.536,46,2.21]]],"invertedIndex":[["",{"_index":0,"title":{},"description":{"0":{}}}],["9457](https://www.rfc-editor.org/rfc/rfc9457.html",{"_index":26,"title":{},"description":{"2":{}}}],["ad",{"_index":34,"title":{},"description":{"4":{}}}],["add",{"_index":10,"title":{"5":{}},"description":{"0":{},"3":{},"5":{}}}],["api",{"_index":14,"title":{},"description":{"1":{}}}],["application/problem+json",{"_index":27,"title":{},"description":{"2":{}}}],["assign",{"_index":42,"title":{},"description":{"5":{}}}],["authent",{"_index":11,"title":{"1":{}},"description":{"1":{}}}],["book",{"_index":2,"title":{"3":{},"4":{},"5":{},"6":{}},"description":{"0":{},"3":{},"4":{},"5":{},"6":{}}}],["book'",{"_index":43,"title":{},"description":{"5":{}}}],["books/{bookid",{"_index":46,"title":{},"description":{"6":{}}}],["cap",{"_index":39,"title":{},"description":{"4":{}}}],["createdat",{"_index":44,"title":{},"description":{"5":{}}}],["detail",{"_index":20,"title":{},"description":{"1":{},"2":{}}}],["error",{"_index":21,"title":{"2":{}},"description":{"2":{}}}],["filter",{"_index":4,"title":{},"description":{"0":{}}}],["first",{"_index":35,"title":{},"description":{"4":{}}}],["format",{"_index":24,"title":{},"description":{"2":{}}}],["given",{"_index":37,"title":{},"description":{"4":{}}}],["guide](authent",{"_index":19,"title":{},"description":{"1":{}}}],["guide](error",{"_index":31,"title":{},"description":{"2":{}}}],["handl",{"_index":30,"title":{},"description":{"2":{}}}],["header",{"_index":17,"title":{},"description":{"1":{}}}],["id",{"_index":9,"title":{},"description":{"0":{},"5":{},"6":{}}}],["includ",{"_index":13,"title":{},"description":{"1":{}}}],["key",{"_index":15,"title":{},"description":{"1":{}}}],["limit",{"_index":38,"title":{},"description":{"4":{}}}],["list",{"_index":1,"title":{"4":{}},"description":{"0":{},"3":{},"4":{},"5":{}}}],["media",{"_index":28,"title":{},"description":{"2":{}}}],["number",{"_index":40,"title":{},"description":{"4":{}}}],["option",{"_index":3,"title":{},"description":{"0":{}}}],["paramet",{"_index":36,"title":{},"description":{"4":{}}}],["problem",{"_index":23,"title":{},"description":{"2":{}}}],["read",{"_index":5,"title":{},"description":{"0":{},"3":{},"4":{},"5":{}}}],["recent",{"_index":33,"title":{},"description":{"4":{}}}],["request",{"_index":12,"title":{},"description":{"1":{}}}],["retriev",{"_index":7,"title":{},"description":{"0":{},"3":{}}}],["return",{"_index":32,"title":{},"description":{"4":{},"6":{}}}],["rfc",{"_index":25,"title":{},"description":{"2":{}}}],["see",{"_index":18,"title":{},"description":{"1":{},"2":{}}}],["server",{"_index":41,"title":{},"description":{"5":{}}}],["singl",{"_index":8,"title":{},"description":{"0":{},"6":{}}}],["statu",{"_index":6,"title":{},"description":{"0":{},"4":{}}}],["timestamp",{"_index":45,"title":{},"description":{"5":{}}}],["type",{"_index":29,"title":{},"description":{"2":{}}}],["us",{"_index":22,"title":{},"description":{"2":{},"4":{}}}],["x-api-key",{"_index":16,"title":{},"description":{"1":{}}}]],"pipeline":[]}},"options":{}};
+
+      var container = document.getElementById('redoc');
+      Redoc.hydrate(__redoc_state, container);
+
+      </script>
+</body>
+
+</html>
