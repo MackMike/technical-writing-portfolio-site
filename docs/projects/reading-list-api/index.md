@@ -28,4 +28,4 @@ Every request is authenticated with an API key sent in the `X-API-Key` header, a
 
 ## About this sample
 
-This piece shows an OpenAPI-first documentation workflow: the specification is the single source of truth, the reference is generated from it, and the guides around it are written by hand. [Process and tooling](process.md) explains the decisions behind it, including what the mock server can and cannot demonstrate. See the [changelog](changelog.md) for version history.
+To build my API documentation skills, I created this documentation set for a fictional REST API. It shows an OpenAPI-first workflow: an OpenAPI 3.1 specification is the source of truth, the reference is generated from it, and the guides around it (getting started, authentication, and error handling) are written by hand. [Process and tooling](process.md) explains the decisions behind it, including what the mock server can and cannot demonstrate. See the [changelog](changelog.md) for version history.
