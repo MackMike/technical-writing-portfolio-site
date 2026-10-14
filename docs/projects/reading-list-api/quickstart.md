@@ -6,7 +6,7 @@ This guide gets you from nothing to a working request in about five minutes. You
 
 You need:
 
-- [Node.js](https://nodejs.org/) 18 or later (needed for the mock server, and for the JavaScript examples, which use the built-in `fetch`).
+- [Node.js](https://nodejs.org/) 18 or later (needed for the mock server and for the JavaScript examples, which use the built-in `fetch`).
 - `curl`, which is included with macOS and most Linux distributions.
 - Optional, for the Python examples: Python 3 and the `requests` library (`pip install requests`).
 
@@ -39,6 +39,9 @@ You need:
     ```
 
 The base URL for every request in this guide is `http://127.0.0.1:4010`. The demo API key is `demo-key`.
+
+!!! note "Don't click the URL in the Prism output"
+    If you open `http://127.0.0.1:4010` in a browser, Prism logs a `NO_PATH_MATCHED_ERROR` for `/` and for `/favicon.ico`. This is expected. The API has no route at `/`, and browsers request a favicon automatically. Browsers also cannot send the `X-API-Key` header, so opening `/books` in a browser returns `401`. Make your requests with `curl` or the code examples below, from a second terminal.
 
 !!! tip "Running the JavaScript examples"
     The JavaScript examples use top-level `await`, so save each one in a file that ends in `.mjs` (for example, `list-books.mjs`) and run it with `node list-books.mjs`.
