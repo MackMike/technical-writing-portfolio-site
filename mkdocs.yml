@@ -5,6 +5,8 @@ theme:
   name: material
   logo: assets/pdfs/logo.svg
   favicon: images/favicon.png
+  features:
+    - content.code.copy
 
 extra:
   analytics:
@@ -23,15 +25,26 @@ nav:
       - "DITA Sample: Managed macOS Onboarding Guide": projects/dita-managed-mac-onboarding.md
       - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing-project.md
       - Atari Computer User Guide: projects/atari-user-guide-project.md
+      - Reading List API:
+          - Overview: projects/reading-list-api/index.md
+          - Quickstart: projects/reading-list-api/quickstart.md
+          - Authentication: projects/reading-list-api/authentication.md
+          - Error handling: projects/reading-list-api/errors.md
+          - API reference: projects/reading-list-api/reference.md
+          - Process and tooling: projects/reading-list-api/process.md
+          - Changelog: projects/reading-list-api/changelog.md
 
 plugins:
   - search
 
 markdown_extensions:
+  - admonition
+  - attr_list
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.details
