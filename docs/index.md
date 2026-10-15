@@ -8,7 +8,7 @@ My experience includes documenting real-world workflows in support, administrati
 
 This portfolio includes selected writing and editing samples in Markdown, XML, OpenAPI, and GitHub-based formats, including onboarding guides, troubleshooting content, administrator documentation, technical editing work, API documentation, and introductory DITA-based structured authoring samples. I have also completed Scriptorium’s *Introduction to DITA* course and have a strong interest in structured authoring, Markdown-based documentation, and modern documentation workflows.
 
-I am open to API documentation work. My most recent sample, the Reading List API documentation, shows an OpenAPI-first workflow: a specification as the source of truth, a generated reference, and hand-written guides for getting started, authentication, and error handling.
+My most recent sample, the Reading List API documentation, shows an OpenAPI-first workflow: a specification as the source of truth, a generated reference, and hand-written guides for getting started, authentication, and error handling.
 
 ---
 
