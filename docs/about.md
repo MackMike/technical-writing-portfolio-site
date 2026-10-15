@@ -8,8 +8,6 @@ I currently serve as a Technical Editor for Apache OpenOffice documentation, whe
 
 My technical background includes macOS, Jamf Pro, endpoint management, enterprise support environments, and security-focused systems work. That hands-on experience helps me understand the tools and workflows I document and translate technical complexity into clear, audience-focused content. While my strongest subject matter expertise is in macOS and enterprise IT, I am also interested in a broader range of technical writing work, including user guides, administrator guides, manuals, how-to documentation, API documentation, support content, and documentation systems.
 
-I am open to API documentation work. To build my skills in this area, I created [Reading List API Documentation](projects/reading-list-api/index.md), a sample for a fictional REST API built with an OpenAPI-first workflow.
-
 I am especially interested in roles involving:
 
 - Technical writing
