@@ -26,7 +26,7 @@ Internal knowledge base documentation for diagnosing and resolving certificate-r
 ### [Migrate User Administrative Tool Documentation](projects/migration-tool-project.md)
 Administrator documentation for an AppleScript-based tool used to restore ownership and group permissions after macOS reimaging. Demonstrates administrator-focused documentation, revised prompts and warnings, maintainable commenting, and clearer messaging to support more reliable tool usage.
 
-### [Reading List API Documentation](projects/reading-list-api/index.md)
+### [Reading List API Documentation](projects/reading-list-api-project.md)
 Developer documentation for a fictional REST API, built with an OpenAPI-first workflow. Demonstrates an OpenAPI 3.1 specification, a generated API reference, a task-based quickstart with curl, JavaScript, and Python examples, authentication guidance, and standardized error documentation, all tested against a local mock server.
 
 ### [DITA Sample: Managed macOS Onboarding Guide](projects/dita-managed-mac-onboarding.md)
