@@ -26,7 +26,8 @@ nav:
       - Apache OpenOffice Technical Editing: projects/openoffice-technical-editing-project.md
       - Atari Computer User Guide: projects/atari-user-guide-project.md
       - Reading List API:
-          - Overview: projects/reading-list-api/index.md
+          - Project Overview: projects/reading-list-api-project.md
+          - API Documentation: projects/reading-list-api/index.md
           - Quickstart: projects/reading-list-api/quickstart.md
           - Authentication: projects/reading-list-api/authentication.md
           - Error handling: projects/reading-list-api/errors.md
