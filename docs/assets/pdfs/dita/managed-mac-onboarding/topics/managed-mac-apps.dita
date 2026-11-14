@@ -76,6 +76,10 @@
       </step>
     </steps>
 
+    <result>
+      <p>You have verified access to company services and can install approved applications as needed.</p>
+    </result>
+
     <example>
       <title>Examples of apps that may be available in Self Service</title>
       <ul>
@@ -87,9 +91,5 @@
         <li>Zoom</li>
       </ul>
     </example>
-
-    <result>
-      <p>You have verified access to company services and can install approved applications as needed.</p>
-    </result>
   </taskbody>
 </task>
