@@ -27,12 +27,12 @@
       </step>
     </steps>
 
-    <postreq>
-      <note type="warning">Some company applications and network resources may not be available until Zscaler is connected.</note>
-    </postreq>
-
     <result>
       <p>Zscaler is connected and secure access to required company resources is available.</p>
     </result>
+
+    <postreq>
+      <note type="warning">Some company applications and network resources may not be available until Zscaler is connected.</note>
+    </postreq>
   </taskbody>
 </task>
