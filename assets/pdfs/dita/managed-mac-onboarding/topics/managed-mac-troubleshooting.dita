@@ -6,8 +6,8 @@
   <troublebody>
 
     <troubleSolution>
-      <title>I cannot sign in</title>
       <cause>
+        <title>I cannot sign in</title>
         <p>The email address, password, or network connection may be incorrect, or the account may not be ready.</p>
       </cause>
       <remedy>
@@ -30,8 +30,8 @@
     </troubleSolution>
 
     <troubleSolution>
-      <title>MFA is not working</title>
       <cause>
+        <title>MFA is not working</title>
         <p>The authentication app may not be available, up to date, or presenting a current code.</p>
       </cause>
       <remedy>
@@ -50,8 +50,8 @@
     </troubleSolution>
 
     <troubleSolution>
-      <title>Zscaler is not connecting</title>
       <cause>
+        <title>Zscaler is not connecting</title>
         <p>The connection may fail because of incorrect credentials, incomplete MFA, or lack of network connectivity.</p>
       </cause>
       <remedy>
@@ -73,8 +73,8 @@
     </troubleSolution>
 
     <troubleSolution>
-      <title>Office apps are missing</title>
       <cause>
+        <title>Office apps are missing</title>
         <p>Application installation may still be in progress or the apps may need to be installed from Self Service.</p>
       </cause>
       <remedy>
@@ -93,8 +93,8 @@
     </troubleSolution>
 
     <troubleSolution>
-      <title>Self Service is missing</title>
       <cause>
+        <title>Self Service is missing</title>
         <p>Enrollment may still be completing or the application may not yet be available on the Mac.</p>
       </cause>
       <remedy>
