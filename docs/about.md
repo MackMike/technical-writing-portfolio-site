@@ -1,6 +1,6 @@
 # About
 
-I am a technical writer and editor specializing in Mac and endpoint management documentation. I spent nearly eight years as an enterprise macOS engineer, and I now write user guides, administrator documentation, knowledge base articles, troubleshooting content, and workflow documentation for end users and technical teams.
+I am a technical writer and editor. I spent nearly eight years as an enterprise macOS engineer, and I now write user guides, administrator documentation, knowledge base articles, troubleshooting content, and workflow documentation for end users and technical teams.
 
 Documentation became central to my engineering work. At BlackRock and earlier at OlsonWorks Consulting, I wrote how-to guides, getting-started documentation for end users, and process documentation for engineering and support teams. That documentation improved consistency, reduced repeated questions, and helped users and support teams work more effectively. Over time, I chose to pursue technical writing and editing as my primary focus.
 
@@ -26,7 +26,7 @@ I am most interested in user-focused documentation roles, especially those invol
 - Manuals and how-to documentation
 - Structured authoring and documentation systems
 
-My strongest subject matter expertise is in macOS and enterprise IT, but I enjoy learning new products and writing for different audiences.
+My deepest subject matter experience is in macOS and enterprise IT, but I enjoy learning new products and writing for different audiences.
 
 ## Links
 
