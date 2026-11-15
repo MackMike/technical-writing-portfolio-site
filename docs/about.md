@@ -1,24 +1,36 @@
 # About
 
-I am a technical writer and editor with a background in macOS systems engineering, endpoint management, and enterprise IT. I create user guides, administrator documentation, knowledge base articles, workflow documentation, playbooks, and process content for technical teams and end users.
+I am a technical writer and editor specializing in Mac and endpoint management documentation. I spent nearly eight years as an enterprise macOS engineer, and I now write user guides, administrator documentation, knowledge base articles, troubleshooting content, and workflow documentation for end users and technical teams.
 
-My background in enterprise support and device management gave me regular opportunities to turn complex technical processes into documentation that improved consistency, reduced repeated questions, and helped users and support teams work more effectively. Over time, that documentation work became central to my professional focus and led me to pursue technical writing and editing more directly.
+Documentation became central to my engineering work. At BlackRock and earlier at OlsonWorks Consulting, I wrote how-to guides, getting-started documentation for end users, and process documentation for engineering and support teams. That documentation improved consistency, reduced repeated questions, and helped users and support teams work more effectively. Over time, I chose to pursue technical writing and editing as my primary focus.
 
-I currently serve as a Technical Editor for Apache OpenOffice documentation, where I review and revise user guide content for clarity, consistency, usability, and technical accuracy. I have also completed Scriptorium’s *Introduction to DITA* course and maintain portfolio samples in Markdown, GitHub-based formats, introductory DITA XML, and OpenAPI-based API documentation.
+## What I Do Now
 
-My technical background includes macOS, Jamf Pro, endpoint management, enterprise support environments, and security-focused systems work. That hands-on experience helps me understand the tools and workflows I document and translate technical complexity into clear, audience-focused content. While my strongest subject matter expertise is in macOS and enterprise IT, I am also interested in a broader range of technical writing work, including user guides, administrator guides, manuals, how-to documentation, API documentation, support content, and documentation systems.
+- **Technical editing:** I volunteer as a Technical Editor for Apache OpenOffice documentation, where I review and revise user guide content for clarity, consistency, usability, and technical accuracy.
+- **Security documentation:** I contribute to the CIS macOS Benchmarks, including macOS 26 Tahoe.
+- **Content review:** I take short-term contracts reviewing and editing content, including AI-generated text and a user manual edited to a client standards guide.
+- **Portfolio work:** I maintain writing samples in Markdown, introductory DITA XML (published to HTML5 with the DITA Open Toolkit), and OpenAPI-based API documentation. I have also completed Scriptorium's *Introduction to DITA* course.
 
-I am especially interested in roles involving:
+## Why My Background Matters
 
-- Technical writing
-- Technical editing
+I understand the tools and workflows I document: macOS, Jamf Pro, endpoint management, enterprise support environments, and security-focused systems work. That hands-on experience helps me write procedures that match what users and administrators actually see, anticipate where they get stuck, and explain complex processes in clear, audience-focused language.
+
+## What I Am Looking For
+
+I am most interested in user-focused documentation roles, especially those involving:
+
 - User and administrator documentation
 - Knowledge base and troubleshooting content
 - Process and workflow documentation
+- Technical editing
 - Manuals and how-to documentation
-- API and developer documentation
 - Structured authoring and documentation systems
 
-## External Links
+My strongest subject matter expertise is in macOS and enterprise IT, but I enjoy learning new products and writing for different audiences.
+
+## Links
+
+- [Resume](resume.md)
 - [LinkedIn](https://www.linkedin.com/in/miscarborough/)
-- [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
+- [GitHub](https://github.com/MackMike)
+- [Portfolio source repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
