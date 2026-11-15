@@ -90,9 +90,9 @@ Technical writer and editor specializing in Mac and endpoint management document
 ## Projects and Contributions
 
 * **Getting Started with Your Managed Mac:** end-user quick-start guide for non-technical employees, with setup and troubleshooting flowcharts. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/managed-mac-onboarding-guide/)
-* **Troubleshooting Compliance Failures on Jamf-Managed Macs:** knowledge base article for IT support and engineering teams, organized by symptom with a decision-flow diagram.
-* **Troubleshooting VPN Certificate Issues on Managed macOS Devices:** knowledge base article for support teams with step-by-step remediation and escalation criteria.
-* **Migrate User Administrative Tool:** administrator guide, plus edited prompts, warnings, comments, and error handling for an AppleScript tool.
+* **Troubleshooting Compliance Failures on Jamf-Managed Macs:** knowledge base article for IT support and engineering teams, organized by symptom with a decision-flow diagram. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting/)
+* **Troubleshooting VPN Certificate Issues on Managed macOS Devices:** knowledge base article for support teams with step-by-step remediation and escalation criteria. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-project/)
+* **Migrate User Administrative Tool:** administrator guide, plus edited prompts, warnings, comments, and error handling for an AppleScript tool. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/migration-tool-project/)
 * **DITA Sample: Managed Mac Onboarding:** the onboarding guide restructured into concept, task, reference, and troubleshooting topics with a DITA map, published to HTML5. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/dita-managed-mac-onboarding/)
 * **Reading List API documentation:** developer documentation for a fictional REST API, built with an OpenAPI-first, docs-as-code workflow and tested against a Prism mock server. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/reading-list-api-project/)
 * **Contributor, Center for Internet Security (CIS) macOS Benchmarks:** contributed technical documentation and security configuration guidance for several benchmarks, including macOS 26 Tahoe.
