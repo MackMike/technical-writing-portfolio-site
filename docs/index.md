@@ -2,13 +2,13 @@
 
 ## Technical Writer and Editor
 
-**I write documentation for Mac and endpoint management: user guides, admin documentation, and troubleshooting content for end users and IT teams.**
+I write user guides, administrator documentation, knowledge base articles, and troubleshooting content for end users and technical teams.
 
-I bring nearly eight years of enterprise macOS engineering experience to my writing. I am a volunteer Technical Editor for Apache OpenOffice documentation and a contributor to the CIS macOS Benchmarks. I have also completed Scriptorium's *Introduction to DITA* course.
+My nearly eight years as an enterprise macOS engineer taught me to write for people who need to get a task done. I am a volunteer Technical Editor for Apache OpenOffice documentation and a contributor to the CIS macOS Benchmarks. I have also completed Scriptorium's *Introduction to DITA* course.
 
 [Resume](resume.md) · [LinkedIn](https://www.linkedin.com/in/miscarborough/) · [GitHub](https://github.com/MackMike) · [About](about.md)
 
-**Open to:** user-focused documentation roles in Mac and endpoint management and enterprise IT.
+**Open to:** user-focused technical writing and editing roles.
 
 ---
 
