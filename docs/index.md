@@ -1,14 +1,12 @@
 # Michael Scarborough
 
-## Technical Writer and Editor
+## Technical Writer and Editor | Mac and Endpoint Management Documentation
 
-Technical writer and editor with a background in macOS systems engineering, endpoint management, and enterprise IT. I create user guides, administrator documentation, knowledge base articles, workflow documentation, and structured writing samples that help technical teams and end users complete tasks, troubleshoot issues, and follow processes more consistently.
+Technical writer and editor specializing in Mac and endpoint management documentation, with a background in macOS systems engineering and enterprise IT. I create user guides, administrator documentation, knowledge base articles, workflow documentation, and structured writing samples that help technical teams and end users complete tasks, troubleshoot issues, and follow processes more consistently.
 
-My experience includes documenting real-world workflows in support, administration, and managed-device environments, with a focus on clarity, structure, usability, and audience-appropriate communication. I also serve as a Technical Editor for Apache OpenOffice documentation, reviewing and improving published user guide content for consistency, readability, and technical accuracy.
+My experience includes documenting real-world workflows in support, administration, and managed-device environments, with a focus on clarity, structure, usability, and audience-appropriate communication. I serve as a volunteer Technical Editor for Apache OpenOffice documentation, reviewing and improving published user guide content for consistency, readability, and technical accuracy, and I have contributed to the CIS macOS Benchmarks.
 
 This portfolio includes selected writing and editing samples in Markdown, XML, OpenAPI, and GitHub-based formats, including onboarding guides, troubleshooting content, administrator documentation, technical editing work, API documentation, and introductory DITA-based structured authoring samples. I have also completed Scriptorium’s *Introduction to DITA* course and have a strong interest in structured authoring, Markdown-based documentation, and modern documentation workflows.
-
-My most recent sample, the Reading List API documentation, shows an OpenAPI-first workflow: a specification as the source of truth, a generated reference, and hand-written guides for getting started, authentication, and error handling.
 
 ---
 
@@ -26,11 +24,11 @@ Internal knowledge base documentation for diagnosing and resolving certificate-r
 ### [Migrate User Administrative Tool Documentation](projects/migration-tool-project.md)
 Administrator documentation for an AppleScript-based tool used to restore ownership and group permissions after macOS reimaging. Demonstrates administrator-focused documentation, revised prompts and warnings, maintainable commenting, and clearer messaging to support more reliable tool usage.
 
-### [Reading List API Documentation](projects/reading-list-api-project.md)
-Developer documentation for a fictional REST API, built with an OpenAPI-first workflow. Demonstrates an OpenAPI 3.1 specification, a generated API reference, a task-based quickstart with curl, JavaScript, and Python examples, authentication guidance, and standardized error documentation, all tested against a local mock server.
-
 ### [DITA Sample: Managed macOS Onboarding Guide](projects/dita-managed-mac-onboarding.md)
-A structured authoring sample that adapts a managed macOS onboarding guide into DITA using concept, task, reference, troubleshooting, and map-based organization. Demonstrates foundational DITA skills, structured XML authoring, and topic-based documentation design.
+A structured authoring sample that adapts a managed macOS onboarding guide into DITA using concept, task, reference, troubleshooting, and map-based organization. Demonstrates foundational DITA skills, structured XML authoring, topic-based documentation design, and publishing to styled HTML5 with the DITA Open Toolkit. [View the published output](assets/pdfs/dita/managed-mac-onboarding/out/index.html).
+
+### [Reading List API Documentation](projects/reading-list-api-project.md)
+Developer documentation for a fictional REST API, built with an OpenAPI-first workflow: a specification as the source of truth, a generated reference, and hand-written guides for getting started, authentication, and error handling. Demonstrates an OpenAPI 3.1 specification, a task-based quickstart with curl, JavaScript, and Python examples, and standardized error documentation, all tested against a local mock server.
 
 ---
 
@@ -66,18 +64,18 @@ A small selection of LinkedIn posts that reflect how I think about technical wri
 
 - Technical writing and editing
 - User and administrator documentation
-- API documentation (foundational)
 - Knowledge base and troubleshooting content
 - Process and workflow documentation
 - Procedural and task-based writing
 - Structured authoring and topic-based writing
+- API documentation (foundational)
 
 ## Tools
 
-- Markdown
-- GitHub and version-controlled documentation workflows
+- Markdown, Git, and GitHub (docs-as-code workflows)
+- MkDocs and Mermaid
+- DITA, XML, and the DITA Open Toolkit (foundational)
 - OpenAPI 3.1, Redocly CLI, and Prism (foundational)
-- DITA / XML (foundational)
 - macOS and Jamf Pro (subject-matter platforms)
 
 ---
