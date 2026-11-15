@@ -10,9 +10,17 @@ Rather than presenting the content as a single continuous guide, this sample org
 
 ---
 
-## Why This Sample Is Presented as Source
+## View the Published Output
 
-DITA is a structured XML authoring format used to create modular documentation that can be published in multiple output formats. Because this portfolio sample is intended to demonstrate foundational DITA authoring skills, it is presented as source rather than rendered HTML output.
+The DITA topics in this sample are also published as HTML using the DITA Open Toolkit, so you can read the finished guide without opening the XML.
+
+**[Getting Started with Your Managed Mac (HTML output)](../assets/pdfs/dita/managed-mac-onboarding/out/index.html)**
+
+---
+
+## Why This Sample Includes Both Source and Output
+
+DITA is a structured XML authoring format used to create modular documentation that can be published in multiple output formats. Because this portfolio sample is intended to demonstrate foundational DITA authoring skills, it is presented as both source files and rendered HTML output.
 
 Presenting the source files makes it possible to show:
 
@@ -22,7 +30,7 @@ Presenting the source files makes it possible to show:
 - Basic structured XML authoring practices
 - Adaptation of an existing Markdown guide into modular DITA topics
 
-For this sample, the documentation structure is part of the work being demonstrated.
+The published output shows how the same source is rendered for readers. For this sample, the documentation structure is part of the work being demonstrated.
 
 ---
 
@@ -30,11 +38,12 @@ For this sample, the documentation structure is part of the work being demonstra
 
 If you are not familiar with DITA, the easiest way to review this sample is:
 
-1. Open the **DITA map** first to see how the documentation set is organized.
-2. Review the **concept topic** to see how explanatory information is separated from instructions.
-3. Review one or two **task topics** to see how procedural steps are structured.
-4. Review the **reference topics** to see how checklist and support information is organized.
-5. Review the **troubleshooting topic** to see how common issues and remedies are grouped.
+1. Open the **[published HTML output](../assets/pdfs/dita/managed-mac-onboarding/out/index.html)** to see the finished guide as a reader would.
+2. Open the **DITA map** to see how the documentation set is organized.
+3. Review the **concept topic** to see how explanatory information is separated from instructions.
+4. Review one or two **task topics** to see how procedural steps are structured.
+5. Review the **reference topics** to see how checklist and support information is organized.
+6. Review the **troubleshooting topic** to see how common issues and remedies are grouped.
 
 This approach shows how the original onboarding guide was divided into reusable topic types rather than written as a single linear document.
 
@@ -111,6 +120,7 @@ This sample demonstrates how onboarding documentation can be adapted into a stru
 - DITA map organization
 - Modular documentation design
 - Adaptation of existing Markdown content into DITA
+- Publishing DITA to styled HTML5 with the DITA Open Toolkit
 
 ---
 
@@ -126,7 +136,6 @@ Together, these samples demonstrate flexibility across documentation formats and
 ---
 
 ## View the Source Files on GitHub
-
 
 - **View DITA project folder:** [managed-mac-onboarding](https://github.com/MackMike/technical-writing-portfolio-site/tree/main/docs/assets/pdfs/dita/managed-mac-onboarding)
 - **View DITA map:** [managed-mac-onboarding.ditamap](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/assets/pdfs/dita/managed-mac-onboarding/managed-mac-onboarding.ditamap)
@@ -179,7 +188,10 @@ Example from the task topic `managed-mac-initial-setup.dita`:
 
 This excerpt shows how procedural content is structured in DITA, using a task topic, short description, prerequisites, and ordered steps.
 
-## Notes
-I created this sample as a foundational DITA writing project for my technical writing portfolio. The scope was intentionally limited to core DITA topic types and map structure in order to demonstrate basic structured authoring concepts clearly.
+---
 
-If needed, this sample could later be expanded to include content reuse, conditional processing, or generated output using a DITA publishing toolchain.
+## Notes
+
+I created this sample as a foundational DITA writing project for my technical writing portfolio. The scope was intentionally limited to core DITA topic types, map structure, and HTML5 publishing with the DITA Open Toolkit in order to demonstrate basic structured authoring concepts clearly.
+
+If needed, this sample could later be expanded to include content reuse, conditional processing, or additional output formats such as PDF.
