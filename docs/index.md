@@ -1,50 +1,62 @@
 # Michael Scarborough
 
-## Technical Writer and Editor | Mac and Endpoint Management Documentation
+## Technical Writer and Editor
 
-Technical writer and editor specializing in Mac and endpoint management documentation, with a background in macOS systems engineering and enterprise IT. I create user guides, administrator documentation, knowledge base articles, workflow documentation, and structured writing samples that help technical teams and end users complete tasks, troubleshoot issues, and follow processes more consistently.
+**I write documentation for Mac and endpoint management: user guides, admin documentation, and troubleshooting content for end users and IT teams.**
 
-My experience includes documenting real-world workflows in support, administration, and managed-device environments, with a focus on clarity, structure, usability, and audience-appropriate communication. I serve as a volunteer Technical Editor for Apache OpenOffice documentation, reviewing and improving published user guide content for consistency, readability, and technical accuracy, and I have contributed to the CIS macOS Benchmarks.
+I bring nearly eight years of enterprise macOS engineering experience to my writing. I am a volunteer Technical Editor for Apache OpenOffice documentation and a contributor to the CIS macOS Benchmarks. I have also completed Scriptorium's *Introduction to DITA* course.
 
-This portfolio includes selected writing and editing samples in Markdown, XML, OpenAPI, and GitHub-based formats, including onboarding guides, troubleshooting content, administrator documentation, technical editing work, API documentation, and introductory DITA-based structured authoring samples. I have also completed Scriptorium’s *Introduction to DITA* course and have a strong interest in structured authoring, Markdown-based documentation, and modern documentation workflows.
+[Resume](resume.md) · [LinkedIn](https://www.linkedin.com/in/miscarborough/) · [GitHub](https://github.com/MackMike) · [About](about.md)
+
+**Open to:** user-focused documentation roles in Mac and endpoint management and enterprise IT.
 
 ---
 
 ## Featured Projects
 
 ### [Managed macOS Onboarding Guide](projects/managed-mac-onboarding.md)
-Task-based end-user documentation for setting up a company-managed macOS device in an enterprise environment. Demonstrates clear onboarding guidance, authentication and security-related setup, and user-focused troubleshooting designed to support a more consistent setup experience.
+An end-user quick-start guide for non-technical employees setting up a company-managed Mac. Includes setup and troubleshooting flowcharts.
 
 ### [KB Article: Troubleshooting Compliance Failures on Jamf-Managed Macs](projects/jamf-managed-mac-compliance-troubleshooting.md)
-Internal knowledge base documentation for diagnosing and remediating compliance failures on Jamf-managed Macs. Demonstrates structured troubleshooting, remediation guidance, and support-focused writing intended to help technical teams investigate issues more consistently and determine next steps.
+An internal knowledge base article for IT support and engineering teams, organized by symptom, with a decision-flow diagram and remediation steps.
 
 ### [KB Article: Troubleshooting VPN Certificate Issues on Managed macOS Devices](projects/vpn-certificate-troubleshooting-project.md)
-Internal knowledge base documentation for diagnosing and resolving certificate-related VPN connection failures on managed macOS devices. Demonstrates structured troubleshooting, endpoint management awareness, escalation guidance, and support-focused writing for enterprise IT environments.
+An internal knowledge base article for support teams, with step-by-step remediation and clear criteria for when to escalate.
 
 ### [Migrate User Administrative Tool Documentation](projects/migration-tool-project.md)
-Administrator documentation for an AppleScript-based tool used to restore ownership and group permissions after macOS reimaging. Demonstrates administrator-focused documentation, revised prompts and warnings, maintainable commenting, and clearer messaging to support more reliable tool usage.
+An administrator guide for an AppleScript tool that restores ownership and permissions after macOS reimaging, plus edited prompts, warnings, comments, and error messages. Original and revised versions are shown side by side.
 
 ### [DITA Sample: Managed macOS Onboarding Guide](projects/dita-managed-mac-onboarding.md)
-A structured authoring sample that adapts a managed macOS onboarding guide into DITA using concept, task, reference, troubleshooting, and map-based organization. Demonstrates foundational DITA skills, structured XML authoring, topic-based documentation design, and publishing to styled HTML5 with the DITA Open Toolkit. [View the published output](assets/pdfs/dita/managed-mac-onboarding/out/index.html).
+The onboarding guide restructured into DITA concept, task, reference, and troubleshooting topics with a DITA map, published to styled HTML5 with the DITA Open Toolkit. [View the published output](assets/pdfs/dita/managed-mac-onboarding/out/index.html).
 
 ### [Reading List API Documentation](projects/reading-list-api-project.md)
-Developer documentation for a fictional REST API, built with an OpenAPI-first workflow: a specification as the source of truth, a generated reference, and hand-written guides for getting started, authentication, and error handling. Demonstrates an OpenAPI 3.1 specification, a task-based quickstart with curl, JavaScript, and Python examples, and standardized error documentation, all tested against a local mock server.
+Developer documentation for a fictional REST API, built OpenAPI-first: an OpenAPI 3.1 specification, a generated reference, a quickstart with curl, JavaScript, and Python examples, and standardized error documentation. All examples are tested against a mock server.
+
+---
+
+## Skills and Tools
+
+**Writing and editing:** user and administrator documentation, knowledge base and troubleshooting content, process and workflow documentation, task-based writing, technical editing
+
+**Authoring and publishing:** Markdown, Git and GitHub, MkDocs, Mermaid, DITA and XML (foundational), the DITA Open Toolkit, OpenAPI 3.1, Redocly CLI, and Prism (foundational)
+
+**Subject-matter platforms:** macOS, Jamf Pro
 
 ---
 
 ## Additional Samples
 
 ### [Apache OpenOffice Technical Editing](projects/openoffice-technical-editing-project.md)
-Technical editing sample based on published Apache OpenOffice documentation. Demonstrates structural editing, clarity and consistency improvements, and before-and-after editorial examples focused on improving readability and usability.
+A technical editing sample from published Apache OpenOffice documentation, with before-and-after examples of structural and clarity edits.
 
 ### [Atari Computer User Guide](projects/atari-user-guide-project.md)
-A Markdown-based user guide created to apply technical writing principles to legacy computer documentation. Demonstrates procedural writing, setup guidance, and troubleshooting for users unfamiliar with older systems.
+A Markdown user guide that applies modern technical writing practices to legacy computer documentation, covering setup and troubleshooting for readers unfamiliar with older systems.
 
 ---
 
 ## Featured LinkedIn Posts
 
-A small selection of LinkedIn posts that reflect how I think about technical writing, documentation quality, and user-centered communication.
+A small selection of posts on how I think about technical writing and documentation quality.
 
 - [Audience Awareness — and Why It Matters](https://tinyurl.com/4x3vuh3j)  
   On designing documentation for readers with different levels of experience, context, and confidence.
@@ -57,32 +69,3 @@ A small selection of LinkedIn posts that reflect how I think about technical wri
 
 - [Confirmation Before Detail — and Why It Matters](https://tinyurl.com/4rw65rs2)  
   On structuring troubleshooting content so readers can quickly decide whether a procedure matches their issue.
-
----
-
-## Skills
-
-- Technical writing and editing
-- User and administrator documentation
-- Knowledge base and troubleshooting content
-- Process and workflow documentation
-- Procedural and task-based writing
-- Structured authoring and topic-based writing
-- API documentation (foundational)
-
-## Tools
-
-- Markdown, Git, and GitHub (docs-as-code workflows)
-- MkDocs and Mermaid
-- DITA, XML, and the DITA Open Toolkit (foundational)
-- OpenAPI 3.1, Redocly CLI, and Prism (foundational)
-- macOS and Jamf Pro (subject-matter platforms)
-
----
-
-## Quick Links
-
-- [About](about.md)
-- [Resume](resume.md)
-- [LinkedIn](https://www.linkedin.com/in/miscarborough/)
-- [GitHub](https://github.com/MackMike)
