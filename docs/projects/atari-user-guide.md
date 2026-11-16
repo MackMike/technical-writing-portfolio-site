@@ -7,7 +7,7 @@
 Version 2.0 – Rewritten for clarity and ease of use
 
 Welcome!
-If you've inherited this Atari setup, you're holding a piece of computing history that's still full of surprises. This guide will walk you through everything step by step, assuming you're new to vintage computers. We'll cover setup, operation, troubleshooting basics, and ways to explore further. 
+If you've inherited this Atari setup, you're holding a piece of computing history that's still full of surprises. This guide walks you through everything step by step, assuming you're new to vintage computers. We'll cover setup, operation, troubleshooting basics, and ways to explore further. 
 This is antique equipment, so please read it fully before powering it on to avoid mishaps.
 
 Let's get your Atari humming again!
@@ -70,7 +70,7 @@ The Atari is simple yet expandable. It sparked careers in programming and hardwa
 Understanding the Atari's roots makes its software and quirks more fun.
 
 #### Computing in the 1970s–1980s
-  - Early computers were massive and expensive (e.g., those for the Apollo moon missions).
+  - Early computers were massive and expensive (for example, those for the Apollo moon missions).
   - Home computers started as kits for hobbyists who built them, like the Apple I.
   - Atari released the Atari 400 in 1979—a colorful, game-friendly home computer with custom graphics chips.
   - Rivals included Commodore, TRS-80, and Apple II. Each had unique software—no cross-compatibility.
@@ -87,7 +87,7 @@ This Atari 400 started as a gift in the early 1980s. It began with 16K of RAM (1
 
 > **Note:** Both the original membrane keyboard and the custom keyboard can operate simultaneously.
 
-There's also an unconnected Atari 800XL for 64K-only software (e.g., The Eidolon).
+There's also an unconnected Atari 800XL for 64K-only software (for example, The Eidolon).
 	
 #### Life Before the Internet
 
@@ -165,7 +165,7 @@ The Atari uses a **serial daisy-chain system** via the SIO (Serial Input/Output)
 
 - The connector is keyed (trapezoidal), so cables can only be inserted in the correct orientation.
 - Most peripherals have two SIO ports for chaining.
-- Devices with only one SIO port (e.g., Atari 410 cassette) must be last in the chain.
+- Devices with only one SIO port (for example, Atari 410 cassette) must be last in the chain.
 
 ### Disk Drive Configuration
 
@@ -241,7 +241,7 @@ The Atari computer connects to a monitor for display. Optional peripherals inclu
 6. Turn on the Amdek Monitor.
 7. Turn on the Atari computer.
 
-If successful, the cartridge's contents appear on the screen (e.g., a BASIC cartridge shows a "READY" prompt).
+If successful, the cartridge's contents appear on the screen (for example, a BASIC cartridge shows a "READY" prompt).
 
 #### Shutting Down
 1. Turn off the Atari computer.
@@ -252,7 +252,7 @@ If you turn the computer on without a cartridge installed, you'll see the defaul
 ### Booting from the Disk Drive
  ⚠️ <span style="color: red;">**To avoid damaging the software, DO NOT TOUCH the shiny plastic part of the floppy disk.**</span>
 
-Use an Atari DOS disk (e.g., DOS 2.5a or SmartDOS) for this example. Connect the Indus GT Drive via an SIO cable.
+Use an Atari DOS disk (for example, DOS 2.5a or SmartDOS) for this example. Connect the Indus GT Drive via an SIO cable.
 
 1. Connect the Indus GT Drive to the Atari computer.
 2. Turn on the disk drive.
@@ -260,7 +260,7 @@ Use an Atari DOS disk (e.g., DOS 2.5a or SmartDOS) for this example. Connect the
 4. Insert the disk and close the drive door by turning the lever above where you insert the disk, 90˚ to the right, so the lever is vertical to engage the disk.
 5. Turn on the Atari computer.
 
-If successful, a menu of disk operations (e.g., copy, load, save) appears.
+If successful, a menu of disk operations (for example, copy, load, save) appears.
 
 > **Note:** To eject the disk when finished, turn the lever 90˚ to the left.
 
@@ -271,7 +271,7 @@ If successful, a menu of disk operations (e.g., copy, load, save) appears.
 - Use a different disk drive for Drive 1. (Change the device assignment on the back of the drive.)
 
 ### Booting from a Cassette Tape
-The Atari 410 cassette recorder loads software from standard cassette tapes. Use a known-good cassette for this example (e.g., "Renaissance" from UMI — green text, blue dot under "R" on Side A).
+The Atari 410 cassette recorder loads software from standard cassette tapes. Use a known-good cassette for this example (for example, "Renaissance" from UMI — green text, blue dot under "R" on Side A).
 
 1. Press the **STOP/EJ** button to open the door.
 2. Insert the cassette with the blue dot facing up and the inner yellow tape visible to you.
@@ -279,10 +279,10 @@ The Atari 410 cassette recorder loads software from standard cassette tapes. Use
 4. (Optional) Reset the tape counter to "000" by pressing the black button.
 5. Push the **PLAY** button down until it clicks and stays in place.
 6. Hold the yellow **Start** button on the Atari computer while turning it on.
-7. The computer will beep once to alert you to remove your finger from the Start button.
+7. The computer beeps once to tell you to remove your finger from the Start button.
 8. Press the **RETURN** key to load.
 
-Loading completes when the software (e.g., Renaissance game) appears. Loading may take several minutes.
+Loading completes when the software (for example, Renaissance game) appears. Loading may take several minutes.
 
 ⚠️ <span style="color: red;">**Store cassettes and floppy disks away from magnets, heat, and direct sunlight.**</span>
 
@@ -323,7 +323,7 @@ The A/B Switchbox enables you to share the Lantronix UDS-10 "modem" with both th
 - Connect the Atari 850 Interface (serial interface port 1) to the lower right connector (as you face the back of the device) of the A/B switchbox.
 - Connect the modem cable from the ATR8000 to the lower left connector (as you face the back of the device) of the A/B switchbox.
 
-Both devices can be powered on, but only the device selected via the switchbox will be recognized.
+Both devices can be powered on, but only the device selected via the switchbox is recognized.
 
 ---
 
@@ -356,7 +356,7 @@ You can connect the ATR8000 modem cable directly to the Lantronix UDS-10 Modem o
 
 ### Power-On Order
 
-Both the ATR8000 and the Epson LQ-500 **must** be running before the Atari is powered on; otherwise, the Atari will not be able to print to the Epson printer.
+Both the ATR8000 and the Epson LQ-500 **must** be running before the Atari is powered on; otherwise, the Atari cannot print to the Epson printer.
 
 1. Turn on the Epson LQ-500.
 2. Turn on the ATR8000.
@@ -426,7 +426,7 @@ The system includes:
 - Paint program and a Koala Graphics Pad
 - Utilities
 - Games
-- ...and more
+- And more
 
 
 ### Learning Resources
