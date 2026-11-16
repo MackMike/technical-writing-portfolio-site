@@ -1,6 +1,6 @@
 # Quickstart
 
-This guide gets you from nothing to a working request in about five minutes. You will start a local mock server, list your books, retrieve one, add one, and trigger each error the API can return.
+This guide gets you from nothing to a working request in about five minutes. You start a local mock server, list your books, retrieve one, add one, and trigger each error the API can return.
 
 ## Before you begin
 
@@ -11,7 +11,7 @@ You need:
 - Optional, for the Python examples: Python 3 and the `requests` library (`pip install requests`).
 
 !!! note "No real server behind this API"
-    The Reading List API is fictional, so you will run it against a mock server called [Prism](https://github.com/stoplightio/prism). The mock reads the OpenAPI specification and returns the example responses documented in it. It does not store data. [Process and tooling](process.md#what-the-mock-server-does-and-does-not-do) lists exactly what the mock does and does not do.
+    The Reading List API is fictional, so you run it against a mock server called [Prism](https://github.com/stoplightio/prism). The mock reads the OpenAPI specification and returns the example responses documented in it. It does not store data. [Process and tooling](process.md#what-the-mock-server-does-and-does-not-do) lists exactly what the mock does and does not do.
 
 ## Start the mock server
 
@@ -223,7 +223,7 @@ The API responds with `201 Created` and the new book. The server assigns the `id
 ```
 
 !!! warning "The mock does not store books"
-    Prism returns the same example response for every valid request. If you list your books again, the new book will not appear.
+    Prism returns the same example response for every valid request. If you list your books again, the new book does not appear.
 
 ## 4. Trigger the errors
 
@@ -258,7 +258,7 @@ Content-type: application/problem+json
 {"type":"https://example.com/problems/bad-request","title":"Bad request","status":400,"detail":"The request body is invalid.","instance":"/books","errors":[{"field":"title","message":"This field is required."},{"field":"status","message":"Must be one of unread, reading, or finished."}]}
 ```
 
-!!! warning "The mock's 400 body is fixed"
+!!! warning "The mock server's 400 body is fixed"
     A real server would list only the fields that were actually invalid in your request. The mock always returns the same example body, so the `errors` list above does not match the request you sent. The status code is accurate.
 
 **`404 Not Found`: ask the mock for it.** The mock returns a book for any ID, so use the `Prefer` request header to request a specific documented response:
