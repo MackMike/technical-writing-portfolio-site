@@ -43,7 +43,7 @@ This sample demonstrates the ability to create effective internal support docume
 
 ## View the Project
 - **View final sample:** [Troubleshoot VPN Certificate Issues on Managed macOS Devices](https://mackmike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-managed-macos/)
-- **View Markdown/source:** [vpn-certificate-troubleshooting-managed-macos.md](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/vpn-certificate-troubleshooting-managed-macos.md)
+- **View Markdown/source:** [`vpn-certificate-troubleshooting-managed-macos.md`](https://github.com/MackMike/technical-writing-portfolio-site/blob/main/docs/projects/vpn-certificate-troubleshooting-managed-macos.md)
 - **View repository:** [GitHub Repository](https://github.com/MackMike/michael-scarborough-technical-writing-portfolio)
 
 ## Related Skills
