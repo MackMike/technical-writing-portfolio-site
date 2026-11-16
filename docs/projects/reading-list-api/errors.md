@@ -132,7 +132,7 @@ Against the mock server, either example prints:
   status: Must be one of unread, reading, or finished.
 ```
 
-!!! warning "The mock's 400 body is fixed"
+!!! warning "The mock server's 400 body is fixed"
     A real server would list only the fields that were invalid in your request. The mock always returns the same example, as explained in the [Quickstart](quickstart.md#4-trigger-the-errors).
 
 ## Troubleshooting
