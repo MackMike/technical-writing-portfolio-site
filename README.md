@@ -1,5 +1,7 @@
 # Technical Writing Portfolio Site
 
+[![Prose lint (Vale)](https://github.com/MackMike/technical-writing-portfolio-site/actions/workflows/vale.yml/badge.svg)](https://github.com/MackMike/technical-writing-portfolio-site/actions/workflows/vale.yml)
+
 This repository contains the source files, assets, and supporting materials for my hosted technical writing portfolio site. It is used for site maintenance, content organization, and publishing.
 
 ## Portfolio Access
