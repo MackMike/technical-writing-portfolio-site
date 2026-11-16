@@ -2,11 +2,11 @@
 
 ## Overview
 
-This guide will help you set up and begin using your company-managed Mac. It covers common onboarding tasks such as connecting to Wi-Fi, signing in, completing multi-factor authentication (MFA), allowing automated setup to finish, connecting to Zscaler, and accessing company applications like Microsoft Outlook and other Microsoft 365 tools.
+This guide helps you set up and begin using your company-managed Mac. It covers common onboarding tasks such as connecting to Wi-Fi, signing in, completing multi-factor authentication (MFA), allowing automated setup to finish, connecting to Zscaler, and accessing company applications like Microsoft Outlook and other Microsoft 365 tools.
 
 > ⏱️ Estimated setup time: 20–30 minutes
 
-By the end of this guide, you will be able to:
+By the end of this guide, you can:
 
 * Sign in to your Mac with your company account
 * Connect to Wi-Fi
@@ -53,7 +53,7 @@ Before starting setup, make sure you have:
 * Any onboarding instructions provided by your IT team
 
 > 🔒 **Security note:**
-> Do not share your company password or MFA verification code. IT will never ask for this information.
+> Do not share your company password or MFA verification code. IT never asks for this information.
 
 ---
 
