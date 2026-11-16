@@ -1,6 +1,7 @@
 name: Prose lint (Vale)
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -33,7 +34,3 @@ jobs:
           vale_flags: "--minAlertLevel=warning"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
-=======
-
->>>>>>> 3013a5d0a29a6feef773bdd8dc79d3af3a87cbf9
