@@ -25,12 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: errata-ai/vale-action@reviewdog
+      - uses: vale-cli/vale-action@v3
         with:
           # Report-only: results appear on the Checks tab and never fail the build.
           reporter: github-check
           fail_on_error: false
           filter_mode: nofilter
-          vale_flags: "--minAlertLevel=warning"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          min_alert_level: warning
