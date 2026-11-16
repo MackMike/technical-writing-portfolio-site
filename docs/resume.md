@@ -77,7 +77,7 @@ Technical writer and editor with nearly eight years of enterprise macOS engineer
 * Authored getting-started documentation for end users to support onboarding and reduce repeated support questions.
 * Created workflow documentation for engineering and support teams, standardizing macOS core processes across IT operations.
 * Developed process documentation for a user-elevated-rights automation workflow, reducing manual intervention for IT Support and Help Desk teams.
-* Translated complex macOS administration and security procedures into clear, reusable documentation for technical and operational audiences.
+* Translated complex macOS administration and security procedures into clear and reusable documentation for technical and operational audiences.
 
 ### Client Engineer, OlsonWorks Consulting Corp (Sephora)
 **May 2016–March 2018**
@@ -89,7 +89,7 @@ Technical writer and editor with nearly eight years of enterprise macOS engineer
 
 ## Projects and Contributions
 
-* **Getting Started with Your Managed Mac:** end-user quick-start guide for non-technical employees, with setup and troubleshooting flowcharts. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/managed-mac-onboarding-guide/)
+* **Getting Started with Your Managed Mac:** end-user quick-start guide for non-technical employees. Includes setup and troubleshooting flowcharts. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/managed-mac-onboarding-guide/)
 * **Troubleshooting Compliance Failures on Jamf-Managed Macs:** knowledge base article for IT support and engineering teams, organized by symptom with a decision-flow diagram. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/jamf-managed-mac-compliance-troubleshooting/)
 * **Troubleshooting VPN Certificate Issues on Managed macOS Devices:** knowledge base article for support teams with step-by-step remediation and escalation criteria. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/vpn-certificate-troubleshooting-project/)
 * **Migrate User Administrative Tool:** administrator guide, plus edited prompts, warnings, comments, and error handling for an AppleScript tool. [View the project](https://mackmike.github.io/technical-writing-portfolio-site/projects/migration-tool-project/)
