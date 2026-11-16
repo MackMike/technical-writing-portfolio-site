@@ -437,7 +437,7 @@ Before removing anything, verify:
 - whether the Mac is assigned to Automated Device Enrollment
 - whether the user can complete setup steps if reenrollment requires user interaction
 - whether FileVault recovery and escrow information is preserved according to policy
-- whether security tools or certificates will be removed and must be restored
+- whether security tools or certificates are removed and must be restored
 
 > ⚠️ If your environment uses Automated Device Enrollment as the standard trusted path, a full erase-and-reprovision may be preferred over manual cleanup and reenrollment. Follow local policy.
 
