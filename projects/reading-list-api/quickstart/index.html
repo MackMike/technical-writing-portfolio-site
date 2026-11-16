@@ -1058,7 +1058,7 @@
 
 
 <h1 id="quickstart">Quickstart</h1>
-<p>This guide gets you from nothing to a working request in about five minutes. You will start a local mock server, list your books, retrieve one, add one, and trigger each error the API can return.</p>
+<p>This guide gets you from nothing to a working request in about five minutes. You start a local mock server, list your books, retrieve one, add one, and trigger each error the API can return.</p>
 <h2 id="before-you-begin">Before you begin</h2>
 <p>You need:</p>
 <ul>
@@ -1068,7 +1068,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">No real server behind this API</p>
-<p>The Reading List API is fictional, so you will run it against a mock server called <a href="https://github.com/stoplightio/prism">Prism</a>. The mock reads the OpenAPI specification and returns the example responses documented in it. It does not store data. <a href="../process/#what-the-mock-server-does-and-does-not-do">Process and tooling</a> lists exactly what the mock does and does not do.</p>
+<p>The Reading List API is fictional, so you run it against a mock server called <a href="https://github.com/stoplightio/prism">Prism</a>. The mock reads the OpenAPI specification and returns the example responses documented in it. It does not store data. <a href="../process/#what-the-mock-server-does-and-does-not-do">Process and tooling</a> lists exactly what the mock does and does not do.</p>
 </div>
 <h2 id="start-the-mock-server">Start the mock server</h2>
 <ol>
@@ -1278,7 +1278,7 @@
 </code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">The mock does not store books</p>
-<p>Prism returns the same example response for every valid request. If you list your books again, the new book will not appear.</p>
+<p>Prism returns the same example response for every valid request. If you list your books again, the new book does not appear.</p>
 </div>
 <h2 id="4-trigger-the-errors">4. Trigger the errors</h2>
 <p>The API returns three kinds of error. Each one is easy to reproduce against the mock.</p>
@@ -1302,7 +1302,7 @@
 <span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;https://example.com/problems/bad-request&quot;</span><span class="p">,</span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;Bad request&quot;</span><span class="p">,</span><span class="nt">&quot;status&quot;</span><span class="p">:</span><span class="mi">400</span><span class="p">,</span><span class="nt">&quot;detail&quot;</span><span class="p">:</span><span class="s2">&quot;The request body is invalid.&quot;</span><span class="p">,</span><span class="nt">&quot;instance&quot;</span><span class="p">:</span><span class="s2">&quot;/books&quot;</span><span class="p">,</span><span class="nt">&quot;errors&quot;</span><span class="p">:[{</span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="s2">&quot;title&quot;</span><span class="p">,</span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;This field is required.&quot;</span><span class="p">},{</span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="s2">&quot;status&quot;</span><span class="p">,</span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;Must be one of unread, reading, or finished.&quot;</span><span class="p">}]}</span>
 </code></pre></div>
 <div class="admonition warning">
-<p class="admonition-title">The mock's 400 body is fixed</p>
+<p class="admonition-title">The mock server's 400 body is fixed</p>
 <p>A real server would list only the fields that were actually invalid in your request. The mock always returns the same example body, so the <code>errors</code> list above does not match the request you sent. The status code is accurate.</p>
 </div>
 <p><strong><code>404 Not Found</code>: ask the mock for it.</strong> The mock returns a book for any ID, so use the <code>Prefer</code> request header to request a specific documented response:</p>
