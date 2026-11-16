@@ -1,0 +1,35 @@
+name: Prose lint (Vale)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "docs/**"
+      - ".vale.ini"
+      - ".vale/**"
+  pull_request:
+    paths:
+      - "docs/**"
+      - ".vale.ini"
+      - ".vale/**"
+
+permissions:
+  contents: read
+  checks: write
+
+jobs:
+  vale:
+    name: Vale
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: errata-ai/vale-action@reviewdog
+        with:
+          # Report-only: results appear on the Checks tab and never fail the build.
+          reporter: github-check
+          fail_on_error: false
+          filter_mode: nofilter
+          vale_flags: "--minAlertLevel=warning"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
