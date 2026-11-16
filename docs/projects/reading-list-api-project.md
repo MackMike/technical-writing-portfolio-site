@@ -20,7 +20,7 @@ The goal of this documentation is to help a developer go from nothing to a worki
 - Task-based quickstart writing for developers
 - Authentication guidance, including key-handling practices
 - Standardized error documentation using Problem Details (RFC 9457), with field-level error detail
-- Testing documentation against a mock server and documenting the mock's limits honestly
+- Testing documentation against a mock server and documenting the mock server's limits honestly
 - Separating generated reference content from hand-written guidance
 
 ## Tools / Methods
