@@ -39,7 +39,7 @@ The goal of this project was to transform an earlier, non-technical draft into a
 ## Challenges / Writing Considerations
 * A key challenge in this project was rewriting existing content while learning Markdown.
 * The guide also needed to support users who may not understand older computing concepts such as cassette-based storage, floppy disks, drive lettering, and hardware-specific device behavior. 
-* Another consideration was deciding when to use supplemental images to support setup and orientation without allowing visuals to replace clear written instructions. The revision work focused on replacing overly wordy, loosely structured content with concise, organized sections and clearer explanations of unfamiliar terms.
+* Another consideration was deciding when to use supplemental images to support setup and orientation without allowing visuals to replace clear written instructions. The revision work focused on replacing overly wordy, loosely structured content with concise, organized sections, and clearer explanations of unfamiliar terms.
 
 ## Deliverables
 - Revised Atari user guide in Markdown
