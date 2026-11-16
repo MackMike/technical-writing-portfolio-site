@@ -352,7 +352,7 @@ Before removing anything, verify:
 
 - whether the device is expected to use Automated Device Enrollment or another standard enrollment workflow
 - whether the user can complete any required setup steps
-- whether certificates, VPN settings, or related security tools will need to be restored
+- whether certificates, VPN settings, or related security tools need to be restored
 - whether FileVault and recovery workflows are preserved according to policy
 
 ### Recommended Re-enrollment Approach
