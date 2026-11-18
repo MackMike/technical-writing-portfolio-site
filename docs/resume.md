@@ -5,7 +5,7 @@ Technical writer and editor who brings nearly eight years of hands-on enterprise
 
 ## Core Skills
 
-**Documentation:** User guides, administrator documentation, knowledge base articles, getting-started guides, troubleshooting content, process and workflow documentation
+**Documentation:** Process and workflow documentation, user guides, administrator documentation, knowledge base articles, getting-started guides, troubleshooting content
 
 **Writing and Editing:** Technical editing, information architecture, structured authoring (DITA), task-based writing, style guide adherence
 
@@ -44,7 +44,7 @@ Technical writer and editor who brings nearly eight years of hands-on enterprise
 **March 2018–March 2024**
 
 * Wrote and maintained how-to guides, knowledge base content, engineering workflows, and technology evaluations in the team wiki and Microsoft Word, as part of macOS engineering duties for 1,700 devices.
-* Authored the getting-started guide used by every user issued a new MacBook, supporting onboarding and reducing repeat support questions.
+* Authored the getting-started guide that every user issued a new MacBook used for onboarding, reducing repeat support questions.
 * Created workflow documentation for engineering and support teams to standardize macOS core processes across IT Ops.
 * Created the user elevated-rights automation workflow and its documentation for engineering and Desktop Support teams, turning a request that required Help Desk intervention into a self-service process and reducing Help Desk calls.
 * Translated the complex macOS admin/security procedures into clear and usable documentation for the technical and ops audiences.
