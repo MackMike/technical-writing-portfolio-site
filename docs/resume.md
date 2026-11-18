@@ -40,7 +40,7 @@ Technical writer and editor who brings nearly eight years of hands-on enterprise
 * Review AI-generated content for grammar, clarity, coherence, tone, and audience fit across a range of prompts (Aether Project, Outlier AI).
 * Edited a draft user manual to meet the requirements of a standards guide (Mercor writing contract).
 
-### macOS Systems Engineer, BlackRock, Inc.
+### macOS Systems Engineer (Associate), BlackRock, Inc.
 **March 2018–March 2024**
 
 * Wrote and maintained how-to guides, knowledge base content, engineering workflows, and technology evaluations in the team wiki and Microsoft Word, as part of macOS engineering duties for 1,700 devices.
