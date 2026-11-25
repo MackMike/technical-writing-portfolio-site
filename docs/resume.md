@@ -1,5 +1,5 @@
 ## Professional Summary
-Technical writer and editor who brings nearly eight years of hands-on enterprise macOS engineering to user and administrator documentation. Documented that engineering work throughout, then spent more than two years building a dedicated writing practice: Apache OpenOffice technical editing, CIS macOS Benchmark contributions, and a public portfolio built with Markdown, Git, GitHub, MkDocs, and DITA. Writes task-based user guides, administrator documentation, knowledge base articles, and troubleshooting content for end users and IT teams.
+Technical writer and editor who brings nearly eight years of hands-on enterprise macOS engineering to user and administrator documentation. Documented that engineering work throughout, then spent more than two years building a dedicated writing practice: Apache OpenOffice technical editing, CIS macOS Benchmark contributions, and a public portfolio built with Markdown, Git, GitHub, MkDocs, and DITA. WWrites task-based user guides, administrator documentation, knowledge base articles, and troubleshooting content for end users and IT teams, using a docs-as-code workflow and working within Agile engineering teams.
 
 [Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
 
@@ -9,7 +9,7 @@ Technical writer and editor who brings nearly eight years of hands-on enterprise
 
 **Writing and Editing:** Technical editing, information architecture, structured authoring (DITA), task-based writing, style guide adherence
 
-**Tools:** Markdown, Git and GitHub, MkDocs, Mermaid, Vale, Atlassian Confluence, Microsoft 365, Jira, ServiceNow, draw.io, Figma
+**Tools:** Markdown, Git and GitHub, MkDocs, Mermaid, Vale, Atlassian Confluence, Microsoft Word, Microsoft 365, Jira, ServiceNow, draw.io, Figma
 
 **Enterprise IT:** macOS, iOS, Jamf Pro, Intune, AirWatch, Bash, AppleScript
 
@@ -48,6 +48,7 @@ Technical writer and editor who brings nearly eight years of hands-on enterprise
 * Created workflow documentation for engineering and support teams to standardize macOS core processes across IT Ops.
 * Created the user elevated-rights automation workflow and its documentation for engineering and Desktop Support teams, turning a request that required Help Desk intervention into a self-service process and reducing Help Desk calls.
 * Translated the complex macOS admin/security procedures into clear and usable documentation for the technical and ops audiences.
+* Worked in a Scrum-based engineering team, tracking work in Jira and reporting project status in regular Scrum meetings.
 
 ### Client Engineer, OlsonWorks Consulting Corp (Sephora)
 **May 2016–March 2018**
@@ -62,7 +63,7 @@ Technical writer and editor who brings nearly eight years of hands-on enterprise
 * SUNY New Paltz (coursework)
 * Introduction to DITA Certificate (2026), Scriptorium
 * Jamf Certifications: Certified Jamf Technician (200), 2015; Certified Jamf Administrator (300), 2017; Jamf Certified Endpoint Security Administrator (370), 2022 (expired)
-* LinkedIn Learning (2025–2026): Business Writing Professional Certificate; Creating Technical Documentation with GitHub; Technical Writing Quick Start Guides; Performing User Experience Audits; Editing and Proofreading Made Simple
+* LinkedIn Learning (2025–2026): Business Writing Professional Certificate; Creating Technical Documentation with GitHub; Technical Writing Quick Start Guides; Performing User Experience Audits; Editing and Proofreading Made Simple, Creating API Documentation
 
 ## External Links
 * [Download PDF Resume](../assets/pdfs/scarborough-resume.pdf)
